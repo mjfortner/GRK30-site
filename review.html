@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRK30 — Review</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="main"></main>
+
+<script src="readings.js"></script>
+<script src="quizzes.js"></script>
+<script src="review.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const quizId = GRK.currentQuizId();
+  GRK.mountChrome("review.html", quizId);
+  GRK.mountPanel();
+
+  const main = document.getElementById("main");
+  const rdgs = GRK.quizReadings(quizId);
+
+  if (!rdgs.length) {
+    main.innerHTML = '<p class="lede">No readings in this quiz yet.</p>';
+    return;
+  }
+
+  const head = document.createElement("div");
+  head.innerHTML = `
+    <h2 class="page">Review</h2>
+    <p class="lede">The constructions that keep coming back in this quiz's readings,
+      then every form in them, sorted so you can drill one kind at a time.</p>`;
+  main.appendChild(head);
+
+  /* ---------------- hand-written grammar topics ---------------- */
+
+  const review = (typeof REVIEW !== "undefined" ? REVIEW : []).find(r => r.quizId === quizId);
+
+  if (!review || !review.topics.length) {
+    const p = document.createElement("p");
+    p.className = "lede";
+    p.textContent = "No grammar topics written for this quiz yet — they get added once the quiz's readings are all in.";
+    main.appendChild(p);
+  } else {
+    review.topics.forEach(topic => {
+      const card = document.createElement("div");
+      card.className = "card topic";
+
+      const h = document.createElement("h3");
+      h.textContent = topic.title;
+      card.appendChild(h);
+
+      const body = document.createElement("div");
+      body.className = "body";
+      const p = document.createElement("p");
+      p.textContent = topic.summary;
+      body.appendChild(p);
+
+      (topic.examples || []).forEach(ex => {
+        const rdg = GRK.reading(ex.readingId);
+        const wrap = document.createElement("div");
+        wrap.className = "ex";
+
+        const gk = document.createElement("div");
+        gk.className = "gk";
+        gk.textContent = ex.quote;
+        wrap.appendChild(gk);
+
+        const why = document.createElement("div");
+        why.className = "why";
+        why.textContent = ex.explain;
+        wrap.appendChild(why);
+
+        if (rdg) {
+          const src = document.createElement("a");
+          src.className = "src";
+          src.href = `readings.html?quiz=${encodeURIComponent(quizId)}#${rdg.id}`;
+          src.textContent = GRK.citeSeg(rdg, ex.seg) + " →";
+          wrap.appendChild(src);
+        }
+        body.appendChild(wrap);
+      });
+
+      card.appendChild(body);
+      main.appendChild(card);
+    });
+  }
+
+  /* ---------------- auto-generated form drills ---------------- */
+  /* Every bucket is derived from the token data in readings.js, so it can never
+     drift out of sync with the passages themselves. */
+
+  const BUCKETS = [
+    { name: "Participles",       test: t => /participle/i.test(t.parse) },
+    { name: "Infinitives",       test: t => /infinitive/i.test(t.parse) },
+    { name: "Optatives",         test: t => /optative/i.test(t.parse) },
+    { name: "Subjunctives",      test: t => /subjunctive/i.test(t.parse) },
+    { name: "Imperatives",       test: t => /imperative/i.test(t.parse) },
+    { name: "Perfect & pluperfect", test: t => /perfect|pluperfect/i.test(t.parse) },
+    { name: "Aorists",           test: t => /aorist/i.test(t.parse) },
+    { name: "Imperfects",        test: t => /imperfect/i.test(t.parse) },
+    { name: "Middle & passive",  test: t => /middle|passive/i.test(t.parse) },
+    { name: "Epic forms",        test: t => /epic|ionic|elided|anastrophe|diectasis/i.test(t.parse + " " + (t.pos || "")) },
+    { name: "Nouns",             test: t => /^noun/i.test(t.pos || "") },
+    { name: "Adjectives",        test: t => /^adjective/i.test(t.pos || "") }
+  ];
+
+  // collect every token in the quiz, with where it came from
+  const all = [];
+  rdgs.forEach(rdg => {
+    rdg.segments.forEach((seg, i) => {
+      GRK.words(seg).forEach(tok => {
+        all.push({ tok, rdg, seg: i });
+      });
+    });
+  });
+
+  const drills = BUCKETS.map(b => {
+    const seen = new Set();
+    const items = [];
+    all.forEach(x => {
+      if (!b.test(x.tok)) return;
+      const key = x.tok.w + "|" + x.tok.parse;
+      if (seen.has(key)) return;
+      seen.add(key);
+      items.push(x);
+    });
+    return { name: b.name, items };
+  }).filter(b => b.items.length);
+
+  const drillCard = document.createElement("div");
+  drillCard.className = "card";
+  drillCard.innerHTML = `
+    <h3>Form drills</h3>
+    <p class="meta">Every distinct form in this quiz, bucketed by what it is. Click a card to check yourself.</p>
+    <div class="drill-tabs" id="tabs"></div>
+    <div class="drill-list" id="list"></div>`;
+  main.appendChild(drillCard);
+
+  const tabs = drillCard.querySelector("#tabs");
+  const list = drillCard.querySelector("#list");
+
+  function showBucket(b) {
+    tabs.querySelectorAll("button").forEach(el =>
+      el.classList.toggle("on", el.dataset.name === b.name));
+
+    list.innerHTML = "";
+    b.items.forEach(x => {
+      const item = document.createElement("div");
+      item.className = "drill-item";
+
+      item.innerHTML = `
+        <span class="src">${GRK.esc(GRK.citeSeg(x.rdg, x.seg))}</span>
+        <div class="form">${GRK.esc(x.tok.w)}</div>
+        <div class="hint">click to reveal</div>
+        <div class="ans">
+          <div class="l">${GRK.esc(x.tok.lemma || "—")}</div>
+          <div class="p">${GRK.esc(x.tok.parse || "—")}</div>
+          <div class="g">${GRK.esc(x.tok.gloss || "")}</div>
+        </div>`;
+
+      item.addEventListener("click", () => item.classList.toggle("open"));
+      list.appendChild(item);
+    });
+  }
+
+  drills.forEach((b, i) => {
+    const btn = document.createElement("button");
+    btn.dataset.name = b.name;
+    btn.innerHTML = `${GRK.esc(b.name)}<span class="n">${b.items.length}</span>`;
+    btn.addEventListener("click", () => showBucket(b));
+    tabs.appendChild(btn);
+    if (i === 0) showBucket(b);
+  });
+})();
+</script>
+</body>
+</html>

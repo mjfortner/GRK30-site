@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRK30 — Readings</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="readings"></main>
+
+<script src="readings.js"></script>
+<script src="quizzes.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const quizId = GRK.currentQuizId();
+  const quiz = GRK.mountChrome("readings.html", quizId);
+  GRK.mountPanel();
+
+  const root = document.getElementById("readings");
+  const rdgs = GRK.quizReadings(quizId);
+
+  if (!rdgs.length) {
+    root.innerHTML = '<p class="lede">No readings in this quiz yet.</p>';
+    return;
+  }
+
+  // in-page jump links for this quiz's readings
+  const nav = document.querySelector("nav.toc");
+  rdgs.forEach(r => {
+    const sep = document.createElement("span");
+    sep.className = "sep";
+    sep.textContent = "·";
+    const a = document.createElement("a");
+    a.href = "#" + r.id;
+    a.textContent = r.title;
+    nav.appendChild(sep);
+    nav.appendChild(a);
+  });
+
+  rdgs.forEach(r => root.appendChild(GRK.renderReading(r)));
+})();
+</script>
+</body>
+</html>

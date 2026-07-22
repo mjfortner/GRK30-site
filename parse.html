@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRK30 — Parse trainer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="main"></main>
+
+<script src="readings.js"></script>
+<script src="quizzes.js"></script>
+<script src="grammar.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const quizId = GRK.currentQuizId();
+  GRK.mountChrome("parse.html", quizId);
+  GRK.mountPanel();
+  const main = document.getElementById("main");
+
+  /* ===================================================================
+     Decode a parse string into a feature set.
+
+     The `parse` fields in readings.js are written out in full and regularly
+     — "aorist middle indicative, 3rd singular", "acc. sg. fem." — so a
+     handful of regexes recover the features. Parenthetical epic notes
+     ("(epic ἤλυθε)") are stripped first so they can't be read as a feature.
+     Finite verbs spell number out ("3rd singular"); nominals abbreviate it
+     ("acc. sg. fem."). NORM maps both, plus gender/case abbreviations.
+     =================================================================== */
+
+  const NORM = {
+    masc: "masculine", fem: "feminine", neut: "neuter",
+    nom: "nominative", gen: "genitive", dat: "dative", acc: "accusative", voc: "vocative",
+    sg: "singular", pl: "plural", du: "dual",
+    singular: "singular", plural: "plural", dual: "dual"
+  };
+
+  function decode(parseStr) {
+    if (!parseStr) return null;
+    const s = parseStr.toLowerCase().replace(/\([^)]*\)/g, " ");
+    const f = {};
+    // pluperfect/imperfect before perfect — the alternation returns the first match
+    f.tense = (s.match(/present|imperfect|future perfect|future|aorist|pluperfect|perfect/) || [])[0] || null;
+    f.voice = /middle\/passive/.test(s) ? "middle/passive"
+            : /middle/.test(s) ? "middle"
+            : /passive/.test(s) ? "passive"
+            : /active/.test(s) ? "active" : null;
+    f.mood = (s.match(/indicative|subjunctive|optative|imperative|infinitive|participle/) || [])[0] || null;
+    f.person = (s.match(/1st|2nd|3rd/) || [])[0] || null;
+    const n = (s.match(/singular|plural|dual|\bsg\b|\bpl\b|\bdu\b/) || [])[0]; f.number = n ? NORM[n] : null;
+    const g = (s.match(/masc|fem|neut/) || [])[0]; f.gender = g ? NORM[g] : null;
+    const c = (s.match(/nom|gen|dat|acc|voc/) || [])[0]; f.case = c ? NORM[c] : null;
+    return f;
+  }
+
+  // What kind of word a token is, from its part of speech.
+  // \bverb\b/\bnoun\b so "adverb" and "proper noun" don't leak in unwanted.
+  function categoryOf(tok) {
+    const pos = tok.pos || "";
+    if (/\bverb\b/i.test(pos)) return "verb";               // incl. "verb (participle)"
+    if (/\badjective\b/i.test(pos)) return "adjective";
+    if (/\bnoun\b/i.test(pos) && !/\bproper\b/i.test(pos)) return "noun";
+    return null;
+  }
+
+  // Which features to quiz, given the word's category and decoded form. Only
+  // features that are actually present are asked (a gen. pl. participle with no
+  // determinable gender simply isn't asked its gender).
+  function featureList(cat, f) {
+    if (cat === "verb") {
+      const base = ["tense", "voice", "mood"];
+      const order = f.mood === "participle" ? [...base, "case", "gender", "number"]
+                  : f.mood === "infinitive" ? base
+                  : [...base, "person", "number"];
+      return order.filter(k => f[k]);
+    }
+    // noun: case + number (gender is lexical, shown but not quizzed)
+    // adjective: case + number + gender (gender agrees, so it's parsed)
+    const order = cat === "adjective" ? ["case", "gender", "number"] : ["case", "number"];
+    return order.filter(k => f[k]);
+  }
+
+  // Fixed option sets. Kept whole (never pruned to the answer) so it stays a
+  // real test; dual is dropped from Number unless it is the answer.
+  const FEATURES = {
+    tense:  { label: "Tense",  options: ["present", "imperfect", "future", "aorist", "perfect", "pluperfect"] },
+    voice:  { label: "Voice",  options: ["active", "middle", "passive", "middle/passive"] },
+    mood:   { label: "Mood",   options: ["indicative", "subjunctive", "optative", "imperative", "infinitive", "participle"] },
+    person: { label: "Person", options: ["1st", "2nd", "3rd"] },
+    number: { label: "Number", options: ["singular", "plural", "dual"] },
+    case:   { label: "Case",   options: ["nominative", "genitive", "dative", "accusative", "vocative"] },
+    gender: { label: "Gender", options: ["masculine", "feminine", "neuter"] }
+  };
+
+  // Where a missed feature sends you in the reference — depends on the mode,
+  // since Case means the participle table for a verb and the declension table
+  // for a noun.
+  const REF_FOR = {
+    verbs: { tense: "tense-markers", voice: "personal-endings", mood: "mood-signs",
+             person: "personal-endings", number: "personal-endings",
+             case: "mood-signs", gender: "mood-signs" },
+    nouns: { case: "case-endings", number: "case-endings", gender: "case-endings" }
+  };
+
+  const REF_TITLE = {};
+  (typeof GRAMMAR !== "undefined" ? GRAMMAR : []).forEach(sec => REF_TITLE[sec.id] = sec.title);
+
+  /* ===================================================================
+     Verb / noun pool from every reading on the site.
+     =================================================================== */
+
+  const MOODS = new Set(["indicative", "subjunctive", "optative", "imperative", "infinitive", "participle"]);
+
+  function buildPool(mode, filter) {
+    const pool = [], seen = new Set();
+    GRK.READINGS.forEach(rdg => {
+      rdg.segments.forEach((seg, si) => {
+        GRK.words(seg).forEach(tok => {
+          const cat = categoryOf(tok);
+          if (!cat) return;
+          const f = decode(tok.parse);
+          if (!f) return;
+
+          if (mode === "verbs") {
+            if (cat !== "verb") return;
+            if (!MOODS.has(f.mood) || !f.tense) return;
+            if (!featureList(cat, f).every(k => f[k])) return;
+            if (filter === "finite" && (f.mood === "participle" || f.mood === "infinitive")) return;
+            if (filter === "participles" && f.mood !== "participle") return;
+          } else {
+            if (cat !== "noun" && cat !== "adjective") return;
+            if (!f.case || !f.number) return;
+            if (filter === "nouns" && cat !== "noun") return;
+            if (filter === "adjectives" && cat !== "adjective") return;
+          }
+
+          const key = tok.w + "|" + tok.parse;
+          if (seen.has(key)) return;
+          seen.add(key);
+          pool.push({ tok, f, cat, rdg, seg: si });
+        });
+      });
+    });
+    return pool;
+  }
+
+  /* ===================================================================
+     State
+     =================================================================== */
+
+  const FILTERS = {
+    verbs: [["all", "All verbs"], ["finite", "Finite only"], ["participles", "Participles"]],
+    nouns: [["all", "All"], ["nouns", "Nouns"], ["adjectives", "Adjectives"]]
+  };
+
+  let mode = "verbs", filter = "all";
+  let pool = [], order = [], cursor = 0;
+  let stat = { count: 0, byFeat: {} };   // byFeat[feature] = { asked, missed }
+
+  function resetStat() { stat = { count: 0, byFeat: {} }; }
+  function record(feature, correct) {
+    const b = stat.byFeat[feature] || (stat.byFeat[feature] = { asked: 0, missed: 0 });
+    b.asked++; if (!correct) b.missed++;
+  }
+
+  function reshuffle() { order = GRK.shuffle(pool.map((_, i) => i)); cursor = 0; }
+  function nextItem() {
+    if (!pool.length) return null;
+    if (cursor >= order.length) reshuffle();
+    return pool[order[cursor++]];
+  }
+
+  /* ===================================================================
+     Rendering
+     =================================================================== */
+
+  function showTab(name) {
+    main.querySelectorAll(".ptab").forEach(b => b.classList.toggle("on", b.dataset.tab === name));
+    document.getElementById("drill-pane").classList.toggle("hidden", name !== "drill");
+    document.getElementById("ref-pane").classList.toggle("hidden", name !== "reference");
+    window.scrollTo(0, 0);
+  }
+  function gotoRef(id) {
+    showTab("reference");
+    const el = document.getElementById("ref-" + id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function pretty(v) { return v.charAt(0).toUpperCase() + v.slice(1); }
+
+  function fullParse(item) {
+    const { f, cat, tok } = item;
+    const order = cat === "verb"
+      ? (f.mood === "participle" ? ["tense", "voice", "mood", "case", "gender", "number"]
+        : f.mood === "infinitive" ? ["tense", "voice", "mood"]
+        : ["tense", "voice", "mood", "person", "number"])
+      : ["case", "gender", "number"];   // show gender even for a noun (it's lexical)
+    const bits = order.filter(k => f[k]).map(k => f[k]);
+    return pretty(bits.join(", ")) + (tok.lemma ? " — from " + tok.lemma : "");
+  }
+
+  function renderCard() {
+    const item = nextItem();
+    const host = document.getElementById("card-host");
+    host.innerHTML = "";
+    if (!item) {
+      host.innerHTML = '<div class="card"><p class="meta">No forms match this filter yet.</p></div>';
+      return;
+    }
+    stat.count++;
+    const { tok, f, cat, rdg, seg } = item;
+
+    const card = document.createElement("div");
+    card.className = "card parsecard";
+    card.innerHTML = `
+      <div class="pform">${GRK.esc(tok.w)}</div>
+      <div class="phint">
+        <button class="btn ghost" id="hintBtn">Show hint</button>
+        <span class="hintbody hidden">
+          <span class="pcat">${GRK.esc(cat)}</span>
+          <span class="lemma">${GRK.esc(tok.lemma || "—")}</span>
+          <span class="src">${GRK.esc(GRK.citeSeg(rdg, seg))}</span>
+        </span>
+      </div>
+      <div class="prows"></div>
+      <div class="pexplain hidden"></div>
+      <div class="btnrow" style="margin-top:14px">
+        <button class="btn" id="nextBtn" disabled>Next →</button>
+      </div>`;
+    host.appendChild(card);
+
+    card.querySelector("#hintBtn").addEventListener("click", e => {
+      card.querySelector(".hintbody").classList.remove("hidden");
+      e.target.remove();
+    });
+
+    const feats = featureList(cat, f);
+    const rows = card.querySelector(".prows");
+    let remaining = feats.length;
+
+    feats.forEach(feature => {
+      const spec = FEATURES[feature];
+      const answer = f[feature];
+      const row = document.createElement("div");
+      row.className = "prow";
+      row.innerHTML = `<div class="plabel">${spec.label}</div>`;
+      const opts = document.createElement("div");
+      opts.className = "popts";
+
+      spec.options.filter(o => o !== "dual" || answer === "dual").forEach(o => {
+        const b = document.createElement("button");
+        b.className = "popt";
+        b.textContent = pretty(o);
+        b.addEventListener("click", () => choose(b, o));
+        opts.appendChild(b);
+      });
+      row.appendChild(opts);
+      rows.appendChild(row);
+
+      let answered = false;
+      function choose(btn, chosen) {
+        if (answered) return;
+        answered = true;
+        const correct = chosen === answer;
+        record(feature, correct);
+        opts.querySelectorAll(".popt").forEach(b => {
+          b.disabled = true;
+          if (b.textContent === pretty(answer)) b.classList.add("right");
+        });
+        if (!correct) {
+          btn.classList.add("wrong");
+          const ref = REF_FOR[mode][feature];
+          if (ref) {
+            row.insertAdjacentHTML("beforeend",
+              `<a class="reflink" data-ref="${ref}">Review: ${GRK.esc(REF_TITLE[ref] || "reference")} →</a>`);
+            row.querySelector(".reflink").addEventListener("click", () => gotoRef(ref));
+          }
+        }
+        if (--remaining === 0) finish();
+      }
+    });
+
+    function finish() {
+      const box = card.querySelector(".pexplain");
+      box.classList.remove("hidden");
+      box.innerHTML = `
+        <div class="lbl">Full parse</div>
+        <div class="full">${GRK.esc(fullParse(item))}</div>
+        ${tok.note ? `<div class="lbl">Why this form here</div><div class="note">${GRK.esc(pretty(tok.note))}.</div>` : ""}
+        ${tok.gloss ? `<div class="gloss">${GRK.esc(tok.lemma || "")} — “${GRK.esc(tok.gloss)}”</div>` : ""}`;
+      card.querySelector("#nextBtn").disabled = false;
+      renderTally();
+    }
+
+    card.querySelector("#nextBtn").addEventListener("click", renderCard);
+  }
+
+  function renderTally() {
+    const el = document.getElementById("tally");
+    const weak = Object.entries(stat.byFeat)
+      .filter(([, b]) => b.missed > 0)
+      .sort((a, b) => b[1].missed - a[1].missed);
+    const asked = Object.values(stat.byFeat).reduce((a, b) => a + b.asked, 0);
+    const missed = Object.values(stat.byFeat).reduce((a, b) => a + b.missed, 0);
+    const noun = mode === "nouns";
+
+    el.innerHTML = `
+      <span class="big">${asked - missed} / ${asked}</span>
+      <span>${stat.count} ${noun ? "form" : "verb"}${stat.count === 1 ? "" : "s"} · features correct</span>
+      ${weak.length
+        ? `<span class="weak">weak spots: ${weak.map(([k, b]) => {
+            const ref = REF_FOR[mode][k];
+            return ref ? `<a data-ref="${ref}">${FEATURES[k].label} ×${b.missed}</a>`
+                       : `${FEATURES[k].label} ×${b.missed}`;
+          }).join(" · ")}</span>`
+        : ""}`;
+    el.querySelectorAll("a[data-ref]").forEach(a =>
+      a.addEventListener("click", () => gotoRef(a.dataset.ref)));
+  }
+
+  /* ---------- reference pane, per mode ---------- */
+
+  function renderReference() {
+    const pane = document.getElementById("ref-pane");
+    pane.innerHTML = "";
+    const want = mode === "nouns" ? "noun" : "verb";
+    (typeof GRAMMAR !== "undefined" ? GRAMMAR : [])
+      .filter(sec => (sec.cat || "verb") === want)
+      .forEach(sec => {
+        const card = document.createElement("div");
+        card.className = "card refsec";
+        card.id = "ref-" + sec.id;
+
+        let html = `<h3>${GRK.esc(sec.title)}</h3>`;
+        if (sec.intro) html += `<p class="intro">${GRK.esc(sec.intro)}</p>`;
+
+        (sec.tables || []).forEach(t => {
+          if (t.caption) html += `<div class="tcap">${GRK.esc(t.caption)}</div>`;
+          html += '<div class="tscroll"><table class="reftable"><thead><tr>' +
+            t.cols.map((c, i) => `<th${i === 0 ? ' class="rowh"' : ""}>${GRK.esc(c)}</th>`).join("") +
+            "</tr></thead><tbody>" +
+            t.rows.map(r => "<tr>" +
+              r.map((cell, i) => `<td${i === 0 ? ' class="rowh"' : ""}>${GRK.esc(cell)}</td>`).join("") +
+              "</tr>").join("") +
+            "</tbody></table></div>";
+        });
+
+        (sec.notes || []).forEach(n => { html += `<p class="rnote">${GRK.esc(n)}</p>`; });
+        card.innerHTML = html;
+        pane.appendChild(card);
+      });
+  }
+
+  /* ---------- filter buttons, per mode ---------- */
+
+  function renderFilters() {
+    const bar = document.getElementById("filtrow");
+    bar.innerHTML = '<span class="filtlabel">Pool:</span>';
+    FILTERS[mode].forEach(([val, label], i) => {
+      const b = document.createElement("button");
+      b.className = "btn ghost filt" + (val === filter ? " on" : "");
+      b.dataset.filter = val;
+      b.textContent = label;
+      b.addEventListener("click", () => {
+        filter = val;
+        bar.querySelectorAll(".filt").forEach(x => x.classList.toggle("on", x === b));
+        pool = buildPool(mode, filter); reshuffle(); renderCard();
+      });
+      bar.appendChild(b);
+    });
+  }
+
+  function setMode(m) {
+    if (m === mode) return;
+    mode = m; filter = "all";
+    main.querySelectorAll(".pmode").forEach(b => b.classList.toggle("on", b.dataset.mode === m));
+    resetStat();
+    renderFilters();
+    renderReference();
+    pool = buildPool(mode, filter);
+    reshuffle();
+    renderCard();
+    document.getElementById("tally").innerHTML = '<span class="big">0 / 0</span><span>0 forms</span>';
+  }
+
+  /* ===================================================================
+     Mount
+     =================================================================== */
+
+  main.innerHTML = `
+    <h2 class="page">Parse trainer</h2>
+    <p class="lede">The fundamentals behind parsing a Greek word, and a drill on
+      real forms pulled from every reading on the site. Work the drill; when it
+      catches a feature you keep missing, follow the link into the reference.</p>
+
+    <div class="ptabs">
+      <button class="ptab on" data-tab="drill">Drill</button>
+      <button class="ptab" data-tab="reference">Reference</button>
+    </div>
+
+    <div id="drill-pane">
+      <div class="btnrow" style="margin-bottom:12px">
+        <span class="filtlabel">Parse:</span>
+        <button class="btn ghost pmode on" data-mode="verbs">Verbs</button>
+        <button class="btn ghost pmode" data-mode="nouns">Nouns &amp; adjectives</button>
+      </div>
+      <div class="btnrow" id="filtrow" style="margin-bottom:14px"></div>
+      <div id="card-host"></div>
+      <div class="score" id="tally"><span class="big">0 / 0</span><span>0 verbs</span></div>
+    </div>
+
+    <div id="ref-pane" class="hidden"></div>`;
+
+  main.querySelectorAll(".ptab").forEach(b =>
+    b.addEventListener("click", () => showTab(b.dataset.tab)));
+  main.querySelectorAll(".pmode").forEach(b =>
+    b.addEventListener("click", () => setMode(b.dataset.mode)));
+
+  renderFilters();
+  renderReference();
+  pool = buildPool(mode, filter);
+  reshuffle();
+  renderCard();
+})();
+</script>
+</body>
+</html>

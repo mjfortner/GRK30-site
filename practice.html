@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRK30 — Practice quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="main"></main>
+
+<script src="readings.js"></script>
+<script src="quizzes.js"></script>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const quizId = GRK.currentQuizId();
+  GRK.mountChrome("practice.html", quizId);
+  GRK.mountPanel();
+
+  const main = document.getElementById("main");
+  const rdgs = GRK.quizReadings(quizId);
+
+  if (!rdgs.length) {
+    main.innerHTML = '<p class="lede">No readings in this quiz yet.</p>';
+    return;
+  }
+
+  /* ---------------- window selection ---------------- */
+
+  const TARGET = 20, MIN = 18, MAX = 24;
+  const RECENT_KEY = "grk30-recent-" + quizId;
+
+  // Kept in memory as well as in localStorage: on a file:// page storage can be
+  // unavailable, and we still must not hand out the same passage twice running.
+  let recentMem = [];
+
+  function recent() {
+    let stored = [];
+    try { stored = JSON.parse(localStorage.getItem(RECENT_KEY)) || []; } catch (e) {}
+    return [...new Set([...recentMem, ...stored])];
+  }
+  function remember(key) {
+    recentMem = [key, ...recentMem.filter(k => k !== key)].slice(0, 3);
+    try { localStorage.setItem(RECENT_KEY, JSON.stringify(recentMem)); } catch (e) {}
+  }
+
+  // Grow a window forward from `start` until it is worth ~20 lines. Returns the
+  // last segment index included. Segments with no words (speaker labels) weigh 0
+  // and so ride along free.
+  function grow(rdg, start) {
+    let total = 0, end = start;
+    for (let i = start; i < rdg.segments.length; i++) {
+      total += GRK.segWeight(rdg, i);
+      end = i;
+      if (total >= TARGET) break;
+    }
+    // if we ran off the end well short of MIN, pull the start back instead
+    if (total < MIN) {
+      while (start > 0 && total < TARGET) {
+        start--;
+        total += GRK.segWeight(rdg, start);
+      }
+    }
+    return { start, end, lines: total };
+  }
+
+  // Enumerate every window the readings can yield, rather than fishing for one at
+  // random — that way "in the 18–24 line band" and "not one of the last three" are
+  // guarantees, not things we hope a retry loop stumbles into.
+  function allWindows() {
+    const out = new Map();
+    rdgs.forEach(rdg => {
+      rdg.segments.forEach((_, i) => {
+        const w = grow(rdg, i);
+        if (w.lines < MIN || w.lines > MAX) return;
+        const key = rdg.id + ":" + w.start;
+        if (!out.has(key)) out.set(key, { rdg, ...w, key });
+      });
+    });
+    return [...out.values()];
+  }
+
+  function pickWindow() {
+    const all = allWindows();
+    if (!all.length) return null;
+    const avoid = recent();
+    const fresh = all.filter(w => !avoid.includes(w.key));
+    return GRK.pick(fresh.length ? fresh : all);
+  }
+
+  /* ---------------- question generation ---------------- */
+
+  // Tokens worth asking about, by job.
+  const isVerb    = t => /verb/i.test(t.pos || "");
+  const isContent = t => /verb|noun|adjective/i.test(t.pos || "") && !/proper/i.test(t.pos || "");
+
+  function tokensIn(rdg, start, end) {
+    const out = [];
+    for (let i = start; i <= end; i++) {
+      GRK.words(rdg.segments[i]).forEach(t => out.push({ tok: t, seg: i }));
+    }
+    return out;
+  }
+
+  // The three derivable question types. Their answer keys are the token data and
+  // the segment translation, so they can never drift out of sync with the text.
+  function buildQuestions(win) {
+    const { rdg, start, end } = win;
+    const toks = tokensIn(rdg, start, end);
+    const used = new Set();
+    const qs = [];
+
+    // syntax — the hand-written ones anchored inside this window
+    const syn = QUESTIONS.filter(q =>
+      q.readingId === rdg.id && q.seg >= start && q.seg <= end);
+    GRK.shuffle(syn).slice(0, 4).forEach(q => qs.push({
+      kind: "Construction",
+      seg: q.seg,
+      prompt: q.prompt,
+      answer: q.answer,
+      why: q.why
+    }));
+
+    // translation — 2 segments, preferring meaty ones
+    const meaty = [];
+    for (let i = start; i <= end; i++) {
+      if (GRK.words(rdg.segments[i]).length >= 5) meaty.push(i);
+    }
+    GRK.shuffle(meaty).slice(0, 2).forEach(i => {
+      const seg = rdg.segments[i];
+      qs.push({
+        kind: "Translation",
+        seg: i,
+        prompt: "Translate this clause:",
+        greek: GRK.words(seg).map(t => t.w).join(" "),
+        answer: seg.translation,
+        why: "Aim for the literal sense before you smooth it out — keep the force of each case, tense, and mood, and let the English be a little stiff if that is what it takes to stay faithful to the Greek."
+      });
+    });
+
+    // parsing — verbs first, they carry the most information
+    const verbs = GRK.shuffle(toks.filter(x => isVerb(x.tok)));
+    const others = GRK.shuffle(toks.filter(x => isContent(x.tok) && !isVerb(x.tok)));
+    [...verbs, ...others].slice(0, 4).forEach(x => {
+      if (used.has(x.tok.w)) return;
+      used.add(x.tok.w);
+      qs.push({
+        kind: "Parsing",
+        seg: x.seg,
+        prompt: "Parse this form in full, and give its dictionary form:",
+        greek: x.tok.w,
+        answer: [
+          x.tok.lemma ? "From " + x.tok.lemma + "." : "",
+          x.tok.pos ? x.tok.pos.charAt(0).toUpperCase() + x.tok.pos.slice(1) + "." : "",
+          x.tok.parse && x.tok.parse !== "—" ? x.tok.parse.charAt(0).toUpperCase() + x.tok.parse.slice(1) + "." : ""
+        ].filter(Boolean).join(" "),
+        why: (x.tok.note ? x.tok.note.charAt(0).toUpperCase() + x.tok.note.slice(1) + "." : "") +
+             (x.tok.gloss ? " It means “" + x.tok.gloss + "”." : "")
+      });
+    });
+
+    // vocabulary — lemma + gloss
+    const vocab = GRK.shuffle(toks.filter(x => isContent(x.tok) && !used.has(x.tok.w)));
+    vocab.slice(0, 3).forEach(x => {
+      used.add(x.tok.w);
+      qs.push({
+        kind: "Vocabulary",
+        seg: x.seg,
+        prompt: "Give the dictionary form and the meaning of:",
+        greek: x.tok.w,
+        answer: (x.tok.lemma || "—") + " — " + (x.tok.gloss || "—"),
+        why: x.tok.note
+          ? "In this passage: " + x.tok.note + "."
+          : "This is the form as it appears in the passage; the lemma is what you would look up."
+      });
+    });
+
+    // interleave so you aren't doing four of a kind in a row
+    return GRK.shuffle(qs);
+  }
+
+  /* ---------------- rendering ---------------- */
+
+  let state = null;
+
+  function render() {
+    main.innerHTML = "";
+
+    const head = document.createElement("div");
+    head.innerHTML = `
+      <h2 class="page">Practice quiz</h2>
+      <p class="lede">A random stretch of roughly twenty lines from this quiz's readings,
+        with the kinds of question you'll actually be asked. Answer, then reveal.</p>`;
+    main.appendChild(head);
+
+    const bar = document.createElement("div");
+    bar.className = "btnrow";
+    bar.style.marginBottom = "20px";
+    const newBtn = document.createElement("button");
+    newBtn.className = "btn";
+    newBtn.textContent = state ? "New passage" : "Start a practice quiz";
+    newBtn.addEventListener("click", () => { start(); });
+    bar.appendChild(newBtn);
+
+    if (state) {
+      const revealAll = document.createElement("button");
+      revealAll.className = "btn ghost";
+      revealAll.textContent = "Reveal everything";
+      revealAll.addEventListener("click", () => {
+        document.querySelectorAll(".q").forEach(el => el.classList.add("revealed"));
+        revealPassage();
+      });
+      bar.appendChild(revealAll);
+    }
+    main.appendChild(bar);
+
+    if (!state) return;
+
+    /* the passage */
+    const { win, questions } = state;
+    const { rdg, start: s, end: e } = win;
+
+    const passage = document.createElement("div");
+    passage.className = "passage";
+    passage.dataset.window = win.key;
+    passage.innerHTML = `
+      <div class="head">
+        <div class="where">${GRK.esc(GRK.cite(rdg, s, e))}
+          <div class="cite">${Math.round(win.lines)} lines · ${questions.length} questions</div>
+        </div>
+        <button class="btn ghost" id="revealPassage">Reveal translation</button>
+      </div>`;
+
+    for (let i = s; i <= e; i++) {
+      const seg = rdg.segments[i];
+      // words stay unclickable until you reveal — the panel would give the answers away
+      const el = GRK.renderSegment(seg, {
+        clickable: false,
+        lineLabel: seg.lines || null,
+        translation: false
+      });
+      if (!GRK.words(seg).length) el.classList.add("solo");  // speaker label
+      passage.appendChild(el);
+    }
+    main.appendChild(passage);
+    passage.querySelector("#revealPassage").addEventListener("click", revealPassage);
+
+    /* the questions */
+    questions.forEach((q, n) => main.appendChild(renderQuestion(q, n)));
+
+    /* the score bar */
+    const score = document.createElement("div");
+    score.className = "score";
+    score.id = "score";
+    main.appendChild(score);
+    updateScore();
+  }
+
+  function revealPassage() {
+    const { win } = state;
+    const passage = document.querySelector(".passage");
+    if (!passage || passage.dataset.revealed) return;
+    passage.dataset.revealed = "1";
+
+    passage.querySelectorAll(".segment").forEach(el => el.remove());
+    for (let i = win.start; i <= win.end; i++) {
+      const seg = win.rdg.segments[i];
+      const el = GRK.renderSegment(seg, { clickable: true, lineLabel: seg.lines || null });
+      if (!GRK.words(seg).length) el.classList.add("solo");
+      passage.appendChild(el);
+    }
+    const btn = passage.querySelector("#revealPassage");
+    if (btn) { btn.textContent = "Translation shown — words are clickable"; btn.disabled = true; }
+  }
+
+  function renderQuestion(q, n) {
+    const el = document.createElement("div");
+    el.className = "q";
+
+    el.innerHTML = `
+      <div class="qhead">
+        <span class="n">${n + 1}.</span>
+        <span class="tag">${GRK.esc(q.kind)}</span>
+      </div>
+      <div class="prompt">${GRK.esc(q.prompt)}
+        ${q.greek ? ` <span class="gkinline">${GRK.esc(q.greek)}</span>` : ""}</div>
+      <textarea placeholder="your answer…" rows="2"></textarea>
+      <div class="btnrow">
+        <button class="btn ghost reveal">Reveal answer</button>
+      </div>
+      <div class="answer">
+        <div class="lbl">Answer</div>
+        <div class="val">${GRK.esc(q.answer)}</div>
+        <div class="lbl">Why</div>
+        <div class="why">${GRK.esc(q.why)}</div>
+        <div class="selfmark">
+          <span class="asked">How did you do?</span>
+          <button class="btn good got">Got it</button>
+          <button class="btn bad missed">Missed it</button>
+          <span class="verdict"></span>
+        </div>
+      </div>`;
+
+    el.querySelector(".reveal").addEventListener("click", () => {
+      el.classList.add("revealed");
+      el.querySelector(".reveal").disabled = true;
+    });
+
+    const mark = (good) => {
+      q.result = good ? "good" : "bad";
+      el.classList.remove("done-good", "done-bad");
+      el.classList.add(good ? "done-good" : "done-bad");
+      const v = el.querySelector(".verdict");
+      v.className = "verdict " + (good ? "good" : "bad");
+      v.textContent = good ? "counted as correct" : "counted as missed";
+      updateScore();
+    };
+    el.querySelector(".got").addEventListener("click", () => mark(true));
+    el.querySelector(".missed").addEventListener("click", () => mark(false));
+
+    return el;
+  }
+
+  function updateScore() {
+    const score = document.getElementById("score");
+    if (!score || !state) return;
+
+    const qs = state.questions;
+    const marked = qs.filter(q => q.result);
+    const good = qs.filter(q => q.result === "good").length;
+
+    // which kinds of question are costing you
+    const missedBy = {};
+    qs.filter(q => q.result === "bad").forEach(q => {
+      missedBy[q.kind] = (missedBy[q.kind] || 0) + 1;
+    });
+    const missSummary = Object.entries(missedBy)
+      .sort((a, b) => b[1] - a[1])
+      .map(([k, v]) => `${k} ×${v}`)
+      .join(" · ");
+
+    score.innerHTML = `
+      <span class="big">${good} / ${marked.length || 0}</span>
+      <span>${marked.length} of ${qs.length} marked</span>
+      ${missSummary ? `<span class="missed">missing: ${GRK.esc(missSummary)}</span>` : ""}`;
+  }
+
+  function start() {
+    const win = pickWindow();
+    if (!win) return;
+    remember(win.key);
+    state = { win, questions: buildQuestions(win) };
+    render();
+    window.scrollTo(0, 0);
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRK30 — Greek</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <h1>GRK30 — Greek</h1>
+  <span class="sub">readings, review, and practice quizzes</span>
+</header>
+
+<main class="narrow">
+  <h2 class="page">Quizzes</h2>
+  <p class="lede">
+    Each quiz covers the readings assigned since the last one. On the day, you get a
+    random stretch of about twenty lines from any of them.
+  </p>
+
+  <a class="global-link" href="parse.html">
+    <strong>Parse trainer</strong>
+    <span>Verb-parsing fundamentals and a drill on every reading — not tied to any one quiz.</span>
+  </a>
+
+  <div id="hub"></div>
+</main>
+
+<script src="readings.js"></script>
+<script src="quizzes.js"></script>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+<script>
+(function () {
+  const hub = document.getElementById("hub");
+
+  GRK.QUIZZES.forEach(q => {
+    const rdgs = GRK.quizReadings(q.id);
+
+    // total verse-line-equivalents across the quiz, so you can see how much text
+    // a quiz actually covers relative to the ~20 lines you'll be asked about
+    let lines = 0, segs = 0;
+    rdgs.forEach(r => r.segments.forEach((s, i) => { lines += GRK.segWeight(r, i); segs++; }));
+
+    const nQ = (typeof QUESTIONS !== "undefined" ? QUESTIONS : [])
+      .filter(x => q.readings.includes(x.readingId)).length;
+
+    const card = document.createElement("div");
+    card.className = "quizcard";
+    card.innerHTML = `
+      <h3>${GRK.esc(q.label)}
+        <span class="tag ${q.status}">${q.status === "ready" ? "ready to study" : "collecting readings"}</span>
+      </h3>
+      <ul>
+        ${rdgs.length
+          ? rdgs.map(r => `<li>${GRK.esc(r.title)}</li>`).join("")
+          : '<li class="none">No readings yet.</li>'}
+      </ul>
+      ${rdgs.length ? `<p class="stats">
+        ${rdgs.length} reading${rdgs.length === 1 ? "" : "s"} ·
+        ${segs} segments · ~${Math.round(lines)} lines ·
+        ${nQ} construction question${nQ === 1 ? "" : "s"} written
+      </p>` : ""}
+      <div class="btnrow">
+        <a href="readings.html?quiz=${encodeURIComponent(q.id)}"><button class="btn" ${rdgs.length ? "" : "disabled"}>Readings</button></a>
+        <a href="review.html?quiz=${encodeURIComponent(q.id)}"><button class="btn ghost" ${rdgs.length ? "" : "disabled"}>Review</button></a>
+        <a href="practice.html?quiz=${encodeURIComponent(q.id)}"><button class="btn ghost" ${rdgs.length ? "" : "disabled"}>Practice quiz</button></a>
+      </div>`;
+
+    if (!rdgs.length) {
+      card.querySelectorAll("a").forEach(a => {
+        a.removeAttribute("href");
+        a.style.pointerEvents = "none";
+      });
+    }
+    hub.appendChild(card);
+  });
+})();
+</script>
+</body>
+</html>
