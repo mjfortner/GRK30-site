@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Build output
+dist/
+build/
+
+# Ignore readings folder
+Readings/
