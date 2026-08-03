@@ -157,6 +157,124 @@ const REVIEW = [
     }
 
   ]
+},
+{
+  quizId: "quiz2",
+  topics: [
+
+    {
+      title: "Reading Doric: a short list of swaps that does most of the work",
+      summary:
+        "Theocritus' bucolic Doric is not a different grammar, only a different spelling of forms you already know, and almost all of it reduces to a dozen substitutions. Learn them as a checklist and the dialect stops being an obstacle. (1) ᾱ where Attic has η — ἁδύς, ἀοιδά, φωνά, κράνα, ἅλιος, θνατός, ἔφα, Πολύφαμος, σᾶμα, ἀώς: this is the single commonest feature and it touches every part of speech. (2) -σδ- for -ζ- — μελίσδεται, συρίσδω, ἐρίσδω, φράσδη, ποτίσδων, ὄσδει, γενειάσδων. (3) 3rd plural -ντι for -νσι/-ουσι — γελᾶντι, βομβεῦντι. (4) Contract verbs keeping -ε- and closing to -ευ- — ἀνηρώτευν, ἐλέγευ, βατεῦνται, φέρευ. (5) Feminine participles in -οισα/-εισα for -ουσα — γελάοισα, ἔχοισα, ζάτεισα, Ἀρέθοισα. (6) Second-declension accusative plural in -ώς for -ούς — ὀφθαλμώς, τώς, δρυμώς, ταύρως, κροτάφως. (7) Genitive singular in -ω for -ου — Πηνειῶ, Ἀνάπω, αὑτῶ, κηρῶ, Λυκαίω, Αἰγίλω. (8) Pronouns in τ- — accented τύ = σύ, enclitic τυ = σε, plus ἐμίν = ἐμοί and ἁμίν = ἡμῖν. (9) κα = ἄν, and the compounds built on it: αἴ κα = ἐάν, ὅκκα = ὅταν, ἐπεί κα = ἐπειδάν; ὅκα alone = ὅτε. (10) ποτί = πρός, in compounds too (ποτάγω, ποταμείβετο, ποτελέξατο). (11) ν for λ in the aorist of ἔρχομαι — ἦνθον, ἔνθε, ἀπῆνθον. (12) Contracted-type futures — φυλαξεῖς, λυγιξεῖν, ᾀσῶ, δοκησεῖς, σκιρτασεῖτε. Articles follow suit: ἁ = ἡ, τοί = οἱ, ταί = αἱ, τάν = τήν, τᾶς = τῆς, τώς = τούς.",
+      examples: [
+        { readingId:"theoc1-1-63", seg:1, quote:"ἁδύ τι τὸ ψιθύρισμα … ποτὶ ταῖς παγαῖσι, μελίσδεται",
+          explain:"Four features in the poem's first line and a half: ᾱ for η twice (ἁδύ, παγαῖσι = πηγαῖς), ποτί for πρός, and -σδ- for -ζ- in μελίσδεται. Theocritus announces the dialect before he announces the subject." },
+        { readingId:"theoc1-120-152", seg:0, quote:"Δάφνις ὁ τὼς ταύρως καὶ πόρτιας ὧδε ποτίσδων",
+          explain:"τὼς ταύρως is the Doric accusative plural in -ώς on both article and noun — never a genitive singular. And beware ποτίσδων: the ποτ- here is the stem of ποτίζω 'water', not the preposition ποτί, so check what follows the ποτ- before you assume." },
+        { readingId:"theoc11-1-18", seg:7, quote:"πολλάκι ταὶ ὄιες ποτὶ τωὔλιον αὐταὶ ἀπῆνθον",
+          explain:"ταί = αἱ, ποτί = πρός, and ἀπῆνθον = ἀπῆλθον by the ν-for-λ rule you met in ἦνθον throughout Idyll 1. Apply the same rule in reverse to ἔνθε (1.124, 128) and you get ἐλθέ, which is what makes the prayer to Pan a prayer at all." }
+      ]
+    },
+
+    {
+      title: "Crasis: when καί, ὁ, τό and ὦ vanish into the next word",
+      summary:
+        "Theocritus fuses a short word onto the following vowel constantly, and an unrecognized crasis is the fastest way to lose a sentence — you look for an article or a conjunction, find none, and mis-parse everything after it. There are two visible tells. A coronis (the smooth-breathing mark over a vowel inside a word: κοὔτι, τωὔλιον) shows two words have merged. And an initial χ where you expected κ shows that καί has aspirated the consonant after losing its iota: χὠ = καὶ ὁ, χὠκ = καὶ ὁ ἐκ. Collect the whole set from this quiz and none will surprise you: from καί — κοὔτι (καὶ οὔ), κἤφα (καὶ ἔφα), κεῖπε (καὶ εἶπε), κἠν (καὶ ἐν), κἠξ (καὶ ἐξ), χὠ, χὠκ; from the article — ὡξ (ὁ ἐξ), ᾡπόλος/ᾡπόλοι (ὁ/οἱ αἰπόλος), ὥλαφος (ὁ ἔλαφος), ὡρχαῖος (ὁ ἀρχαῖος), τωὔλιον (τὸ αὔλιον); from ὦ — ὠγαθέ (ὦ ἀγαθέ), ὦναξ (ὦ ἄναξ). The method is always the same: split the word back into its parts and construe them separately.",
+      examples: [
+        { readingId:"theoc1-64-118", seg:7, quote:"τῆνον χὠκ δρυμοῖο λέων ἔκλαυσε θανόντα",
+          explain:"A triple crasis — καί + ὁ + ἐκ. Unpack it as καὶ ὁ ἐκ δρυμοῖο λέων and the genitive δρυμοῖο, which otherwise has nothing to govern it, is immediately accounted for." },
+        { readingId:"theoc1-120-152", seg:13, quote:"κἠξ ὀρέων τοὶ σκῶπες ἀηδόσι γαρύσαιντο",
+          explain:"κἠξ = καὶ ἐξ, on the same pattern as κἠν = καὶ ἐν at 1.103. Note that τοί here is the Doric ARTICLE (= οἱ), not the relative τοί of 1.118 — a noun follows it, not a verb." },
+        { readingId:"theoc11-1-18", seg:7, quote:"ποτὶ τωὔλιον αὐταὶ ἀπῆνθον",
+          explain:"τωὔλιον = τὸ αὔλιον, marked by the coronis over the υ. Without splitting it you have a preposition governing an unrecognizable word; with it, an ordinary article and noun in the accusative after ποτί." }
+      ]
+    },
+
+    {
+      title: "The neuter adjective used as an adverb",
+      summary:
+        "Greek makes adverbs out of neuter adjectives so freely that in this quiz it is the default rather than the exception, and the habit accounts for several forms that otherwise look like agreement errors. The positive appears as a neuter singular or plural (καλόν 'sweetly', ἁδεῖα 'with enjoyment', πάνθ᾽ 'wholly', τόσσον 'so much', τί 'why', ἔξοχα 'above all'); the comparative is the neuter singular (ἅδιον 'more sweetly', φέρτερον 'better'); the superlative is the neuter plural (ῥάιστα 'most easily'). The practical rule: when a neuter accusative sits next to a verb or participle and has no plausible noun to agree with — or when the noun it might agree with is the wrong gender — attach it to the verb. Dover uses exactly this reasoning at 1.95 to prove that ἁδεῖα cannot be describing Aphrodite.",
+      examples: [
+        { readingId:"theoc1-64-118", seg:26, quote:"ἦνθέ γε μὰν ἁδεῖα καὶ ἁ Κύπρις γελάοισα",
+          explain:"ἁδεῖα is ambiguous in form between nom. sg. fem. and neut. pl. Dover argues from sense for the neuter plural adverb: not 'sweet Cypris came' but 'Cypris came laughing with enjoyment', which is the reading the next line's concealed laughter and displayed anger requires." },
+        { readingId:"theoc1-120-152", seg:20, quote:"ἐγὼ δ᾽ ὔμμιν καὶ ἐς ὕστερον ἅδιον ᾀσῶ",
+          explain:"The neuter singular of a comparative IS its adverb — ἅδιον = ἥδιον 'more sweetly'. Do not look for a noun for it to agree with; compare φέρτερον three lines later, and μᾶλλον, θᾶσσον, ῥᾷον generally." },
+        { readingId:"theoc11-1-18", seg:4, quote:"οὕτω γοῦν ῥάιστα διᾶγ᾽ ὁ Κύκλωψ",
+          explain:"Neuter plural superlative as adverb: 'got through most easily'. It answers the οὐ ῥᾴδιον of line 4 — the remedy is hard to find, but once found it makes life easiest." }
+      ]
+    },
+
+    {
+      title: "The optative, and how to tell which kind you have",
+      summary:
+        "The optative appears in three distinct jobs across these readings, and each is identified by what surrounds it, not by the ending. (1) WISH: no ἄν, no subordinating word, often introduced by νῦν or εἴθε — 'may X happen'. Idyll 1.132–136 is a solid block of them (φορέοιτε, κομάσαι, γένοιτο, ἐνείκαι, ἕλκοι, γαρύσαιντο), the adynaton or catalogue of impossibilities, and the goatherd answers it with benevolent wishes at 146–148 (γένοιτο, τρώγοις). (2) POTENTIAL: optative WITH ἄν/κα — ἀρεσαίμαν at 1.60, 'I would gladly gratify you'. (3) OPTATIVE OF INDIRECT DISCOURSE: in a subordinate clause after a past main verb, replacing an original indicative — πάθοι at 1.81. So: look for ἄν first; if there is none, ask whether the optative stands in a main clause (wish) or a subordinate one after a past tense (indirect discourse). A useful side-effect: in a stanza of wishes, any INDICATIVE stands out as the one thing that is actually true — which is exactly the force of θνάσκει at 1.135.",
+      examples: [
+        { readingId:"theoc1-120-152", seg:9, quote:"νῦν ἴα μὲν φορέοιτε βάτοι, φορέοιτε δ᾽ ἄκανθαι",
+          explain:"Optative of wish, 2nd plural, because the brambles and thistles are vocatives and are being addressed. Recognize the mood and the whole adynaton opens; miss it and you will try to read impossibilities as statements of fact." },
+        { readingId:"theoc1-64-118", seg:15, quote:"πάντες ἀνηρώτευν τί πάθοι κακόν",
+          explain:"Optative of indirect discourse: after the past-tense ἀνηρώτευν the indicative of the direct question (τί ἔπαθε;) may be changed to the optative. No ἄν, and a subordinate clause — so not a wish and not potential." },
+        { readingId:"theoc1-120-152", seg:22, quote:"πλῆρές τοι μέλιτος τὸ καλὸν στόμα, Θύρσι, γένοιτο",
+          explain:"The same wish-optative as the adynaton, now used to bless rather than to curse — the goatherd pays Thyrsis in good wishes before he pays him in goods. Note also πλῆρες + genitive, and the predicative position of πλῆρες outside the article-noun bracket against attributive καλόν inside it." }
+      ]
+    },
+
+    {
+      title: "What governs what: the cases that follow particular words",
+      summary:
+        "A large share of the difficulty in these passages is not word-order but knowing which case a given verb or adjective demands — and the case, once recognized, often settles a disputed reading. GENITIVE: verbs of beginning and ceasing (ἄρχω, λήγω — and this is what proves ἀοιδᾶς in the refrain is a genitive singular, not an accusative plural); verbs of desiring and loving (ἔραμαι — τίνος … ἔρασαι, ἤρατο τᾶς Γαλατείας); verbs of touching and taking hold (θιγγάνω, ἅπτομαι); adjectives of fullness (πλήρης μέλιτος); comparison without ἤ (τέττιγος … φέρτερον); and the idiomatic ἐν/εἰς + genitive of a person, 'at so-and-so's house' (κἠν Ἀΐδα). DATIVE: adjectives and verbs of likeness, liking and loathing (ἔοικα, φίλος, ἀπεχθής — Μοίσαις φίλον, Νύμφαισιν ἀπεχθῆ, θνατοῖσιν ἀπεχθής); verbal adjectives in -τός and perfect passives, which take a dative of agent rather than ὑπό + genitive (μακάρεσσιν ἀγητόν, Μοίσαις πεφιλημένον); and μετά + dative 'among', poetic. ACCUSATIVE: the accusative of respect (τάκεται ὀφθαλμώς, 'melts as to his eyes'); and the double accusative of person-and-thing with verbs of saying (τὼς δ᾽ οὐδὲν ποτελέξατο).",
+      examples: [
+        { readingId:"theoc1-120-152", seg:5, quote:"λήγετε βουκολικᾶς, Μοῖσαι, ἴτε λήγετ᾽ ἀοιδᾶς",
+          explain:"The refrain's last form settles an ambiguity that has stood since line 64. Doric -ᾶς is both genitive singular and accusative plural, but λήγω 'cease FROM' can only take a genitive — so ἀοιδᾶς was genitive with ἄρχετε all along." },
+        { readingId:"theoc11-1-18", seg:8, quote:"ὁ δὲ τὰν Γαλάτειαν ἀείδων … κατετάκετο",
+          explain:"Galateia is genitive at line 8 (ἤρατο τᾶς Γαλατείας) and accusative here, because ἔραμαι governs a genitive and ἀείδω an accusative of the thing sung. The case follows the verb, not the English sense." },
+        { readingId:"theoc1-120-152", seg:17, quote:"τὸν Μοίσαις φίλον ἄνδρα, τὸν οὐ Νύμφαισιν ἀπεχθῆ",
+          explain:"Two datives governed by two adjectives of liking and loathing. The line is Daphnis' epitaph and every word answers something earlier — Νύμφαισιν picks up the reproach of line 66, and ἀπεχθῆ is the very word he flung at Aphrodite at 101." }
+      ]
+    },
+
+    {
+      title: "Prepositions coming loose: anastrophe and tmesis",
+      summary:
+        "As in Homer, prepositions in this verse still behave partly like the adverbs they once were, and two consequences recur. ANASTROPHE: the preposition follows its noun instead of preceding it (Ἔρωτος ὑπ᾽ ἀργαλέω, Κύπριδος ἐκ μεγάλας). The practical rule for reading is simple — if a preposition appears to have nothing after it to govern, look immediately before it; and expect the adjective agreeing with that noun to sit on the far side, so agreement has to be traced across the preposition. TMESIS: the preverb of a compound verb stands apart from its verb (ἀνὰ … ἔχοισα = ἀνέχοισα). The tell is that the preposition's own sense does not work and the verb is left needing an object. Related, and just as common here, is APOCOPE — a preposition dropping its final vowel before a consonant (πὰρ ποσσί for παρά, ἀν᾽ ὤρεα for ἀνά) — and the fact that Greek does not repeat a preposition in a parallel member, so a bare accusative beside a prepositional phrase is usually inside it (πάσας ἀνὰ κράνας, πάντ᾽ ἄλσεα).",
+      examples: [
+        { readingId:"theoc1-64-118", seg:28, quote:"ἦ ῥ᾽ οὐκ αὐτὸς Ἔρωτος ὑπ᾽ ἀργαλέω ἐλυγίχθης;",
+          explain:"Anastrophe: ὑπό follows Ἔρωτος, and ἀργαλέω agrees with it across the preposition. ὑπό + genitive is the agent of the passive ἐλυγίχθης — the very verb Daphnis boasted he would use on Eros two lines earlier." },
+        { readingId:"theoc1-64-118", seg:26, quote:"βαρὺν δ᾽ ἀνὰ θυμὸν ἔχοισα",
+          explain:"Tmesis: ἀνά is not governing θυμόν but is the prefix of ἔχοισα at the line-end. Dover's reading — she 'holds up' her anger as one raises a signal for others to see — is what makes θυμόν an object rather than a place." },
+        { readingId:"theoc11-1-18", seg:9, quote:"Κύπριδος ἐκ μεγάλας τό οἱ ἥπατι πᾶξε βέλεμνον",
+          explain:"Anastrophe again, with μεγάλας agreeing across ἐκ. This is also the authority-marking ἐκ of 1.140 (ἐκ Μοιρᾶν), 'at the hands of'. And note τό: Dover makes it the object of πᾶξε with ἕλκος as antecedent, which leaves βέλεμνον predicative, 'fixed it in his liver as a shaft'." }
+      ]
+    },
+
+    {
+      title: "The article doing everything except being an article",
+      summary:
+        "ὁ, ἡ, τό in this poetry has not settled into the Attic definite article, and it turns up in at least five roles. (1) As a third-person PRONOUN — τώς 'them' (1.92), τάν 'her' (1.100), ταῖσι 'them' (1.91), τόν 'him' (1.138), ὁ δέ 'but he' (11.13). If an 'article' has no noun anywhere near it, it is a pronoun. (2) As a RELATIVE — τοί = οἵ (1.118), τό = ὅ (1.126, 11.16). The way to decide between article and relative is to read one word further: an article leans on a noun, a relative introduces a finite verb. (3) With a PARTICIPLE, making the equivalent of a relative clause — ὁ τὰς βόας ὧδε νομεύων, 'the one who pastures his cows here'. Everything between article and participle belongs inside the phrase. (4) With a PREPOSITIONAL PHRASE, likewise — ὁ παρ᾽ ἁμῖν 'the one in our parts', ὁ ἐξ Αἴτνας (in crasis, ὡξ). (5) With a VOCATIVE in peremptory orders — αἱ δὲ χίμαιραι, 'you there, you she-goats'. And of course it disappears into crasis at every opportunity.",
+      examples: [
+        { readingId:"theoc1-64-118", seg:24, quote:"τὼς δ᾽ οὐδὲν ποτελέξαθ᾽ ὁ βουκόλος",
+          explain:"τώς is the Doric accusative plural used as a pronoun, 'them' — the visitors — while ὁ βουκόλος beside it is an ordinary article. Two different jobs for the same word in one clause, with a double accusative (person + thing) after the verb of speaking." },
+        { readingId:"theoc1-64-118", seg:40, quote:"καὶ ποταμοὶ τοὶ χεῖτε καλὸν κατὰ Θύβριδος ὕδωρ",
+          explain:"Here τοί is a relative (= οἵ), because a finite verb follows; at 1.80 the same word is the article. And χεῖτε is 2nd person because the antecedent is a vocative — a relative clause after a vocative keeps that person." },
+        { readingId:"theoc1-120-152", seg:26, quote:"αἱ δὲ χίμαιραι, οὐ μὴ σκιρτασεῖτε",
+          explain:"Dover: the article with a vocative is not uncommon in peremptory orders. Note also the two different μή's — οὐ μή + future indicative is an emphatic prohibition, while the μή later in the line introduces a fear clause and takes the subjunctive ἀναστῇ." }
+      ]
+    },
+
+    {
+      title: "Aspect: what the tense of a participle, infinitive or perfect is telling you",
+      summary:
+        "Outside the indicative, Greek tense shows aspect rather than time, and in these readings the choice repeatedly carries the meaning. PARTICIPLES: an aorist participle is antecedent to the main verb, a present participle contemporaneous with it. Dover insists that θανόντα at 1.72 is 'dead', not 'dying' — the aorist jumps ahead to the death, and only at 74 do we return to the deathbed; ἀμέλξας at 1.143 is 'having milked', so milk first and pour second; ἀείδων at 11.13 is present, so the Cyclops wastes away AS he sings. INFINITIVES: the tense keeps that of the original direct thought, so a perfect infinitive reports a state (φράσδη … δεδύκειν 'that the sun HAS set and is down'; πεπλύσθαι νιν 'that it stands washed'), and a future infinitive follows verbs of boasting and promising (κατεύχεο … λυγιξεῖν). PERFECTS WITH PRESENT MEANING: a whole class of verbs forms a perfect denoting a resulting state, which is simply a present — πέφυκα 'I am by nature', ἔοικα 'I am like', and correspondingly the pluperfect λελοίπει 'had run out'. And in the indicative, the imperfect against the aorist can be the whole argument: 11.17–18 sets the single act εὗρε beside the ongoing ἄειδε, because it was by PERSISTING in song that Polyphemus found his cure.",
+      examples: [
+        { readingId:"theoc1-64-118", seg:7, quote:"τῆνον χὠκ δρυμοῖο λέων ἔκλαυσε θανόντα",
+          explain:"Aorist participle, therefore prior: 'wept for him now that he was dead'. Dover uses the aspect to fix the chronology of the whole song — this couplet looks ahead past the wasting-away, and the narrative steps back at 74." },
+        { readingId:"theoc11-1-18", seg:10, quote:"ἀλλὰ τὸ φάρμακον εὗρε … ἄειδε τοιαῦτα",
+          explain:"Aorist against imperfect in one sentence: the finding is a single completed event, the singing an ongoing practice. The imperfect IS Dover's point — by going on singing he eventually found what he could have found no other way." },
+        { readingId:"theoc11-1-18", seg:0, quote:"οὐδὲν ποττὸν ἔρωτα πεφύκει φάρμακον ἄλλο",
+          explain:"πέφυκα is a perfect with present force — 'has grown' and so 'exists, is by nature'. Translating it as a past tense makes nonsense of a general truth. The metaphor is live too: φάρμακα are plants, so the drug that has not GROWN launches the whole medical conceit." }
+      ]
+    }
+
+  ]
 }
 ];
 

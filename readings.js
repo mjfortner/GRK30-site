@@ -2911,9 +2911,9 @@ const READINGS = [
   },
 
   {
-    id: "theoc1-1-56",
-    title: "Idyll 1.1–56",
-    citation: "Theocritus, Idyll 1.1–56 — Thyrsis and the goatherd; the carved cup (Doric)",
+    id: "theoc1-1-63",
+    title: "Idyll 1.1–63",
+    citation: "Theocritus, Idyll 1.1–63 — Thyrsis and the goatherd; the carved cup (Doric)",
     segments: [
 
       {
@@ -4232,6 +4232,2500 @@ const READINGS = [
           { w:"ἀτύξαι", lemma:"ἀτύζω", pos:"verb", parse:"aorist active optative, 3rd singular",
             gloss:"amaze, astound, strike with awe/bewilderment", note:"potential optative with κέ; subject τέρας — the cup's beauty 'would dumbfound' the beholder. A fitting close to the ekphrasis" },
           { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 57–58 ---- */
+      {
+        lines: "57–58",
+        translation: "For it I gave the Calydnian ferryman a goat as its price, and a great cheese of white milk;",
+        greek: [
+          { w:"τῷ", lemma:"ὁ, ἡ, τό (demonstrative)", pos:"demonstrative pronoun", parse:"dat. sg. neut.",
+            gloss:"for it, in exchange for it", note:"dative of price referring to the cup (δέπας) just described — 'in return for it I gave…'; τῷ μέν sets up the goatherd's past generosity" },
+          { w:"μὲν", lemma:"μέν", pos:"particle", parse:"—",
+            gloss:"on the one hand", note:"balances what he once paid for the cup against the offer he is about to make to Thyrsis" },
+          { w:"ἐγὼ", lemma:"ἐγώ", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"I", note:"emphatic subject of ἔδωκα — the goatherd stresses the cup cost him real goods" },
+          { w:"πορθμῆι", lemma:"πορθμεύς, -έως, ὁ", pos:"noun", parse:"dat. sg. masc. (πορθμῆι = πορθμεῖ)",
+            gloss:"ferryman, boatman", note:"indirect object of ἔδωκα — the man he bought the cup from. Epic dat. -ῆι for -εῖ" },
+          { w:"Καλυδνίῳ", lemma:"Καλύδνιος, -α, -ον", pos:"adjective (proper)", parse:"dat. sg. masc.",
+            gloss:"Calydnian, of Calydna", note:"attributive with πορθμῆι — from the Calydnae, islets off Cos; a realistic local colour" },
+          { w:"αἶγά", lemma:"αἴξ, αἰγός, ὁ/ἡ", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"goat, she-goat", note:"object of ἔδωκα, the first half of the price. The acute on the ultima comes from the following enclitic τ'" },
+          { w:"τ᾽", lemma:"τε", pos:"conjunction (enclitic)", parse:"—",
+            gloss:"and", note:"τε … καί (line 58) coordinating the two things he gave, αἶγα … τυρόεντα" },
+          { w:"ἔδωκα", lemma:"δίδωμι (aor. ἔδωκα)", pos:"verb", parse:"aorist active indicative, 1st singular",
+            gloss:"give", note:"main verb — 'I gave'; the goatherd recalls the purchase price of the cup" },
+          { w:"ὦνον", lemma:"ὦνος, -ου, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"price, purchase-price, payment", note:"in apposition to αἶγα (and τυρόεντα) — 'as the price', i.e. the goat and cheese together were what he paid" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"the καί of τε … καί, joining τυρόεντα to αἶγα" },
+          { w:"τυρόεντα", lemma:"τυρόεις, -εσσα, -εν", pos:"adjective (substantival)", parse:"acc. sg. masc.",
+            gloss:"of cheese, cheesy; (subst.) a cheese", note:"substantival: 'a cheese', the second item of the price. The adjective τυρόεις 'made of cheese' used as a noun" },
+          { w:"μέγαν", lemma:"μέγας, μεγάλη, μέγα", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"great, big", note:"attributive with τυρόεντα — 'a great cheese'" },
+          { w:"λευκοῖο", lemma:"λευκός, -ή, -όν", pos:"adjective", parse:"gen. sg. neut. (epic -οιο = -ου)",
+            gloss:"white, bright", note:"attributive with γάλακτος. Epic genitive -οιο again, as ἁλιτρύτοιο (line 45), γλυφάνοιο (28)" },
+          { w:"γάλακτος", lemma:"γάλα, γάλακτος, τό", pos:"noun", parse:"gen. sg. neut.",
+            gloss:"milk", note:"genitive of material with τυρόεντα — 'a cheese of white milk'" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 59–60 ---- */
+      {
+        lines: "59–60",
+        translation: "and it has not yet at all touched my lip, but still lies undefiled.",
+        greek: [
+          { w:"οὐδέ", lemma:"οὐδέ", pos:"conjunction/adverb", parse:"—",
+            gloss:"and not, nor, not even", note:"linking on: he has not even used the cup — it is still pristine, which makes it a fit gift" },
+          { w:"τι", lemma:"τις, τι (adverbial τι)", pos:"indefinite pronoun (adverbial)", parse:"acc. sg. neut.",
+            gloss:"at all, in any way", note:"adverbial τι strengthening the negative — 'not at all'" },
+          { w:"πω", lemma:"πω", pos:"adverb (enclitic)", parse:"—",
+            gloss:"yet, as yet", note:"οὐδέ … πω = 'not yet'; the cup is brand-new, never drunk from" },
+          { w:"ποτὶ", lemma:"πρός (Doric ποτί)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, against", note:"ποτὶ χεῖλος = 'to my lip'. Doric ποτί for πρός, as ποτιδέρκεται (36), πόταγε (62)" },
+          { w:"χεῖλος", lemma:"χεῖλος, -εος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"lip, rim, edge", note:"object of ποτί — his own lip; the same word serves for the 'rim' of a cup, a quiet overlap" },
+          { w:"ἐμὸν", lemma:"ἐμός, -ή, -όν", pos:"possessive adjective", parse:"acc. sg. neut.",
+            gloss:"my, mine", note:"attributive with χεῖλος — 'my lip'" },
+          { w:"θίγεν", lemma:"θιγγάνω (aor. ἔθιγον)", pos:"verb", parse:"aorist active indicative, 3rd singular (epic/Doric θίγεν = ἔθιγε)",
+            gloss:"touch, take hold of (+ gen.)", note:"subject is the cup (δέπας) — 'it has not touched my lip'. Unaugmented epic aorist θίγεν = ἔθιγε(ν)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἀλλ᾽", lemma:"ἀλλά", pos:"conjunction", parse:"—",
+            gloss:"but", note:"adversative — untouched, but still waiting to be used" },
+          { w:"ἔτι", lemma:"ἔτι", pos:"adverb", parse:"—",
+            gloss:"still, yet", note:"'still lies' — the cup remains unused, and so a worthy fresh gift" },
+          { w:"κεῖται", lemma:"κεῖμαι", pos:"verb", parse:"present middle/passive indicative, 3rd singular",
+            gloss:"lie, be laid up, be set aside", note:"main verb; the cup 'lies' stored away, subject δέπας — κεῖμαι serving as the passive of τίθημι, 'has been put by'" },
+          { w:"ἄχραντον", lemma:"ἄχραντος, -ον", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"undefiled, unstained, unused", note:"predicative with the cup (neut.) — 'lies undefiled', never yet drunk from, and so still fit to give away" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 60–61 ---- */
+      {
+        lines: "60–61",
+        translation: "And so I would very gladly gratify you, if you would sing me the lovely song, my friend.",
+        greek: [
+          { w:"τῷ", lemma:"τῷ (adv. = therefore)", pos:"adverb", parse:"—",
+            gloss:"therefore, and so, in that case", note:"instrumental dative frozen as a connective, 'and so' — the offer follows from the cup's worth. Not the article here" },
+          { w:"κά", lemma:"ἄν / κε(ν) (Doric κα)", pos:"particle", parse:"—",
+            gloss:"(potential particle)", note:"Doric κα = ἄν; with the optative ἀρεσαίμαν it makes a potential — 'I would gladly please you'" },
+          { w:"τυ", lemma:"σύ (Doric enclitic τυ = σε)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"you", note:"object of ἀρεσαίμαν. Doric enclitic τυ = σε, as at lines 5, 56" },
+          { w:"μάλα", lemma:"μάλα", pos:"adverb", parse:"—",
+            gloss:"very, exceedingly", note:"intensifies πρόφρων — 'right gladly'" },
+          { w:"πρόφρων", lemma:"πρόφρων, -ον", pos:"adjective", parse:"nom. sg. masc.",
+            gloss:"eager, willing, gracious, with a ready heart", note:"predicative adjective doing adverbial duty with ἀρεσαίμαν — 'I would please you with a ready heart', i.e. gladly" },
+          { w:"ἀρεσαίμαν", lemma:"ἀρέσκομαι (aor. ἠρεσάμην)", pos:"verb", parse:"aorist middle optative, 1st singular (Doric -μαν = -μην)",
+            gloss:"please, gratify, win over, make amends to", note:"potential optative with κά — 'I would gratify you'. Doric 1st sg. middle -μαν for -μην" },
+          { w:"αἴ", lemma:"εἰ (Doric αἰ)", pos:"conjunction", parse:"—",
+            gloss:"if", note:"Doric αἰ = εἰ; αἴ κα + subjunctive = ἐάν, a prospective 'if', pairing a future-more-vivid protasis with the potential apodosis" },
+          { w:"κα", lemma:"ἄν / κε(ν) (Doric κα)", pos:"particle", parse:"—",
+            gloss:"(conditional particle)", note:"αἴ κα = ἐάν; κα (= ἄν) with the subjunctive ἀείσῃς makes the condition prospective, 'if you (will) sing'" },
+          { w:"μοι", lemma:"ἐγώ (enclitic μοι)", pos:"personal pronoun", parse:"dat. sg. (enclitic)",
+            gloss:"to me, for me", note:"dative of advantage with ἀείσῃς — 'sing for me'" },
+          { w:"τύ", lemma:"σύ (Doric τύ = σύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"emphatic nominative subject of ἀείσῃς. Doric accented τύ = σύ — contrast the enclitic τυ = σε just above" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"φίλος", lemma:"φίλος, -η, -ον", pos:"adjective (substantival, vocative sense)", parse:"nom. sg. masc. (for voc.)",
+            gloss:"dear, beloved; (subst.) friend", note:"address to Thyrsis, 'my friend'; the nominative form standing in for the vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the", note:"with ὕμνον" },
+          { w:"ἐφίμερον", lemma:"ἐφίμερος, -ον", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"longed-for, lovely, charming, desirable", note:"attributive with ὕμνον — the song the goatherd longs to hear (the lament for Daphnis)" },
+          { w:"ὕμνον", lemma:"ὕμνος, -ου, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"song, hymn, lay", note:"object of ἀείσῃς — the very song Thyrsis is famous for" },
+          { w:"ἀείσῃς", lemma:"ἀείδω (aor. ἤεισα)", pos:"verb", parse:"aorist active subjunctive, 2nd singular",
+            gloss:"sing (of)", note:"subjunctive in the αἴ κα protasis — 'if you sing'. From ἀείδω = ᾄδω" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 62 ---- */
+      {
+        lines: "62",
+        translation: "And I am not mocking you at all. Come here, good friend;",
+        greek: [
+          { w:"κοὔτι", lemma:"καί + οὔ τι (crasis κοὔτι)", pos:"conjunction + negative", parse:"crasis of καί + οὔ (+ adverbial τι)",
+            gloss:"and not at all, and by no means", note:"crasis: καί + οὔ → κοὔ (+ adverbial τι) — 'and I don't in the least…'. The same crasis type as κοὐ, κἀγώ" },
+          { w:"τυ", lemma:"σύ (Doric enclitic τυ = σε)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"you", note:"object of κερτομέω. Doric τυ = σε once more" },
+          { w:"κερτομέω", lemma:"κερτομέω", pos:"verb", parse:"present active indicative, 1st singular",
+            gloss:"mock, taunt, jeer at, tease", note:"main verb — 'I am not mocking you'; he insists the fine cup is a genuine reward, not a joke at Thyrsis' expense" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"πόταγ᾽", lemma:"προσάγω (Doric ποτάγω)", pos:"verb", parse:"present active imperative, 2nd singular (Doric πόταγε = πρόσαγε)",
+            gloss:"come here, draw near, approach; (trans.) bring to", note:"intransitive imperative, 'come closer!'. Doric ποτ- for προσ- (cf. ποτί) with shortened πόταγ(ε)" },
+          { w:"ὠγαθέ", lemma:"ὦ ἀγαθέ (crasis ὠγαθέ)", pos:"interjection + adjective (vocative)", parse:"voc. sg. masc.",
+            gloss:"good sir!, my good friend!", note:"crasis of ὦ + ἀγαθέ (voc. of ἀγαθός) → ὠγαθέ; a warm, coaxing address to Thyrsis" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 62–63 ---- */
+      {
+        lines: "62–63",
+        translation: "for you will in no way keep the song for yourself, once you reach Hades that makes all things forgotten.",
+        greek: [
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article", parse:"acc. sg. fem.",
+            gloss:"the", note:"with ἀοιδάν; object of φυλαξεῖς, fronted before γάρ for emphasis. Doric τάν = τήν" },
+          { w:"γὰρ", lemma:"γάρ", pos:"particle", parse:"—",
+            gloss:"for", note:"gives the reason to sing now: you cannot carry your song down to the grave" },
+          { w:"ἀοιδάν", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"song, singing, lay", note:"object of φυλαξεῖς. Doric ᾱ for η (ἀοιδά = ἀοιδή), as παγά, χολά, ἅβα" },
+          { w:"οὔ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negates φυλαξεῖς — the emphatic point: you will not keep it" },
+          { w:"τι", lemma:"τις, τι (adverbial τι)", pos:"indefinite pronoun (adverbial)", parse:"acc. sg. neut.",
+            gloss:"at all, in any way", note:"adverbial τι reinforcing οὔ … πα — 'not in any way'" },
+          { w:"πα", lemma:"πῃ / πως (Doric πα)", pos:"adverb (enclitic)", parse:"—",
+            gloss:"in any way, somehow, at all", note:"Doric πα = πῃ/πως; οὔ τι πα piles up the negation, 'in no way at all'" },
+          { w:"εἰς", lemma:"εἰς", pos:"preposition", parse:"+ accusative",
+            gloss:"to, into (the realm of)", note:"εἰς Ἀίδαν = '(down) to Hades', of the destination in death" },
+          { w:"Ἀίδαν", lemma:"Ἅιδης, -ου, ὁ (Doric Ἀΐδας)", pos:"noun (proper)", parse:"acc. sg. masc.",
+            gloss:"Hades, the underworld", note:"object of εἰς — the place of the dead. Doric acc. -αν" },
+          { w:"γε", lemma:"γε", pos:"particle (enclitic)", parse:"—",
+            gloss:"at least, at any rate, indeed", note:"emphasizes εἰς Ἀίδαν — 'once you get to Hades of all places'" },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the (one who)", note:"article + participle ἐκλελάθοντα, agreeing with Ἀίδαν — 'Hades, the one that makes forget'" },
+          { w:"ἐκλελάθοντα", lemma:"ἐκλανθάνω (redupl. aor. ἐκλέλαθον, causative)", pos:"verb (participle)", parse:"aorist active participle, acc. sg. masc. (reduplicated)",
+            gloss:"make utterly forget, cause to forget completely", note:"attributive with Ἀίδαν — 'Hades that makes one forget everything'. A causative reduplicated aorist (ἐκλέλαθον 'I made to forget'), hence active but transitive; the underworld wipes out all memory" },
+          { w:"φυλαξεῖς", lemma:"φυλάσσω (fut. φυλάξω)", pos:"verb", parse:"future active indicative, 2nd singular (Doric φυλαξεῖς = φυλάξεις)",
+            gloss:"keep, guard, preserve, keep in store", note:"main verb — 'you will not keep (the song)'; once dead you lose it, so sing while you can. Doric contracted-type future accent -εῖς = φυλάξεις" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    id: "theoc1-64-118",
+    title: "Idyll 1.64–107, 115–118",
+    citation: "Theocritus, Idyll 1.64–107, 115–118 — Thyrsis sings the death of Daphnis: the visitors, the quarrel with Aphrodite, the farewell (Doric)",
+    segments: [
+
+      {
+        translation: "THYRSIS",
+        greek: [
+          { w:"Θύρσις", punct:true }
+        ]
+      },
+
+      /* ---- 64 ---- */
+      {
+        lines: "64",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin, make a beginning of (+ gen.)", note:"ἄρχω takes the genitive of the thing begun — that is why ἀοιδᾶς at the line-end is genitive, not accusative. This line is the refrain of Thyrsis' lament: it comes back after every stanza (70, 73, 76, 79, 84, 89), shifts to the πάλιν form at 94, and finally turns into λήγετε 'cease' when the song ends" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral, of herdsmen", note:"attributive with ἀοιδᾶς, from which it is separated by the whole vocative — the refrain's deliberate frame. Doric ᾱ for η" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse; song, poetic art", note:"addressees of the imperative. Doric Μοῖσα for Μοῦσα — the same οι-for-ου you will meet in γελάοισα, ἔχοισα (95–96) and Ἀρέθοισα (117)" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear, beloved", note:"agrees with Μοῖσαι. It drops out of the refrain from 94 onwards, which is one way of hearing the song darken" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided ἄρχετε)",
+            gloss:"begin", note:"the imperative repeated on either side of the vocative — the figure that gives the refrain its incantatory swing" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"song, singing, lay", note:"genitive governed by ἄρχετε. Do not read it as an accusative plural (the ending would look the same in Doric): the closing refrain λήγετε … ἀοιδᾶς settles it, since λήγω too takes the genitive" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 65 ---- */
+      {
+        lines: "65",
+        translation: "This is Thyrsis from Etna, and the voice of Thyrsis is sweet.",
+        greek: [
+          { w:"Θύρσις", lemma:"Θύρσις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Thyrsis", note:"subject of a verbless nominal sentence, 'this (is) Thyrsis'. The singer signs his own name as he starts, like Theognis in his sphragis" },
+          { w:"ὅδ᾽", lemma:"ὅδε, ἥδε, τόδε", pos:"demonstrative pronoun", parse:"nom. sg. masc. (elided ὅδε)",
+            gloss:"this (man here)", note:"deictic, pointing at the speaker himself: 'here stands Thyrsis'" },
+          { w:"ὡξ", lemma:"ὁ + ἐξ (crasis ὡξ)", pos:"article + preposition", parse:"crasis of ὁ ἐξ (+ gen.)",
+            gloss:"the one from", note:"crasis: ὁ + ἐξ → ὡξ. Article plus prepositional phrase does the work of a relative clause — 'the man (who is) from Etna'" },
+          { w:"Αἴτνας", lemma:"Αἴτνα, -ας, ἡ (Doric = Αἴτνη)", pos:"proper noun", parse:"gen. sg. fem. (Doric -ας = Attic -ης)",
+            gloss:"Etna", note:"governed by the ἐξ buried in the crasis" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joins a second nominal clause" },
+          { w:"Θύρσιδος", lemma:"Θύρσις, -ιδος, ὁ", pos:"proper noun", parse:"gen. sg. masc.",
+            gloss:"Thyrsis", note:"possessive genitive with φωνά" },
+          { w:"ἁδέα", lemma:"ἡδύς, -εῖα, -ύ (Doric ἁδύς)", pos:"adjective", parse:"nom. sg. fem. (Doric ἁδέα = Attic ἡδεῖα)",
+            gloss:"sweet, pleasant", note:"PREDICATE, not attribute. Dover insists on the difference: not 'and it is the sweet voice of Thyrsis' but 'and the voice of Thyrsis is sweet'. Doric ᾱ for η plus the uncontracted -έα for -εῖα" },
+          { w:"φωνά", lemma:"φωνή, -ῆς, ἡ (Doric φωνά)", pos:"noun", parse:"nom. sg. fem.",
+            gloss:"voice", note:"subject of the understood ἐστί. Doric ᾱ for η, as ἀοιδά, παγά, κράνα" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 66 ---- */
+      {
+        lines: "66",
+        translation: "Where ever were you, when Daphnis was wasting away, where were you, Nymphs?",
+        greek: [
+          { w:"πᾷ", lemma:"πῇ (Doric πᾷ)", pos:"interrogative adverb", parse:"—",
+            gloss:"where?, whither?", note:"Doric πᾷ = Attic πῇ. Repeated in the middle of the line: the question is asked twice in one breath" },
+          { w:"ποκ᾽", lemma:"ποτέ (Doric ποκά)", pos:"adverb (enclitic)", parse:"elided ποκά",
+            gloss:"ever, at that time", note:"Doric ποκά = ποτέ. The Doric κ for τ is the same swap as in ὅκα (= ὅτε) below and ὅκκα at 87" },
+          { w:"ἄρ᾽", lemma:"ἄρα", pos:"particle", parse:"elided ἄρα",
+            gloss:"then, indeed", note:"with the interrogative it turns the question indignant: 'where on earth were you?'" },
+          { w:"ἦσθ᾽", lemma:"εἰμί", pos:"verb", parse:"imperfect indicative, 2nd plural (poetic ἦσθε = Attic ἦτε; elided)",
+            gloss:"you were", note:"2nd PLURAL, not 2nd singular — the addressees are the Νύμφαι at the line-end. ἦσθε is an analogical plural built off the 2nd sg. ἦσθα. Dover: the real force of the question is 'why did you not save him?'" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὅκα", lemma:"ὅτε (Doric ὅκα)", pos:"conjunction", parse:"—",
+            gloss:"when", note:"Doric ὅκα = ὅτε. With a plain indicative (ἐτάκετο) it is a definite temporal clause, 'at the time when'; contrast ὅκκα + subjunctive at 87, 'whenever'" },
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"subject of ἐτάκετο — the legendary cowherd whose death is the subject of the whole song" },
+          { w:"ἐτάκετο", lemma:"τήκω (Doric τάκομαι)", pos:"verb", parse:"imperfect middle/passive indicative, 3rd singular",
+            gloss:"melt; (mid./pass.) waste away, pine away", note:"imperfect of a process drawn out over time. τάκομαι is this poem's word for dying of love, and it keeps coming back: 82 τάκεαι, 88 τάκεται, 91 τάκεαι. Doric τάκ- for τήκ-" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πᾷ", lemma:"πῇ (Doric πᾷ)", pos:"interrogative adverb", parse:"—",
+            gloss:"where?", note:"the question resumed after the temporal clause — anaphora" },
+          { w:"ποκα", lemma:"ποτέ (Doric ποκά)", pos:"adverb (enclitic)", parse:"—",
+            gloss:"ever", note:"unelided here, before the following consonant" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Νύμφαι", lemma:"νύμφη, -ης, ἡ", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"nymph", note:"held back to the very last word: only now do we learn whom Thyrsis has been reproaching. Dover notes that Theocritus makes these normally very local spirits into goddesses who can roam the whole Greek world" },
+          { w:";", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 67 ---- */
+      {
+        lines: "67",
+        translation: "Was it down the lovely glens of Peneios, or down Pindos?",
+        greek: [
+          { w:"ἦ", lemma:"ἦ", pos:"particle", parse:"—",
+            gloss:"either …? (in a double question)", note:"ἦ … ἦ frames a disjunctive question, 'was it here, or there?'. Thyrsis guesses where the Nymphs can have been instead" },
+          { w:"κατὰ", lemma:"κατά", pos:"preposition", parse:"+ accusative",
+            gloss:"down through, along", note:"κατά + acc. of extent, with τέμπεα" },
+          { w:"Πηνειῶ", lemma:"Πηνειός, -οῦ, ὁ", pos:"proper noun", parse:"gen. sg. masc. (Doric/epic -ῶ = Attic -οῦ)",
+            gloss:"Peneios (the great river of Thessaly)", note:"possessive genitive with τέμπεα. Second-declension genitives contract to -ω in Doric (cf. Ἀνάπω 68, Πίνδω below, αὑτῶ 92)" },
+          { w:"καλὰ", lemma:"καλός, -ή, -όν", pos:"adjective", parse:"acc. pl. neut.",
+            gloss:"beautiful, lovely, fair", note:"attributive with τέμπεα" },
+          { w:"τέμπεα", lemma:"τέμπος, -εος, τό", pos:"noun", parse:"acc. pl. neut. (uncontracted -εα = -η)",
+            gloss:"glen, vale, dell", note:"object of κατά. The Vale of Tempe, on this very river, takes its name from the word" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἦ", lemma:"ἦ", pos:"particle", parse:"—",
+            gloss:"or …?", note:"the second limb of the disjunction" },
+          { w:"κατὰ", lemma:"κατά", pos:"preposition", parse:"+ genitive",
+            gloss:"down from, down over", note:"the SAME preposition with a different case two words apart: κατά + acc. is 'along, through', κατά + gen. 'down from, down over'. Πίνδω is genitive, so read 'down over Pindos'" },
+          { w:"Πίνδω", lemma:"Πίνδος, -ου, ὁ", pos:"proper noun", parse:"gen. sg. masc. (Doric -ω = Attic -ου)",
+            gloss:"Pindos (the mountain range of northern Greece)", note:"Thessaly and Pindos are the far north of the mainland — as far from Sicily as Thyrsis can imagine" },
+          { w:";", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 68–69 ---- */
+      {
+        lines: "68–69",
+        translation: "For certainly you were not keeping the great stream of the river Anapos, nor Etna's peak, nor the holy water of Akis.",
+        greek: [
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negates εἴχετε; οὐ γὰρ δή together = 'for certainly not'" },
+          { w:"γὰρ", lemma:"γάρ", pos:"particle", parse:"—",
+            gloss:"for", note:"explains why he had to look as far as Thessaly: their usual Sicilian haunts were empty" },
+          { w:"δὴ", lemma:"δή", pos:"particle", parse:"—",
+            gloss:"certainly, indeed", note:"emphatic, reinforcing the negative" },
+          { w:"ποταμοῖο", lemma:"ποταμός, -οῦ, ὁ", pos:"noun", parse:"gen. sg. masc. (epic -οιο = -ου)",
+            gloss:"river", note:"epic genitive in -οιο, taken with Ἀνάπω at the line-end: 'of the river Anapos'" },
+          { w:"μέγαν", lemma:"μέγας, μεγάλη, μέγα", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"great, large", note:"attributive with ῥόον" },
+          { w:"ῥόον", lemma:"ῥόος, -ου, ὁ (= ῥοῦς)", pos:"noun", parse:"acc. sg. masc. (uncontracted)",
+            gloss:"stream, current, flow", note:"first object of εἴχετε" },
+          { w:"εἴχετ᾽", lemma:"ἔχω", pos:"verb", parse:"imperfect active indicative, 2nd plural (elided εἴχετε)",
+            gloss:"have, hold; occupy, haunt, keep to", note:"ἔχω of a place is 'occupy, keep to' — 'you were not to be found at' your own waters. 2nd plural again, picking up ἦσθ᾽ from 66" },
+          { w:"Ἀνάπω", lemma:"Ἄναπος, -ου, ὁ", pos:"proper noun", parse:"gen. sg. masc. (Doric -ω = Attic -ου)",
+            gloss:"Anapos (a river at Syracuse)", note:"genitive with ποταμοῖο. The Anapos runs into the great harbour of Syracuse: after the Thessalian names of 67 we come home to Sicily" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"οὐδ᾽", lemma:"οὐδέ", pos:"conjunction (negative)", parse:"elided οὐδέ",
+            gloss:"nor, and not", note:"linking the second of three objects" },
+          { w:"Αἴτνας", lemma:"Αἴτνα, -ας, ἡ (Doric = Αἴτνη)", pos:"proper noun", parse:"gen. sg. fem.",
+            gloss:"Etna", note:"possessive genitive with σκοπιάν" },
+          { w:"σκοπιάν", lemma:"σκοπιά, -ᾶς, ἡ", pos:"noun", parse:"acc. sg. fem. (Doric -άν = Attic -ήν)",
+            gloss:"peak, height, look-out point", note:"second object of εἴχετε" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"οὐδ᾽", lemma:"οὐδέ", pos:"conjunction (negative)", parse:"elided οὐδέ",
+            gloss:"nor", note:"the third limb" },
+          { w:"Ἄκιδος", lemma:"Ἆκις, -ιδος, ὁ", pos:"proper noun", parse:"gen. sg. masc.",
+            gloss:"Akis (a river of eastern Sicily)", note:"possessive genitive with ὕδωρ. The Akis reaches the sea south of Etna — the third and last of the home waters" },
+          { w:"ἱερὸν", lemma:"ἱερός, -ά, -όν", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"holy, sacred", note:"attributive with ὕδωρ; rivers and springs are themselves divine" },
+          { w:"ὕδωρ", lemma:"ὕδωρ, ὕδατος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"water", note:"third object of εἴχετε. Note how one verb governs three accusatives spread over two lines, each longer than the last" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 70 ---- */
+      {
+        lines: "70",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin, make a beginning of (+ gen.)", note:"the refrain, unchanged. ἄρχω + genitive of the thing begun (ἀοιδᾶς)" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral, of herdsmen", note:"attributive with ἀοιδᾶς at the far end of the line" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative. Doric Μοῖσα = Μοῦσα" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear, beloved", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided ἄρχετε)",
+            gloss:"begin", note:"repeated imperative closing the frame around the vocative" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"song, singing, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 71–72 ---- */
+      {
+        lines: "71–72",
+        translation: "For him the jackals howled, for him the wolves; for him even the lion out of the thicket wept, when he was dead.",
+        greek: [
+          { w:"τῆνον", lemma:"τῆνος, -α, -ο (= ἐκεῖνος)", pos:"demonstrative pronoun", parse:"acc. sg. masc.",
+            gloss:"that one, him", note:"object of ὠρύσαντο. Doric τῆνος = ἐκεῖνος. Three times at the head of successive clauses — the anaphora of formal lament" },
+          { w:"μὰν", lemma:"μήν (Doric μάν)", pos:"particle", parse:"—",
+            gloss:"indeed, truly", note:"Doric μάν = μήν, affirming what follows" },
+          { w:"θῶες", lemma:"θώς, θωός, ὁ", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"jackal", note:"first subject of ὠρύσαντο. These same jackals are among the beasts Daphnis says goodbye to at 115" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τῆνον", lemma:"τῆνος, -α, -ο (= ἐκεῖνος)", pos:"demonstrative pronoun", parse:"acc. sg. masc.",
+            gloss:"him", note:"repeated with the second subject" },
+          { w:"λύκοι", lemma:"λύκος, -ου, ὁ", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"wolf", note:"second subject of the same verb" },
+          { w:"ὠρύσαντο", lemma:"ὠρύομαι", pos:"verb", parse:"aorist middle indicative, 3rd plural",
+            gloss:"howl, wail", note:"takes an accusative of the one howled for. Wild animals mourning a herdsman is the pathetic fallacy that shapes the whole lament" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τῆνον", lemma:"τῆνος, -α, -ο (= ἐκεῖνος)", pos:"demonstrative pronoun", parse:"acc. sg. masc.",
+            gloss:"him", note:"the third and climactic repetition" },
+          { w:"χὠκ", lemma:"καί + ὁ + ἐκ (crasis χὠκ)", pos:"conjunction + article + preposition", parse:"crasis of καὶ ὁ ἐκ (+ gen.)",
+            gloss:"and the one out of", note:"a triple crasis. καί + ὁ gives χὠ (the κ aspirated to χ by καί's lost iota), then ἐκ is folded in. Unpack it as καὶ ὁ ἐκ δρυμοῖο λέων" },
+          { w:"δρυμοῖο", lemma:"δρυμός, -οῦ, ὁ", pos:"noun", parse:"gen. sg. masc. (epic -οιο = -ου)",
+            gloss:"thicket, wood, coppice", note:"governed by the ἐκ hidden in χὠκ. Epic genitive -οιο, as ποταμοῖο at 68" },
+          { w:"λέων", lemma:"λέων, -οντος, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"lion", note:"subject of ἔκλαυσε. Dover: Sicilian lions belong to fable and to Homeric simile, not to the real world — the lion is here for grandeur" },
+          { w:"ἔκλαυσε", lemma:"κλαίω (aor. ἔκλαυσα)", pos:"verb", parse:"aorist active indicative, 3rd singular",
+            gloss:"weep, weep for, lament", note:"transitive with τῆνον. The singular verb after two plural verbs isolates the lion as the climax of the list" },
+          { w:"θανόντα", lemma:"θνῄσκω (Doric θνάσκω, aor. ἔθανον)", pos:"verb (participle)", parse:"aorist active participle, acc. sg. masc.",
+            gloss:"die; (aor. part.) dead", note:"agrees with τῆνον. Aorist, so 'dead', not 'dying' (Dover): the couplet jumps ahead to the death itself, and only at 74 do we come back to the deathbed" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 73 ---- */
+      {
+        lines: "73",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"refrain. The genitive ἀοιδᾶς depends on it" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 74–75 ---- */
+      {
+        lines: "74–75",
+        translation: "Many cows at his feet, and many bulls, and many heifers and calves lamented.",
+        greek: [
+          { w:"πολλαί", lemma:"πολύς, πολλή, πολύ", pos:"adjective", parse:"nom. pl. fem.",
+            gloss:"many, much", note:"with βόες. πολλαί … πολλοί … πολλαὶ at the head of three phrases — anaphora again, now for the herd" },
+          { w:"οἱ", lemma:"οὗ, οἷ, ἕ (epic 3rd person pronoun)", pos:"personal pronoun", parse:"dat. sg. (enclitic)",
+            gloss:"for him, to him, his", note:"epic enclitic dative = αὐτῷ. Taken with πὰρ ποσσί: 'at his feet'. Not to be confused with the article οἱ" },
+          { w:"πὰρ", lemma:"παρά (apocope πάρ)", pos:"preposition", parse:"+ dative",
+            gloss:"beside, at", note:"apocope — παρά drops its final vowel before a consonant, an epic licence. Cf. ἀν᾽ for ἀνά at 115" },
+          { w:"ποσσὶ", lemma:"πούς, ποδός, ὁ", pos:"noun", parse:"dat. pl. masc. (epic ποσσί = ποσί)",
+            gloss:"foot", note:"epic double σ. The herd is crowded round the dying man where he lies" },
+          { w:"βόες", lemma:"βοῦς, βοός, ὁ/ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"cow, ox", note:"first of four subjects sharing the single verb ὠδύραντο" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πολλοὶ", lemma:"πολύς, πολλή, πολύ", pos:"adjective", parse:"nom. pl. masc.",
+            gloss:"many", note:"with ταῦροι" },
+          { w:"δέ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective" },
+          { w:"τε", lemma:"τε", pos:"particle (enclitic)", parse:"—",
+            gloss:"and", note:"δέ τε is a purely connective epic combination — do not hunt for a τε … τε pair" },
+          { w:"ταῦροι", lemma:"ταῦρος, -ου, ὁ", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"bull", note:"second subject" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πολλαὶ", lemma:"πολύς, πολλή, πολύ", pos:"adjective", parse:"nom. pl. fem.",
+            gloss:"many", note:"with δαμάλαι" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective" },
+          { w:"δαμάλαι", lemma:"δαμάλη, -ης, ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"heifer, young cow", note:"third subject" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joins the fourth subject" },
+          { w:"πόρτιες", lemma:"πόρτις, -ιος, ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"calf, young heifer", note:"fourth subject" },
+          { w:"ὠδύραντο", lemma:"ὀδύρομαι", pos:"verb", parse:"aorist middle indicative, 3rd plural",
+            gloss:"lament, mourn, wail", note:"one verb, held to the last word, for all four subjects: the whole herd's grief lands at once. The augment lengthens ὀ- to ὠ-" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 76 ---- */
+      {
+        lines: "76",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"refrain, dividing the visits of the animals from the visits of the gods" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 77 ---- */
+      {
+        lines: "77",
+        translation: "Hermes came first from the mountain, and said, “Daphnis,",
+        greek: [
+          { w:"ἦνθ᾽", lemma:"ἔρχομαι (Doric aor. ἦνθον = ἦλθον)", pos:"verb", parse:"aorist active indicative, 3rd singular (elided ἦνθε)",
+            gloss:"come, go", note:"Doric ἦνθον for ἦλθον — λ has become ν. Learn the form now: it returns twice in 80, again in 81, and again at 95" },
+          { w:"Ἑρμᾶς", lemma:"Ἑρμῆς, -οῦ, ὁ (Doric Ἑρμᾶς)", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Hermes", note:"subject. Doric ᾱ for η. Hermes is the herdsman's own god, so he is the first of the three divine visitors" },
+          { w:"πράτιστος", lemma:"πρῶτος, -η, -ον (Doric πρᾶτος, superl. πρώτιστος)", pos:"adjective", parse:"nom. sg. masc. (Doric πράτιστος = πρώτιστος)",
+            gloss:"first of all, very first", note:"PREDICATIVE with the verb — 'came first', not 'the first Hermes'. A predicative adjective of this kind is regularly translated as an adverb in English. Doric ᾱ for ω (πρᾶτος = πρῶτος)" },
+          { w:"ἀπ᾽", lemma:"ἀπό", pos:"preposition", parse:"+ genitive (elided ἀπό)",
+            gloss:"from, away from", note:"with ὤρεος" },
+          { w:"ὤρεος", lemma:"ὄρος, -εος, τό (Doric ὤρος)", pos:"noun", parse:"gen. sg. neut. (uncontracted -εος = -ους)",
+            gloss:"mountain", note:"governed by ἀπό. Two archaisms at once: Doric ὤ- for ὄ-, and the uncontracted third-declension genitive" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"εἶπε", lemma:"λέγω", pos:"verb", parse:"aorist active indicative, 3rd singular (aor. εἶπον)",
+            gloss:"say, speak", note:"second main verb; the direct speech that follows runs to the end of 78" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective" },
+          { w:"“Δάφνι", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Daphnis", note:"vocative opening Hermes' speech. Note the vocative of an -ις stem: Δάφνι, with no ending at all" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 78 ---- */
+      {
+        lines: "78",
+        translation: "who is wearing you down? For whom, good friend, do you long so greatly?”",
+        greek: [
+          { w:"τίς", lemma:"τίς, τί", pos:"interrogative pronoun", parse:"nom. sg. masc.",
+            gloss:"who?", note:"subject of κατατρύχει. Hermes assumes a person is to blame" },
+          { w:"τυ", lemma:"σύ (Doric enclitic τυ = σε)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"you", note:"object of κατατρύχει. Doric enclitic τυ = σε; contrast the accented τύ/τὺ = σύ at 82 and 97" },
+          { w:"κατατρύχει", lemma:"κατατρύχω", pos:"verb", parse:"present active indicative, 3rd singular",
+            gloss:"wear down, wear out, distress", note:"κατά- intensifies τρύχω 'wear away' — the same wasting the poem calls τάκομαι" },
+          { w:";", punct:true, nospaceBefore:true },
+          { w:"τίνος", lemma:"τίς, τί", pos:"interrogative pronoun", parse:"gen. sg.",
+            gloss:"of whom?, for whom?", note:"GENITIVE because ἔρασαι governs it: verbs of desire and longing (ἔραμαι, ἐπιθυμέω) take the genitive of what is desired. Recognizing that is what tells you the sentence is about love at all" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὠγαθέ", lemma:"ὦ ἀγαθέ (crasis ὠγαθέ)", pos:"interjection + adjective (vocative)", parse:"voc. sg. masc.",
+            gloss:"good sir!, my good friend!", note:"crasis of ὦ + ἀγαθέ. The goatherd used the very same coaxing address to Thyrsis at 62" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τόσσον", lemma:"τόσος, -η, -ον (epic τόσσος)", pos:"adjective (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"so much, so greatly", note:"adverbial accusative with ἔρασαι. Epic double σ" },
+          { w:"ἔρασαι", lemma:"ἔραμαι", pos:"verb", parse:"present middle indicative, 2nd singular (uncontracted -σαι)",
+            gloss:"love, be in love with, long for (+ gen.)", note:"the athematic ending -σαι kept where Attic would contract to ἐρᾷ. Dover notes the long α (-ρᾱ-) and that Theocritus uses ἐρῶ and ἔρᾱμαι elsewhere but never ἔρᾰμαι. Governs τίνος" },
+          { w:";", punct:true, nospaceBefore:true },
+          { w:"”", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 79 ---- */
+      {
+        lines: "79",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"refrain, closing Hermes' visit and opening the herdsmen's" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 80 ---- */
+      {
+        lines: "80",
+        translation: "The cowherds came, the shepherds, the goatherds came.",
+        greek: [
+          { w:"ἦνθον", lemma:"ἔρχομαι (Doric aor. ἦνθον = ἦλθον)", pos:"verb", parse:"aorist active indicative, 3rd plural",
+            gloss:"come, go", note:"Doric ἦνθον = ἦλθον. The verb stands first AND last in the line, with the three subjects enclosed between — a ring that makes the whole countryside converge on the dying man" },
+          { w:"τοὶ", lemma:"ὁ, ἡ, τό (Doric τοί = οἱ)", pos:"article", parse:"nom. pl. masc.",
+            gloss:"the", note:"Doric τοί for οἱ, as ταί for αἱ and ἁ for ἡ" },
+          { w:"βοῦται", lemma:"βούτας, -α, ὁ (Doric = βούτης)", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"cowherd, oxherd", note:"first subject. Daphnis is himself a βούτας (86, 92)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τοὶ", lemma:"ὁ, ἡ, τό (Doric τοί = οἱ)", pos:"article", parse:"nom. pl. masc.",
+            gloss:"the", note:"repeated with the second subject; the third gets no article of its own because it is swallowed by crasis" },
+          { w:"ποιμένες", lemma:"ποιμήν, -ένος, ὁ", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"shepherd", note:"second subject" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ᾡπόλοι", lemma:"ὁ αἰπόλος (crasis ᾡπόλος)", pos:"article + noun", parse:"nom. pl. masc., crasis of οἱ αἰπόλοι",
+            gloss:"the goatherds", note:"crasis of οἱ + αἰπόλοι (the same fusion in the singular at 87). Cowherd, shepherd, goatherd: between them these three trades are the whole social world of the Idylls" },
+          { w:"ἦνθον", lemma:"ἔρχομαι (Doric aor. ἦνθον = ἦλθον)", pos:"verb", parse:"aorist active indicative, 3rd plural",
+            gloss:"came", note:"the verb repeated to close the ring" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 81 ---- */
+      {
+        lines: "81",
+        translation: "All of them kept asking what harm he had suffered. Priapos came",
+        greek: [
+          { w:"πάντες", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective (substantival)", parse:"nom. pl. masc.",
+            gloss:"all, every", note:"sums up the three groups of 80 as the subject of ἀνηρώτευν" },
+          { w:"ἀνηρώτευν", lemma:"ἀνερωτάω", pos:"verb", parse:"imperfect active indicative, 3rd plural (Doric -ευν = Attic -ων)",
+            gloss:"ask, question, keep asking", note:"Doric keeps the -ε- of the contract verb and closes -εον to -ευν where Attic contracts to -ων (ἀνηρώτεον → ἀνηρώτευν). The same -ευ- appears in ἐλέγευ (86), βατεῦνται (87), βομβεῦντι (107). Imperfect of repeated action: they kept on asking" },
+          { w:"τί", lemma:"τίς, τί", pos:"interrogative pronoun", parse:"acc. sg. neut.",
+            gloss:"what?", note:"with κακόν — 'what harm', the object of πάθοι, introducing an indirect question" },
+          { w:"πάθοι", lemma:"πάσχω (aor. ἔπαθον)", pos:"verb", parse:"aorist active optative, 3rd singular",
+            gloss:"suffer, experience, have happen to one", note:"OPTATIVE, not indicative: an indirect question in secondary sequence (here after the imperfect ἀνηρώτευν) may be put into the optative. The direct question would have been τί ἔπαθε; — so render it 'what had happened to him?'" },
+          { w:"κακόν", lemma:"κακός, -ή, -όν", pos:"adjective (substantival)", parse:"acc. sg. neut.",
+            gloss:"bad, evil; (subst.) harm, trouble", note:"agreeing with τί" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"ἦνθ᾽", lemma:"ἔρχομαι (Doric aor. ἦνθον = ἦλθον)", pos:"verb", parse:"aorist active indicative, 3rd singular (elided ἦνθε)",
+            gloss:"come", note:"the second divine visitor arrives; the sentence runs on across the line-end into 82" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with Πρίηπος" },
+          { w:"Πρίηπος", lemma:"Πρίηπος, -ου, ὁ (= Πρίαπος)", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Priapos", note:"subject of ἦνθε. The crude phallic god of gardens and fertility — which is exactly why his consolation takes the shape it does at 87–91" }
+        ]
+      },
+
+      /* ---- 82 ---- */
+      {
+        lines: "82",
+        translation: "and said, “Poor Daphnis, why are you wasting away?",
+        greek: [
+          { w:"κἤφα", lemma:"καί + ἔφα (crasis κἤφα)", pos:"conjunction + verb", parse:"crasis of καί + ἔφα (3rd sg. of φημί; Doric ἔφα = Attic ἔφη)",
+            gloss:"and he said", note:"two things at once: crasis (καί + ἔ- → κἤ-) and Doric ᾱ for η (ἔφα = ἔφη). Unpack it as καὶ ἔφα. Compare κεῖπε (97), χὠ (100), κἠν (103)" },
+          { w:"“Δάφνι", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Daphnis", note:"vocative opening Priapos' speech, which runs all the way to the end of 91" },
+          { w:"τάλαν", lemma:"τάλας, τάλαινα, τάλαν", pos:"adjective", parse:"voc. sg. masc.",
+            gloss:"wretched, poor, suffering", note:"vocative agreeing with Δάφνι — the tone is pity, 'poor Daphnis'" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τί", lemma:"τίς, τί", pos:"interrogative pronoun (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"why?", note:"adverbial accusative, the ordinary Greek way of saying 'why?'" },
+          { w:"τὺ", lemma:"σύ (Doric τύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"emphatic subject of τάκεαι. ACCENTED τύ/τὺ = σύ; the unaccented enclitic τυ = σε (78, 83). The accent is the only thing that distinguishes them" },
+          { w:"τάκεαι", lemma:"τήκω (Doric τάκομαι)", pos:"verb", parse:"present middle/passive indicative, 2nd singular (uncontracted -εαι = Attic -ῃ)",
+            gloss:"melt; (mid./pass.) waste away, pine", note:"Doric on two counts: τάκ- for τήκ- (ᾱ for η), and the uncontracted ending -εαι where Attic gives -ῃ. The poem's key verb — cf. 66, 88, 91" },
+          { w:";", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 82–83 ---- */
+      {
+        lines: "82–83",
+        translation: "But the girl, over all the springs and through all the groves, is roaming on foot —",
+        greek: [
+          { w:"ἁ", lemma:"ὁ, ἡ, τό (Doric ἁ = ἡ)", pos:"article", parse:"nom. sg. fem.",
+            gloss:"the", note:"with κώρα — but separated from it by the enclitic τυ" },
+          { w:"δέ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"but, and for her part", note:"contrasting the girl's restless searching with Daphnis' motionless wasting" },
+          { w:"τυ", lemma:"σύ (Doric enclitic τυ = σε)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"you", note:"the object not of anything in these two lines but of ζάτεισ᾽ at 85, with the whole refrain standing in between. Dover: slipping an enclitic pronoun object in between article and noun (ἁ … τυ … κώρα) is normal Ionic but otherwise rare" },
+          { w:"κώρα", lemma:"κόρη, -ης, ἡ (Doric κώρα)", pos:"noun", parse:"nom. sg. fem.",
+            gloss:"girl, maiden", note:"subject of φορεῖται (and, at 85, of the participle ζάτεισ᾽). Doric κώρα = κόρη" },
+          { w:"πάσας", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective", parse:"acc. pl. fem.",
+            gloss:"all, every", note:"with κράνας, its own preposition wedged between them" },
+          { w:"ἀνὰ", lemma:"ἀνά", pos:"preposition", parse:"+ accusative",
+            gloss:"up over, throughout", note:"standing between the adjective and its noun (πάσας ἀνὰ κράνας) — a verse liberty; hunt for the noun that agrees with the adjective, not the nearest one" },
+          { w:"κράνας", lemma:"κρήνη, -ης, ἡ (Doric κράνα)", pos:"noun", parse:"acc. pl. fem. (Doric -ας = Attic -ᾱς)",
+            gloss:"spring, fountain", note:"governed by ἀνά. Doric ᾱ for η (κράνα = κρήνη), like παγά, ἀοιδά, φωνά" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πάντ᾽", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective", parse:"acc. pl. neut. (elided πάντα)",
+            gloss:"all", note:"with ἄλσεα" },
+          { w:"ἄλσεα", lemma:"ἄλσος, -εος, τό", pos:"noun", parse:"acc. pl. neut. (uncontracted -εα = -η)",
+            gloss:"grove, sacred grove", note:"a second accusative of the ground covered, with ἀνά understood again from the first half of the line — Greek does not repeat a preposition in a parallel phrase" },
+          { w:"ποσσὶ", lemma:"πούς, ποδός, ὁ", pos:"noun", parse:"dat. pl. masc. (epic ποσσί = ποσί)",
+            gloss:"foot", note:"instrumental dative, 'on foot' — she is out searching in person, tramping the whole countryside" },
+          { w:"φορεῖται", lemma:"φορέω", pos:"verb", parse:"present middle/passive indicative, 3rd singular",
+            gloss:"be carried; range, roam, be borne along", note:"the middle/passive of φορέω used intransitively of restless movement, 'she goes ranging'. The sentence breaks off here: its participle ζάτεισ᾽ does not arrive until 85, after the refrain" },
+          { w:"—", punct:true }
+        ]
+      },
+
+      /* ---- 84 ---- */
+      {
+        lines: "84",
+        translation: "— begin, dear Muses, begin the pastoral song —",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"here the refrain does something it does nowhere else: it interrupts a sentence in mid-flight. Priapos' clause hangs unfinished at the end of 83 and is completed only at 85 — hence the dashes on either side of the refrain" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:"—", punct:true }
+        ]
+      },
+
+      /* ---- 85 ---- */
+      {
+        lines: "85",
+        translation: "— looking for you. Ah, you are a sort of person too unlucky in love, and beyond help.",
+        greek: [
+          { w:"ζάτεισ᾽", lemma:"ζητέω (Doric ζατέω)", pos:"verb (participle)", parse:"present active participle, nom. sg. fem. (Doric ζάτεισα = Attic ζητοῦσα; elided)",
+            gloss:"seek, look for", note:"agrees with ἁ κώρα back at 82 and takes that line's τυ as its object: the sentence is only now complete. Doric on two counts — ζατ- for ζητ- and the participle -εισα for -οῦσα. Dover: putting the new and decisive word first in the line with a pause immediately after is a favourite epic device, and the interposed refrain makes the effect far stronger here" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"ἆ", lemma:"ἆ", pos:"interjection", parse:"—",
+            gloss:"ah!, alas!", note:"exclamation of pity or exasperation, introducing Priapos' verdict" },
+          { w:"δύσερώς", lemma:"δύσερως, -ωτος", pos:"adjective", parse:"nom. sg. masc.",
+            gloss:"unlucky in love, wretched in love", note:"predicate with ἐσσί. Dover: the word is used of a person whose relation to ἔρως provokes an adverse reaction in the speaker — pity, resentment, revulsion or fear. Galateia calls Polyphemos δύσερως for the same reason" },
+          { w:"τις", lemma:"τις, τι", pos:"indefinite pronoun", parse:"nom. sg. masc. (enclitic)",
+            gloss:"a sort of, somehow", note:"softens — or belittles — the adjective: 'you're a difficult sort of person'. Dover admits the tone is impossible to pin down exactly" },
+          { w:"ἄγαν", lemma:"ἄγαν", pos:"adverb", parse:"—",
+            gloss:"too much, excessively", note:"with δύσερως: 'too unlucky in love'" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining the second predicate" },
+          { w:"ἀμήχανος", lemma:"ἀμήχανος, -ον", pos:"adjective", parse:"nom. sg. masc.",
+            gloss:"helpless; impossible to deal with, hopeless", note:"second predicate with ἐσσί. Both senses of the word are live at once: Daphnis can do nothing, and nothing can be done with him" },
+          { w:"ἐσσί", lemma:"εἰμί", pos:"verb", parse:"present active indicative, 2nd singular (Doric/epic ἐσσί = Attic εἶ)",
+            gloss:"you are", note:"the uncontracted athematic form; Attic εἶ is a contraction of exactly this" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 86 ---- */
+      {
+        lines: "86",
+        translation: "You used to be called a cowherd, but now you are like a goatherd man.",
+        greek: [
+          { w:"βούτας", lemma:"βούτας, -α, ὁ (Doric = βούτης)", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"cowherd, oxherd", note:"PREDICATE NOMINATIVE with the passive ἐλέγευ. What an active verb of naming would put in the accusative ('they called you a cowherd') a passive leaves in the nominative — exactly as in English 'you were called a cowherd'" },
+          { w:"μὲν", lemma:"μέν", pos:"particle", parse:"—",
+            gloss:"on the one hand", note:"answered by νῦν δ᾽ — 'once … but now'" },
+          { w:"ἐλέγευ", lemma:"λέγω", pos:"verb", parse:"imperfect middle/passive indicative, 2nd singular (Doric ἐλέγευ = Attic ἐλέγου)",
+            gloss:"say; (mid./pass.) be called, be spoken of as", note:"Doric -ευ for -ου: the uncontracted -εο is kept and closed to -ευ, the same treatment as in ἀνηρώτευν (81), βατεῦνται (87), βομβεῦντι (107). The imperfect is 'you used to be called'" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"νῦν", lemma:"νῦν", pos:"adverb", parse:"—",
+            gloss:"now", note:"marking the reversal" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"but", note:"answering μέν" },
+          { w:"αἰπόλῳ", lemma:"αἰπόλος, -ου, ὁ", pos:"noun (attributive)", parse:"dat. sg. masc.",
+            gloss:"goatherd", note:"a noun used adjectivally with ἀνδρί, 'a goatherd man' — a common Greek idiom (cf. ἀνὴρ ἰατρός)" },
+          { w:"ἀνδρὶ", lemma:"ἀνήρ, ἀνδρός, ὁ", pos:"noun", parse:"dat. sg. masc.",
+            gloss:"man", note:"DATIVE because ἔοικας requires it: verbs and adjectives of likeness take the dative of the thing resembled" },
+          { w:"ἔοικας", lemma:"ἔοικα (perf. with pres. sense)", pos:"verb", parse:"perfect active indicative, 2nd singular",
+            gloss:"be like, resemble, look like (+ dat.)", note:"perfect in form, present in sense. Dover: what follows is an elaborate εἰκών ('likeness'), a standard form of Greek wit with a riddling shape — 'why is X like Y? Because …' — and Priapos spells it out in 87–91" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 87–88 ---- */
+      {
+        lines: "87–88",
+        translation: "The goatherd, whenever he sees how the she-goats are mounted, melts in his eyes because he himself was not born a he-goat.",
+        greek: [
+          { w:"ᾡπόλος", lemma:"ὁ αἰπόλος (crasis ᾡπόλος)", pos:"article + noun", parse:"nom. sg. masc., crasis of ὁ αἰπόλος",
+            gloss:"the goatherd", note:"crasis of ὁ + αἰπόλος, as ᾡπόλοι in the plural at 80. The article is generic: 'the goatherd' = goatherds as a class" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὅκκ᾽", lemma:"ὅτε + ἄν (Doric ὅκκα = Attic ὅταν)", pos:"conjunction", parse:"elided ὅκκα",
+            gloss:"whenever", note:"Doric ὅκα (= ὅτε) fused with κα (= ἄν) → ὅκκα = ὅταν. That κα is why ἐσορῇ is subjunctive: ὅταν + subjunctive gives the indefinite 'whenever', against the plain indicative after ὅκα at 66" },
+          { w:"ἐσορῇ", lemma:"ἐσοράω (= εἰσοράω)", pos:"verb", parse:"present active subjunctive, 3rd singular",
+            gloss:"look at, behold, see", note:"subjunctive required by the κα in ὅκκα. -άῃ contracts to -ῇ" },
+          { w:"τὰς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. fem.",
+            gloss:"the", note:"with μηκάδας" },
+          { w:"μηκάδας", lemma:"μηκάς, -άδος, ἡ", pos:"noun", parse:"acc. pl. fem.",
+            gloss:"bleating one, she-goat", note:"object of ἐσορῇ. Literally 'the bleaters' — an adjective doing duty as a noun, of the kind Greek makes freely" },
+          { w:"οἷα", lemma:"οἷος, -α, -ον", pos:"relative adjective (adverbial)", parse:"acc. pl. neut. as adverb",
+            gloss:"how, in what manner", note:"introduces an indirect exclamation depending on ἐσορῇ: 'sees HOW they are mounted'" },
+          { w:"βατεῦνται", lemma:"βατέω", pos:"verb", parse:"present middle/passive indicative, 3rd plural (Doric -εῦνται = Attic -οῦνται)",
+            gloss:"mount, cover, tread (of animals)", note:"passive: the she-goats are the ones being mounted. Doric -ευ- for the contraction -ου-, as in ἐλέγευ (86) and βομβεῦντι (107)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τάκεται", lemma:"τήκω (Doric τάκομαι)", pos:"verb", parse:"present middle/passive indicative, 3rd singular",
+            gloss:"melt; waste away, pine", note:"the main verb, at last: 'he melts'. Doric τάκ- for τήκ-. The same verb as of Daphnis at 66 and 82 — Priapos is building the likeness" },
+          { w:"ὀφθαλμὼς", lemma:"ὀφθαλμός, -οῦ, ὁ", pos:"noun", parse:"acc. pl. masc. (Doric -ώς = Attic -ούς)",
+            gloss:"eye", note:"ACCUSATIVE OF RESPECT with τάκεται: 'melts as to his eyes'. Note the Doric second-declension accusative plural in -ώς, which you will meet again in τώς (92), δρυμώς (117)" },
+          { w:"ὅτι", lemma:"ὅτι", pos:"conjunction", parse:"—",
+            gloss:"because", note:"causal ὅτι, giving the reason for the melting" },
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negates ἔγεντο" },
+          { w:"τράγος", lemma:"τράγος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"he-goat, billy-goat", note:"predicate nominative with ἔγεντο — 'was not born a he-goat'" },
+          { w:"αὐτὸς", lemma:"αὐτός, -ή, -ό", pos:"intensive pronoun", parse:"nom. sg. masc.",
+            gloss:"himself", note:"'he himself', pointing the contrast between the watching goatherd and his goats" },
+          { w:"ἔγεντο", lemma:"γίγνομαι (epic aor. ἔγεντο)", pos:"verb", parse:"aorist middle indicative, 3rd singular (epic ἔγεντο = ἐγένετο)",
+            gloss:"become, come to be, be born", note:"a syncopated epic aorist — ἐγένετο with the middle syllable squeezed out. The goatherd's grievance is that he cannot do what his own animals do" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 89 ---- */
+      {
+        lines: "89",
+        translation: "Begin, dear Muses, begin the pastoral song.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"the last refrain in the φίλαι form; from 94 on it changes shape" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:"φίλαι", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"dear", note:"with Μοῖσαι" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 90–91 ---- */
+      {
+        lines: "90–91",
+        translation: "And you too, whenever you see how the girls laugh, melt in your eyes because you are not dancing among them.”",
+        greek: [
+          { w:"καὶ", lemma:"καί", pos:"adverb", parse:"—",
+            gloss:"also, too", note:"'you too' — the second half of the likeness: as the goatherd is to his goats, so you are to the girls" },
+          { w:"τὺ", lemma:"σύ (Doric τύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"accented, therefore = σύ (nominative), not the enclitic τυ = σε" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"καὶ … δέ together, 'and you too', a standard combination" },
+          { w:"ἐπεί", lemma:"ἐπεί", pos:"conjunction", parse:"—",
+            gloss:"when, whenever", note:"with κ(α) + subjunctive = ἐπειδάν, an indefinite temporal clause — the same construction as ὅκκ᾽ … ἐσορῇ at 87, now turned on Daphnis" },
+          { w:"κ᾽", lemma:"ἄν (Doric κα)", pos:"particle", parse:"elided κα",
+            gloss:"(modal particle)", note:"Doric κα = Attic ἄν. Its presence is what makes ἐσορῇς subjunctive rather than indicative" },
+          { w:"ἐσορῇς", lemma:"ἐσοράω (= εἰσοράω)", pos:"verb", parse:"present active subjunctive, 2nd singular",
+            gloss:"look at, behold, see", note:"subjunctive in the indefinite temporal clause" },
+          { w:"τὰς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. fem.",
+            gloss:"the", note:"with παρθένος — and the giveaway that παρθένος here is accusative plural" },
+          { w:"παρθένος", lemma:"παρθένος, -ου, ἡ", pos:"noun", parse:"acc. pl. fem. (Doric -ος = Attic -ους)",
+            gloss:"maiden, unmarried girl", note:"object of ἐσορῇς. Do not be fooled by the ending: this is the Doric accusative plural (from -ονς), not a nominative singular. The article τὰς settles it" },
+          { w:"οἷα", lemma:"οἷος, -α, -ον", pos:"relative adjective (adverbial)", parse:"acc. pl. neut. as adverb",
+            gloss:"how, in what manner", note:"indirect exclamation after ἐσορῇς, exactly as at 87" },
+          { w:"γελᾶντι", lemma:"γελάω (Doric)", pos:"verb", parse:"present active indicative, 3rd plural (Doric -ντι = Attic -νσι → -ουσι)",
+            gloss:"laugh, smile", note:"Doric keeps the original ending -ντι where Attic lost the ν and lengthened the vowel: γελᾶντι = γελῶσι. This is the single most useful Doric verb ending to be able to recognize — cf. βομβεῦντι at 107" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τάκεαι", lemma:"τήκω (Doric τάκομαι)", pos:"verb", parse:"present middle/passive indicative, 2nd singular (uncontracted -εαι)",
+            gloss:"melt; waste away, pine", note:"main verb, answering τάκεται in 88 word for word: the likeness is complete" },
+          { w:"ὀφθαλμὼς", lemma:"ὀφθαλμός, -οῦ, ὁ", pos:"noun", parse:"acc. pl. masc. (Doric -ώς = Attic -ούς)",
+            gloss:"eye", note:"accusative of respect again, repeating 88 exactly" },
+          { w:"ὅτι", lemma:"ὅτι", pos:"conjunction", parse:"—",
+            gloss:"because", note:"causal, as at 88" },
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negates χορεύεις" },
+          { w:"μετὰ", lemma:"μετά", pos:"preposition", parse:"+ dative",
+            gloss:"among, in the company of", note:"μετά + DATIVE 'among' is poetic; Attic prose would say μετά + gen. or σύν + dat. The case tells you which sense you are dealing with" },
+          { w:"ταῖσι", lemma:"ὁ, ἡ, τό (demonstrative)", pos:"article as pronoun", parse:"dat. pl. fem. (epic/Doric -αισι = -αις)",
+            gloss:"them", note:"the article used as a third-person pronoun, as regularly in epic; plus the fuller dative plural -αισι for -αις" },
+          { w:"χορεύεις", lemma:"χορεύω", pos:"verb", parse:"present active indicative, 2nd singular",
+            gloss:"dance, take part in the dance", note:"the point of the whole comparison: the goatherd cannot mate, and Daphnis will not join the dance. Dover reads a hint here that Daphnis is somehow bound not to" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"”", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 92–93 ---- */
+      {
+        lines: "92–93",
+        translation: "But the cowherd answered them nothing; instead he carried through his own bitter love, and carried it through to the fulfilment of his destiny.",
+        greek: [
+          { w:"τὼς", lemma:"ὁ, ἡ, τό (demonstrative)", pos:"article as pronoun", parse:"acc. pl. masc. (Doric τώς = τούς)",
+            gloss:"them", note:"the Doric second-declension accusative plural in -ώς (cf. ὀφθαλμώς 88, δρυμώς 117), here used as a pronoun: Hermes, Priapos and the assembled herdsmen" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"but", note:"turning from the visitors' speeches to Daphnis' silence" },
+          { w:"οὐδὲν", lemma:"οὐδείς, οὐδεμία, οὐδέν", pos:"pronoun", parse:"acc. sg. neut.",
+            gloss:"nothing", note:"internal (cognate) accusative with ποτελέξατο. Verbs of speaking take a double accusative — the person addressed (τώς) and the thing said (οὐδέν)" },
+          { w:"ποτελέξαθ᾽", lemma:"προσλέγομαι (Doric ποτιλέγομαι)", pos:"verb", parse:"aorist middle indicative, 3rd singular (elided ποτελέξατο)",
+            gloss:"address, answer, reply to", note:"Doric ποτ(ι)- for προσ- once again — cf. ποτί, πόταγε (62), ποταμείβετο (100)" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with βουκόλος" },
+          { w:"βουκόλος", lemma:"βουκόλος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"cowherd, herdsman", note:"subject — Daphnis, named by his trade rather than his name, as at 86 and 105" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἀλλὰ", lemma:"ἀλλά", pos:"conjunction", parse:"—",
+            gloss:"but, instead", note:"strong adversative after the negative οὐδέν: 'not a word — instead …'" },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the", note:"with ἔρωτα, at the start of the next line: article, possessive, adjective and noun straddle the line-end" },
+          { w:"αὑτῶ", lemma:"ἑαυτοῦ, -ῆς, -οῦ (Doric αὑτῶ)", pos:"reflexive pronoun", parse:"gen. sg. masc. (Doric -ῶ = Attic -οῦ)",
+            gloss:"of himself, his own", note:"reflexive genitive tucked between article and noun (τὸν αὑτῶ … ἔρωτα), the normal place for a possessive. Watch the breathing: αὑτῶ (rough) is reflexive 'his own', αὐτῶ (smooth) would be plain 'his'" },
+          { w:"ἄνυε", lemma:"ἀνύω (= ἀνύτω)", pos:"verb", parse:"imperfect active indicative, 3rd singular",
+            gloss:"accomplish, complete, carry through", note:"imperfect of the sustained act, and repeated later in the same line — the anaphora gives a sense of grim persistence. Note the missing augment (ἄνυε for ἤνυε), an epic licence" },
+          { w:"πικρὸν", lemma:"πικρός, -ά, -όν", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"bitter, sharp, harsh", note:"attributive with ἔρωτα" },
+          { w:"ἔρωτα", lemma:"ἔρως, -ωτος, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"love, desire, passion", note:"object of ἄνυε. Dover: this line at last confirms that Daphnis really is in love — until now we have had only Hermes' and Priapos' guesses" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining the repeated verb" },
+          { w:"ἐς", lemma:"εἰς (Doric ἐς)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, up to", note:"Doric/poetic ἐς = εἰς" },
+          { w:"τέλος", lemma:"τέλος, -εος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"end, fulfilment, completion", note:"with μοίρας: 'to the fulfilment of his allotted fate'" },
+          { w:"ἄνυε", lemma:"ἀνύω (= ἀνύτω)", pos:"verb", parse:"imperfect active indicative, 3rd singular",
+            gloss:"carry through, accomplish", note:"the verb repeated, with μοίρας now as its object — the second time it means 'saw his fate out to the end'" },
+          { w:"μοίρας", lemma:"μοῖρα, -ας, ἡ", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"fate, destiny, allotted portion", note:"genitive with τέλος. Doric gen. sg. -ας where Attic writes -ᾱς" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 94 ---- */
+      {
+        lines: "94",
+        translation: "Begin, Muses, begin the pastoral song again.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"from here the refrain takes a new shape and keeps it: πάλιν comes in and φίλαι drops out. The song has crossed into its second half, where Aphrodite herself appears" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative, now standing alone" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πάλιν", lemma:"πάλιν", pos:"adverb", parse:"—",
+            gloss:"again, once more, back", note:"the new word in the refrain, filling the metrical space φίλαι has vacated" },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 95–96 ---- */
+      {
+        lines: "95–96",
+        translation: "And indeed Cypris too came, laughing sweetly — laughing in secret, but holding up her heavy anger for all to see —",
+        greek: [
+          { w:"ἦνθέ", lemma:"ἔρχομαι (Doric aor. ἦνθον = ἦλθον)", pos:"verb", parse:"aorist active indicative, 3rd singular",
+            gloss:"come, go", note:"Doric ἦνθε = ἦλθε, the same form as at 77 and 81 — the third and last of the visitors" },
+          { w:"γε", lemma:"γε", pos:"particle (enclitic)", parse:"—",
+            gloss:"indeed, at any rate", note:"γε μάν together: 'and what is more'" },
+          { w:"μὰν", lemma:"μήν (Doric μάν)", pos:"particle", parse:"—",
+            gloss:"indeed, truly", note:"Doric μάν = μήν" },
+          { w:"ἁδεῖα", lemma:"ἡδύς, -εῖα, -ύ (Doric ἁδύς)", pos:"adjective (adverbial)", parse:"acc. pl. neut. as adverb (Doric ἁδεῖα = Attic ἡδεῖα)",
+            gloss:"sweetly, with enjoyment", note:"Dover's point: this is NOT nominative singular feminine agreeing with Κύπρις but a NEUTER PLURAL used adverbially with γελάοισα. The sense wanted is not 'smiling agreeably' but 'laughing with enjoyment', like Homer's ἡδὺ γέλασσαν of the Greeks laughing at someone's discomfiture. Read it with the participle, not with the goddess" },
+          { w:"καὶ", lemma:"καί", pos:"adverb", parse:"—",
+            gloss:"also, too", note:"'Cypris too', after Hermes and Priapos" },
+          { w:"ἁ", lemma:"ὁ, ἡ, τό (Doric ἁ = ἡ)", pos:"article", parse:"nom. sg. fem.",
+            gloss:"the", note:"with Κύπρις. Doric ἁ = ἡ" },
+          { w:"Κύπρις", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"nom. sg. fem.",
+            gloss:"Cypris, Aphrodite", note:"subject. 'The Cyprian', from her great cult on Cyprus" },
+          { w:"γελάοισα", lemma:"γελάω (Doric)", pos:"verb (participle)", parse:"present active participle, nom. sg. fem. (Doric -οισα = Attic -ουσα)",
+            gloss:"laugh, smile", note:"Doric -οισα for -ουσα, exactly as in ἔχοισα below and Ἀρέθοισα at 117; the uncontracted γελα- keeps the stem vowel" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"λάθρῃ", lemma:"λάθρῃ / λάθρᾳ", pos:"adverb", parse:"—",
+            gloss:"secretly, in secret, unnoticed", note:"with γελάοισα. Dover: if we laugh λάθρῃ, others do not see that we are laughing — Aphrodite comes to Daphnis with a straight face" },
+          { w:"μὲν", lemma:"μέν", pos:"particle", parse:"—",
+            gloss:"on the one hand", note:"answered by δ᾽ later in the line: the hidden laughter against the displayed anger" },
+          { w:"γελάοισα", lemma:"γελάω (Doric)", pos:"verb (participle)", parse:"present active participle, nom. sg. fem. (Doric -οισα = Attic -ουσα)",
+            gloss:"laughing", note:"the participle picked up from the end of 95 and qualified — a figure of repetition Greek loves at the start of a new line" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"βαρὺν", lemma:"βαρύς, -εῖα, -ύ", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"heavy, grievous, oppressive", note:"attributive with θυμόν. Daphnis will throw the word back at her as βαρεῖα in 100" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"but", note:"answering μέν" },
+          { w:"ἀνὰ", lemma:"ἀνά", pos:"preposition (in tmesis)", parse:"prefix of ἀνέχοισα, separated from it",
+            gloss:"up", note:"TMESIS: ἀνά here is not a preposition governing θυμόν but the prefix of the participle at the end of the line — ἀνὰ … ἔχοισα = ἀνέχοισα, 'holding up'. Splitting a compound verb from its prefix is an epic licence Theocritus keeps" },
+          { w:"θυμὸν", lemma:"θυμός, -οῦ, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"heart, spirit; anger, wrath", note:"OBJECT of ἀν-έχοισα, not 'in her heart'. Dover (after Zuntz): she 'holds up' her grievance the way one raises a signal for others to see. That reading is precisely what makes ἀνά a prefix rather than a preposition here" },
+          { w:"ἔχοισα", lemma:"ἔχω", pos:"verb (participle)", parse:"present active participle, nom. sg. fem. (Doric -οισα = Attic -ουσα)",
+            gloss:"have, hold; (with ἀνά) hold up, display", note:"second participle with Κύπρις. Doric -οισα for -ουσα again" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 97 ---- */
+      {
+        lines: "97",
+        translation: "and said, “You, I suppose, were the one who boasted that you would bend Eros, Daphnis;",
+        greek: [
+          { w:"κεῖπε", lemma:"καί + εἶπε (crasis κεἶπε)", pos:"conjunction + verb", parse:"crasis of καί + εἶπε (aorist active indicative, 3rd singular)",
+            gloss:"and said", note:"crasis: καί + εἶ- → κεῖ-. The same trick as κἤφα (82), χὠ (100), κἠν (103) — when a word begins κ- or χ- where you expect καί, suspect crasis" },
+          { w:"“τύ", lemma:"σύ (Doric τύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"accented, so nominative subject of κατεύχεο, and thrown to the very head of the speech: 'YOU were the one who…'" },
+          { w:"θην", lemma:"θήν", pos:"particle", parse:"—",
+            gloss:"surely, doubtless, I suppose", note:"a Doric particle close to δήπου. Here it is heavily ironic — she is quoting his boast back at him" },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the", note:"with Ἔρωτα" },
+          { w:"Ἔρωτα", lemma:"Ἔρως, -ωτος, ὁ", pos:"proper noun", parse:"acc. sg. masc.",
+            gloss:"Eros, Love (the god)", note:"object of λυγιξεῖν, set at a distance from its own infinitive at the end of the line. Dover notes that in the Hellenistic poets Eros is Aphrodite's son, so she has a personal stake in the insult" },
+          { w:"κατεύχεο", lemma:"κατεύχομαι", pos:"verb", parse:"imperfect middle indicative, 2nd singular (uncontracted -εο = Attic -ου)",
+            gloss:"boast, vaunt, vow loudly", note:"the governing verb, and it takes the FUTURE infinitive λυγιξεῖν: verbs of boasting, promising, hoping and swearing take a future infinitive, because what is boasted is still to come. Uncontracted -εο for -ου is epic/Doric" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Δάφνι", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Daphnis", note:"vocative, dropped in mid-sentence" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"λυγιξεῖν", lemma:"λυγίζω", pos:"verb (infinitive)", parse:"future active infinitive (Doric λυγιξεῖν = Attic λυγίσειν)",
+            gloss:"bend, twist, wrench (as one bends a withy)", note:"future infinitive after κατεύχεο. Doric forms the future of these verbs on the contracted pattern (-ξῶ, -ξεῖν), like φυλαξεῖς at 63. From λύγος, the pliant willow-shoot: to λυγίζω someone is to bend them double — hence the passive ἐλυγίχθης in the next line" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 98 ---- */
+      {
+        lines: "98",
+        translation: "have you not yourself been bent by cruel Eros?”",
+        greek: [
+          { w:"ἦ", lemma:"ἦ", pos:"particle", parse:"—",
+            gloss:"surely?, is it not the case that?", note:"ἦ ῥα introduces a pointed question that expects the answer 'yes'" },
+          { w:"ῥ᾽", lemma:"ῥα (= ἄρα)", pos:"particle (enclitic)", parse:"elided ῥα",
+            gloss:"then, indeed", note:"epic shortened form of ἄρα" },
+          { w:"οὐκ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"with the interrogative ἦ: a negative question inviting agreement" },
+          { w:"αὐτὸς", lemma:"αὐτός, -ή, -ό", pos:"intensive pronoun", parse:"nom. sg. masc.",
+            gloss:"yourself", note:"'you of all people' — the sting of the taunt: the would-be bender has been bent" },
+          { w:"Ἔρωτος", lemma:"Ἔρως, -ωτος, ὁ", pos:"proper noun", parse:"gen. sg. masc.",
+            gloss:"Eros, Love", note:"genitive of the AGENT with the passive ἐλυγίχθης, governed by the ὑπ᾽ that follows it" },
+          { w:"ὑπ᾽", lemma:"ὑπό", pos:"preposition", parse:"+ genitive (elided ὑπό)",
+            gloss:"by (of the agent)", note:"ANASTROPHE — the preposition standing after its noun (Ἔρωτος ὑπ᾽), which verse permits and prose does not. Read Ἔρωτος … ἀργαλέω as a single phrase straddling it" },
+          { w:"ἀργαλέω", lemma:"ἀργαλέος, -α, -ον", pos:"adjective", parse:"gen. sg. masc. (Doric -έω = Attic -έου)",
+            gloss:"grievous, painful, cruel", note:"agreeing with Ἔρωτος across the intervening preposition. Dover: using such a derogatory word of Love suits Aphrodite's pretence of sympathy — and Daphnis' furious reply shows he sees straight through it" },
+          { w:"ἐλυγίχθης", lemma:"λυγίζω (aor. pass. ἐλυγίχθην)", pos:"verb", parse:"aorist passive indicative, 2nd singular",
+            gloss:"be bent, be twisted, be wrenched", note:"the passive of the very verb he had boasted he would use on Eros (λυγιξεῖν, 97). Turning a man's own word back on him in another voice is the figure of the whole taunt" },
+          { w:";", punct:true, nospaceBefore:true },
+          { w:"”", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 99 ---- */
+      {
+        lines: "99",
+        translation: "Begin, Muses, begin the pastoral song again.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"refrain in its second form (πάλιν, no φίλαι)" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πάλιν", lemma:"πάλιν", pos:"adverb", parse:"—",
+            gloss:"again, once more", note:"with ἄρχετ᾽" },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 100–101 ---- */
+      {
+        lines: "100–101",
+        translation: "And then Daphnis in his turn answered her: “Cypris the grievous, Cypris the resented, Cypris hateful to mortals,",
+        greek: [
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article as pronoun", parse:"acc. sg. fem.",
+            gloss:"her", note:"the article doing duty as a third-person pronoun, object of ποταμείβετο. Doric τάν = τήν" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and, but", note:"connective" },
+          { w:"ἄρα", lemma:"ἄρα", pos:"particle", parse:"—",
+            gloss:"then, so", note:"narrative ἄρα, marking the expected next step" },
+          { w:"χὠ", lemma:"καί + ὁ (crasis χὠ)", pos:"conjunction + article", parse:"crasis of καὶ ὁ",
+            gloss:"and he", note:"crasis: καί + ὁ → χὠ, with the κ aspirated to χ. Here καί has the force 'in his turn', answering her speech" },
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"subject" },
+          { w:"ποταμείβετο", lemma:"προσαμείβομαι (Doric ποταμείβομαι)", pos:"verb", parse:"imperfect middle indicative, 3rd singular",
+            gloss:"answer, reply to", note:"Doric ποτ(ι)- for προσ-, as ποτελέξατο at 92. Takes the accusative of the person answered (τάν)" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"“Κύπρι", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"voc. sg. fem.",
+            gloss:"Cypris, Aphrodite", note:"vocative, and repeated at the head of each of the three following phrases — the shape of a curse or a formal denunciation" },
+          { w:"βαρεῖα", lemma:"βαρύς, -εῖα, -ύ", pos:"adjective", parse:"voc. sg. fem.",
+            gloss:"heavy, grievous, oppressive", note:"first element of the address — and a deliberate echo of the βαρύν she was described with at 96: he has read her mood exactly" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Κύπρι", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"voc. sg. fem.",
+            gloss:"Cypris", note:"second vocative" },
+          { w:"νεμεσσατά", lemma:"νεμεσητός, -ή, -όν (Doric νεμεσσατά)", pos:"adjective", parse:"voc. sg. fem. (Doric ᾱ for η; epic double σ)",
+            gloss:"resented, provoking indignation; resentful", note:"second element, one word longer than the first" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Κύπρι", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"voc. sg. fem.",
+            gloss:"Cypris", note:"third vocative" },
+          { w:"θνατοῖσιν", lemma:"θνητός, -ή, -όν (Doric θνατός)", pos:"adjective (substantival)", parse:"dat. pl. masc. (epic -οισιν = -οις)",
+            gloss:"mortal; (subst.) mortals", note:"dative with ἀπεχθής — adjectives of liking and loathing govern the dative. Doric ᾱ for η, plus the fuller epic dative plural" },
+          { w:"ἀπεχθής", lemma:"ἀπεχθής, -ές", pos:"adjective", parse:"voc. sg. fem.",
+            gloss:"hateful, odious", note:"the third and longest element. Dover: this is a 'rising trikolon' — three parallel members, each longer than the last, a figure as old as Iliad 1.145. Daphnis uses the same shape again in his farewell at 115" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 102 ---- */
+      {
+        lines: "102",
+        translation: "for do you really suppose that my sun has wholly set?",
+        greek: [
+          { w:"ἤδη", lemma:"ἤδη", pos:"adverb", parse:"—",
+            gloss:"already, by now", note:"with δεδύκειν: 'already set'" },
+          { w:"γὰρ", lemma:"γάρ", pos:"particle", parse:"—",
+            gloss:"for", note:"Dover: this γάρ amounts to a flat 'No!' answering her taunt of 98 — 'you are wrong to think…'. And the question is not 'do you think I am as good as dead?' (he is, and he knows it) but 'do you think I am BEATEN?', which the next line denies" },
+          { w:"φράσδη", lemma:"φράζομαι (Doric φράσδομαι)", pos:"verb", parse:"present middle indicative, 2nd singular (Doric -σδ- for -ζ-, -η for -ῃ)",
+            gloss:"think, suppose, imagine", note:"Doric writes -σδ- where Attic has -ζ- — the same swap as μελίσδεται, συρίσδες, ἐρίσδω earlier in the poem. Governs an accusative-and-infinitive" },
+          { w:"πάνθ᾽", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective (adverbial)", parse:"acc. pl. neut. as adverb (elided πάντα, aspirated before the rough breathing)",
+            gloss:"wholly, altogether, completely", note:"adverbial accusative with δεδύκειν, NOT an agreement with ἅλιον (which is masculine singular). Note the aspiration: πάντα + ἅλιον → πάνθ᾽ ἅλιον" },
+          { w:"ἅλιον", lemma:"ἥλιος, -ου, ὁ (Doric ἅλιος)", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"sun", note:"SUBJECT of the infinitive δεδύκειν, and therefore accusative: the accusative-and-infinitive of indirect statement after a verb of thinking. Doric ᾱ for η" },
+          { w:"ἄμμι", lemma:"ἐγώ (Aeolic/Doric ἄμμιν = ἡμῖν)", pos:"personal pronoun", parse:"dat. pl. (for sg.)",
+            gloss:"for us, for me", note:"Aeolic/epic dative plural = ἡμῖν, poetic plural for singular. Dative of interest: 'my sun'. Cf. ὕμμιν = ὑμῖν at 116" },
+          { w:"δεδύκειν", lemma:"δύω (perf. δέδυκα)", pos:"verb (infinitive)", parse:"perfect active infinitive (epic/Doric δεδύκειν = Attic δεδυκέναι)",
+            gloss:"sink, go down, set (of the sun)", note:"perfect infinitive in indirect statement after φράσδη. The perfect gives the resulting state: 'has set and is down'. Epic infinitive ending -ειν for -έναι" },
+          { w:";", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 103 ---- */
+      {
+        lines: "103",
+        translation: "Daphnis, even in the house of Hades, will be a bitter pain to Eros.",
+        greek: [
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"he names himself in the third person — the grand manner proper to a boast or a curse" },
+          { w:"κἠν", lemma:"καί + ἐν (crasis κἠν)", pos:"conjunction + preposition", parse:"crasis of καὶ ἐν (+ gen. here)",
+            gloss:"even in", note:"crasis καί + ἐν → κἠν, with καί meaning 'even'" },
+          { w:"Ἀΐδα", lemma:"Ἅιδης, -ου, ὁ (Doric Ἀΐδας)", pos:"proper noun", parse:"gen. sg. masc. (Doric -α = Attic -ου)",
+            gloss:"Hades", note:"GENITIVE, not dative. Dover: 'even in ⟨the house⟩ of Hades' — Hades is a person, not a place, and ἐν/εἰς regularly take the genitive of a person with 'house' left understood, exactly like English 'at Joe's', 'to my brother's'" },
+          { w:"κακὸν", lemma:"κακός, -ή, -όν", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"bad, evil, bitter", note:"attributive with ἄλγος" },
+          { w:"ἔσσεται", lemma:"εἰμί", pos:"verb", parse:"future middle indicative, 3rd singular (epic ἔσσεται = Attic ἔσται)",
+            gloss:"will be", note:"epic future of εἰμί with the double σ" },
+          { w:"ἄλγος", lemma:"ἄλγος, -εος, τό", pos:"noun", parse:"nom. sg. neut.",
+            gloss:"pain, grief, sorrow", note:"predicate nominative with ἔσσεται — Daphnis will not merely feel pain, he will BE one" },
+          { w:"Ἔρωτι", lemma:"Ἔρως, -ωτος, ὁ", pos:"proper noun", parse:"dat. sg. masc.",
+            gloss:"Eros, Love", note:"dative of the person affected: a grief FOR Eros. Dover: he will be a pain to Love because he refuses to concede the victory by accepting the natural consequence of falling in love — and keeping up a feud after death is Homeric, like Ajax's ghost refusing to speak to Odysseus" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 104 ---- */
+      {
+        lines: "104",
+        translation: "Begin, Muses, begin the pastoral song again.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"refrain, second form; it now separates Daphnis' defiance from his counter-attack" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πάλιν", lemma:"πάλιν", pos:"adverb", parse:"—",
+            gloss:"again", note:"with ἄρχετ᾽" },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 105 ---- */
+      {
+        lines: "105",
+        translation: "Is the cowherd not said to have — Cypris? Off with you to Ida,",
+        greek: [
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"a negative question expecting 'yes': 'isn't it said that…?'" },
+          { w:"λέγεται", lemma:"λέγω", pos:"verb", parse:"present middle/passive indicative, 3rd singular",
+            gloss:"say; (pass.) be said (to)", note:"the personal passive construction: the subject is ὁ βουκόλος (nominative), and an infinitive should follow — but never does" },
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article", parse:"acc. sg. fem.",
+            gloss:"the", note:"with Κύπριν" },
+          { w:"Κύπριν", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"acc. sg. fem.",
+            gloss:"Cypris, Aphrodite", note:"object of the missing infinitive, left hanging in mid-air" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with βουκόλος" },
+          { w:"βουκόλος", lemma:"βουκόλος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"cowherd, herdsman", note:"NOT Daphnis this time but Anchises, the Trojan 'cowherd' by whom Aphrodite became the mother of Aeneas — which is why the very next words are 'go to Ida'. He is nominative because λέγεται is used personally: 'the cowherd is said to…'" },
+          { w:"—", punct:true },
+          { w:";", punct:true },
+          { w:"ἕρπε", lemma:"ἕρπω", pos:"verb", parse:"present active imperative, 2nd singular",
+            gloss:"creep, go, make one's way", note:"imperative dismissing her. Dover: Daphnis deliberately leaves the infinitive that depends on λέγεται unspoken, as though he had a coarse word for sex in mind and disdained to utter it — and such suppression of the verb is common in proverbs" },
+          { w:"ποτ᾽", lemma:"πρός (Doric ποτί)", pos:"preposition", parse:"+ accusative (elided ποτί)",
+            gloss:"to, towards", note:"Doric ποτί = πρός" },
+          { w:"Ἴδαν", lemma:"Ἴδη, -ης, ἡ (Doric Ἴδα)", pos:"proper noun", parse:"acc. sg. fem.",
+            gloss:"Ida (the mountain above Troy)", note:"Anchises' mountain, where Aphrodite came to him in the Homeric Hymn — the whole point of the taunt. Doric ᾱ for η" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 106–107 ---- */
+      {
+        lines: "106–107",
+        translation: "go to Anchises; there are oaks there, and galingale, and the bees hum sweetly at the hives.",
+        greek: [
+          { w:"ἕρπε", lemma:"ἕρπω", pos:"verb", parse:"present active imperative, 2nd singular",
+            gloss:"creep, go, make one's way", note:"the imperative repeated from 105 at the head of the line — anaphora driving her away" },
+          { w:"ποτ᾽", lemma:"πρός (Doric ποτί)", pos:"preposition", parse:"+ accusative (elided ποτί)",
+            gloss:"to, towards", note:"Doric ποτί = πρός" },
+          { w:"Ἀγχίσαν", lemma:"Ἀγχίσης, -ου, ὁ (Doric Ἀγχίσας)", pos:"proper noun", parse:"acc. sg. masc.",
+            gloss:"Anchises", note:"named at last: at 105 he was only 'the cowherd'. Doric acc. -αν for -ην" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"τηνεὶ", lemma:"ἐκεῖ (Doric τηνεί)", pos:"adverb", parse:"—",
+            gloss:"there, in that place", note:"Doric τηνεί = ἐκεῖ, built on the demonstrative τῆνος (= ἐκεῖνος) you met at 71–72" },
+          { w:"δρύες", lemma:"δρῦς, δρυός, ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"oak (tree)", note:"subject of an understood 'there are' — the verbless nominal sentence typical of landscape description in this poetry" },
+          { w:"ἠδὲ", lemma:"ἠδέ", pos:"conjunction", parse:"—",
+            gloss:"and", note:"epic ἠδέ = καί. Dover prints Meineke's ἠδέ … αἱ δέ here; the manuscripts have ὧδε … ὧδε, 'here … here', imported from Idyll 5" },
+          { w:"κύπειρος", lemma:"κύπειρος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"galingale, sedge", note:"second subject. A marsh-plant that grazing animals relish — one of the standard furnishings of the bucolic pleasant place" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"αἱ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. pl. fem.",
+            gloss:"the", note:"with μέλισσαι, the very last word of the line" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective, introducing the third and stinging item" },
+          { w:"καλὸν", lemma:"καλός, -ή, -όν (adv. καλόν)", pos:"adjective (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"beautifully, sweetly", note:"adverbial accusative with βομβεῦντι — the neuter adjective doing the work of an adverb, as ἁδεῖα does at 95" },
+          { w:"βομβεῦντι", lemma:"βομβέω", pos:"verb", parse:"present active indicative, 3rd plural (Doric -εῦντι = Attic -οῦσι)",
+            gloss:"hum, buzz, boom", note:"TWO Doric features stacked in one word: -ευ- for the contraction -ου- (cf. ἀνηρώτευν 81, βατεῦνται 87), and the ending -ντι for -νσι (cf. γελᾶντι 90)" },
+          { w:"ποτὶ", lemma:"πρός (Doric ποτί)", pos:"preposition", parse:"+ dative",
+            gloss:"at, by, near", note:"Doric ποτί = πρός, here + dative of place" },
+          { w:"σμάνεσσι", lemma:"σμῆνος, -εος, τό (Doric σμᾶνος)", pos:"noun", parse:"dat. pl. neut. (epic -εσσι = -εσι)",
+            gloss:"beehive, swarm of bees", note:"epic dative plural in -εσσι. Doric ᾱ for η" },
+          { w:"μέλισσαι", lemma:"μέλισσα, -ης, ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"bee", note:"kept back to the last word of the couplet. Dover: after the oaks and the galingale this third item turns malicious, because there was a traditional belief that bees sting adulterers" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      {
+        translation: "[Lines 108–114 fall outside this assignment: a refrain, Daphnis' jibe that Aphrodite should go to the hunting Adonis (109–110), and his third insult, that she should go and face Diomedes again (112–113).]",
+        greek: [
+          { w:"⋯", punct:true }
+        ]
+      },
+
+      /* ---- 115 ---- */
+      {
+        lines: "115",
+        translation: "O wolves, O jackals, O bears that lie in your dens up in the mountains,",
+        greek: [
+          { w:"ὦ", lemma:"ὦ", pos:"interjection", parse:"—",
+            gloss:"O", note:"the three ὦ's mark another RISING TRIKOLON (cf. 100–101): two bare vocatives, then a third expanded with a whole phrase. Dover compares the long farewell the abducted Philoctetes takes of his island in Sophocles" },
+          { w:"λύκοι", lemma:"λύκος, -ου, ὁ", pos:"noun", parse:"voc. pl. masc.",
+            gloss:"wolf", note:"first addressee — one of the beasts that howled for him at 71" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὦ", lemma:"ὦ", pos:"interjection", parse:"—",
+            gloss:"O", note:"second limb" },
+          { w:"θῶες", lemma:"θώς, θωός, ὁ", pos:"noun", parse:"voc. pl. masc.",
+            gloss:"jackal", note:"the same animals as at 71: Daphnis now takes his leave of his own mourners" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὦ", lemma:"ὦ", pos:"interjection", parse:"—",
+            gloss:"O", note:"third and longest limb" },
+          { w:"ἀν᾽", lemma:"ἀνά (apocope ἄν)", pos:"preposition", parse:"+ accusative (apocope ἀν᾽ = ἀνά)",
+            gloss:"up through, among", note:"apocope: ἀνά drops its final vowel before a consonant, exactly as παρά does in πὰρ at 74" },
+          { w:"ὤρεα", lemma:"ὄρος, -εος, τό (Doric ὤρος)", pos:"noun", parse:"acc. pl. neut. (uncontracted -εα = -η)",
+            gloss:"mountain", note:"governed by ἀν᾽. Doric ὤ- for ὄ-, as ὤρεος at 77" },
+          { w:"φωλάδες", lemma:"φωλάς, -άδος", pos:"adjective", parse:"voc. pl. fem.",
+            gloss:"lying in a den, denning, lurking", note:"attributive with ἄρκτοι: 'bears that den up in the hills'. The prepositional phrase sits inside the adjective-noun pair" },
+          { w:"ἄρκτοι", lemma:"ἄρκτος, -ου, ἡ", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"bear", note:"the third addressee, and the one that fills out the trikolon" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 116 ---- */
+      {
+        lines: "116",
+        translation: "farewell! I, Daphnis the cowherd, am no longer among you in the woodland,",
+        greek: [
+          { w:"χαίρεθ᾽", lemma:"χαίρω", pos:"verb", parse:"present active imperative, 2nd plural (elided χαίρετε, aspirated)",
+            gloss:"rejoice; (as greeting) hail, farewell", note:"the one Greek word for both 'hello' and 'goodbye'. Note the aspiration: χαίρετε + ὁ (with rough breathing) → χαίρεθ᾽" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with βουκόλος" },
+          { w:"βουκόλος", lemma:"βουκόλος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"cowherd, herdsman", note:"in apposition with ἐγώ and Δάφνις: 'I, Daphnis the cowherd'" },
+          { w:"ὕμμιν", lemma:"ὑμεῖς (Aeolic/Doric ὕμμιν = ὑμῖν)", pos:"personal pronoun", parse:"dat. pl.",
+            gloss:"to you, among you", note:"Aeolic/Doric ὕμμιν = ὑμῖν, the double μ matching ἄμμι = ἡμῖν at 102. Dative with the understood 'am': 'am no longer here for you'" },
+          { w:"ἐγὼ", lemma:"ἐγώ", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"I", note:"emphatic, wedged in among its own appositives" },
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"in apposition with ἐγώ — the full self-naming of a farewell" },
+          { w:"οὐκέτ᾽", lemma:"οὐκέτι", pos:"adverb", parse:"elided οὐκέτι",
+            gloss:"no longer, no more", note:"repeated twice in the next line — the hammering negation of the farewell" },
+          { w:"ἀν᾽", lemma:"ἀνά (apocope ἄν)", pos:"preposition", parse:"+ accusative (apocope)",
+            gloss:"up through, in", note:"apocope again, as in 115" },
+          { w:"ὕλαν", lemma:"ὕλη, -ης, ἡ (Doric ὕλα)", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"wood, woodland, forest", note:"governed by ἀν᾽. NO VERB is expressed in the whole clause: the copula is simply left out, as Greek does freely — 'I am no longer in the woodland'. Doric ᾱ for η" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 117 ---- */
+      {
+        lines: "117",
+        translation: "no longer through the thickets, not in the groves. Farewell, Arethusa,",
+        greek: [
+          { w:"οὐκέτ᾽", lemma:"οὐκέτι", pos:"adverb", parse:"elided οὐκέτι",
+            gloss:"no longer", note:"the negation picked up from the line before" },
+          { w:"ἀνὰ", lemma:"ἀνά", pos:"preposition", parse:"+ accusative",
+            gloss:"up through, among", note:"unelided here, before a consonant cluster that will scan" },
+          { w:"δρυμώς", lemma:"δρυμός, -οῦ, ὁ", pos:"noun", parse:"acc. pl. masc. (Doric -ώς = Attic -ούς)",
+            gloss:"thicket, wood, coppice", note:"Doric second-declension accusative plural in -ώς — the same ending as ὀφθαλμώς (88, 91) and τώς (92). Do not mistake it for a genitive singular" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"οὐκ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"the third negative, now bare — the phrase is stripped down as it goes" },
+          { w:"ἄλσεα", lemma:"ἄλσος, -εος, τό", pos:"noun", parse:"acc. pl. neut. (uncontracted -εα = -η)",
+            gloss:"grove, sacred grove", note:"with ἀνά still understood from the phrase before: Greek does not repeat the preposition in a parallel member (cf. 83)" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"χαῖρ᾽", lemma:"χαίρω", pos:"verb", parse:"present active imperative, 2nd singular (elided χαῖρε)",
+            gloss:"farewell, goodbye", note:"now SINGULAR, addressed to the one spring Arethusa, after the plural χαίρεθ᾽ to the beasts — watch the number of the imperative to see who is being addressed" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Ἀρέθοισα", lemma:"Ἀρέθουσα, -ης, ἡ (Doric Ἀρέθοισα)", pos:"proper noun", parse:"voc. sg. fem.",
+            gloss:"Arethusa", note:"the never-failing spring in the middle of Syracuse — Theocritus' own city, and the same homeland the Nymphs were reproached with abandoning at 68–69. Doric -οισα for -ουσα, exactly as in γελάοισα, ἔχοισα (95–96)" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 118 ---- */
+      {
+        lines: "118",
+        translation: "and you rivers who pour your lovely water down from Thybris.",
+        greek: [
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining a second addressee to Ἀρέθοισα" },
+          { w:"ποταμοὶ", lemma:"ποταμός, -οῦ, ὁ", pos:"noun", parse:"voc. pl. masc.",
+            gloss:"river", note:"vocative — the rivers of 68–69 are being taken leave of in their turn" },
+          { w:"τοὶ", lemma:"ὅς, ἥ, ὅ (Doric/epic τοί = οἵ)", pos:"relative pronoun", parse:"nom. pl. masc.",
+            gloss:"who, which", note:"the Doric/epic relative in τ- (τοί = οἵ) — identical in shape to the ARTICLE τοί at 80, so let the following word decide: a finite verb after it (χεῖτε) makes it a relative" },
+          { w:"χεῖτε", lemma:"χέω", pos:"verb", parse:"present active indicative, 2nd plural",
+            gloss:"pour, pour forth", note:"SECOND person, not third: a relative clause whose antecedent is a vocative keeps the person of the one addressed. 'You rivers, who pour…' — never 'who pours'" },
+          { w:"καλὸν", lemma:"καλός, -ή, -όν", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"beautiful, lovely, fair", note:"attributive with ὕδωρ, from which the whole prepositional phrase separates it" },
+          { w:"κατὰ", lemma:"κατά", pos:"preposition", parse:"+ genitive",
+            gloss:"down from, down along", note:"κατά + gen., as at 67 — 'down from Thybris'" },
+          { w:"Θύβριδος", lemma:"Θύβρις, -ιδος, ὁ", pos:"proper noun", parse:"gen. sg. masc.",
+            gloss:"Thybris (a place in Sicily)", note:"Dover: its location and even its nature are obscure to us, but 'down Thybris' makes it sound like a valley or a mountainside" },
+          { w:"ὕδωρ", lemma:"ὕδωρ, ὕδατος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"water", note:"object of χεῖτε, held to the last word of the stanza — as μέλισσαι was at 107" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    id: "theoc1-120-152",
+    title: "Idyll 1.120–152",
+    citation: "Theocritus, Idyll 1.120–152 — Daphnis' last words, his death, and the goatherd's payment; the end of the poem (Doric)",
+    segments: [
+
+      /* ---- 120–121 ---- */
+      {
+        lines: "120–121",
+        translation: "I am that Daphnis here, the one who pastures his cows in these parts, Daphnis, the one who waters his bulls and calves in these parts.",
+        greek: [
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"predicate of an understood 'am', with ἐγών as subject. He names himself twice at the head of two successive lines — the formal self-identification of a man taking his leave" },
+          { w:"ἐγὼν", lemma:"ἐγώ (Doric/epic ἐγών)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"I", note:"Doric/epic ἐγών for ἐγώ before a vowel. Subject of the verbless sentence: '(I am) that Daphnis here'" },
+          { w:"ὅδε", lemma:"ὅδε, ἥδε, τόδε", pos:"demonstrative pronoun", parse:"nom. sg. masc.",
+            gloss:"this one here", note:"deictic 'here', pointing at himself — paired with τῆνος 'that famous one', so 'the man you have heard of, standing here'" },
+          { w:"τῆνος", lemma:"τῆνος, -α, -ο (= ἐκεῖνος)", pos:"demonstrative pronoun", parse:"nom. sg. masc.",
+            gloss:"that one, that famous one", note:"Doric τῆνος = ἐκεῖνος. The combination ὅδε … τῆνος sets 'here' against 'the well-known', the ordinary way Greek says 'I am the one you mean'" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the (one who)", note:"article + participle = an attributive relative clause, 'the one who pastures'. Everything down to νομεύων belongs inside it" },
+          { w:"τὰς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. fem.",
+            gloss:"the", note:"with βόας" },
+          { w:"βόας", lemma:"βοῦς, βοός, ὁ/ἡ", pos:"noun", parse:"acc. pl. fem.",
+            gloss:"cow, ox", note:"object of νομεύων" },
+          { w:"ὧδε", lemma:"ὧδε", pos:"adverb", parse:"—",
+            gloss:"here, in these parts", note:"place, not manner — 'here', in this countryside. Repeated in the next line at the same point" },
+          { w:"νομεύων", lemma:"νομεύω", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"pasture, herd, graze", note:"attributive participle governed by ὁ. Present aspect: what he habitually does, which is precisely what is now ending" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"the name repeated at the head of the second line — anaphora, matching the two parallel participial clauses" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the (one who)", note:"second article + participle clause, exactly parallel to the first" },
+          { w:"τὼς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. masc. (Doric τώς = τούς)",
+            gloss:"the", note:"the Doric second-declension accusative plural in -ώς again (cf. ὀφθαλμώς 88, δρυμώς 117)" },
+          { w:"ταύρως", lemma:"ταῦρος, -ου, ὁ", pos:"noun", parse:"acc. pl. masc. (Doric -ως = Attic -ους)",
+            gloss:"bull", note:"object of ποτίσδων. Both article and noun carry the Doric -ώς/-ως ending, so the pair is unmistakable once you know it" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining a second object" },
+          { w:"πόρτιας", lemma:"πόρτις, -ιος, ἡ", pos:"noun", parse:"acc. pl. fem.",
+            gloss:"calf, young heifer", note:"the same animals that mourned him at 75 — his herd frames the whole song" },
+          { w:"ὧδε", lemma:"ὧδε", pos:"adverb", parse:"—",
+            gloss:"here, in these parts", note:"repeated from the line before, in the same metrical slot" },
+          { w:"ποτίσδων", lemma:"ποτίζω (Doric ποτίσδω)", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"give to drink, water (animals)", note:"Doric -σδ- for -ζ- (cf. μελίσδεται, φράσδη, γενειάσδων in Idyll 11.9). Do not confuse it with ποτί = πρός: here ποτ- is part of the stem ποτίζω, from πότος 'drink'" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 122 ---- */
+      {
+        lines: "122",
+        translation: "Begin, Muses, begin the pastoral song again.",
+        greek: [
+          { w:"ἄρχετε", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"begin (+ gen.)", note:"the refrain in its second form (πάλιν, no φίλαι). Two more of these and it changes for the last time into λήγετε at 127" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς at the far end of the line" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative. Doric Μοῖσα = Μοῦσα" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πάλιν", lemma:"πάλιν", pos:"adverb", parse:"—",
+            gloss:"again, once more", note:"with ἄρχετ᾽" },
+          { w:"ἄρχετ᾽", lemma:"ἄρχω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"begin", note:"repeated imperative" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive governed by ἄρχετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 123–124 ---- */
+      {
+        lines: "123–124",
+        translation: "O Pan, Pan, whether you are on the long mountains of Lykaion, or whether you range over great Mainalos,",
+        greek: [
+          { w:"ὦ", lemma:"ὦ", pos:"interjection", parse:"—",
+            gloss:"O", note:"opening a cletic hymn — a formal summons to a god" },
+          { w:"Πὰν", lemma:"Πάν, Πανός, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Pan", note:"the goat-god of Arcadia and the syrinx. Dover: Pan is naturally the deity Daphnis feels closest to — and it is the pipe he is about to hand over" },
+          { w:"Πάν", lemma:"Πάν, Πανός, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Pan", note:"the name doubled, as regularly in urgent prayer" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"εἴτ᾽", lemma:"εἴτε", pos:"conjunction", parse:"elided εἴτε",
+            gloss:"whether", note:"εἴτε … εἴτε, 'whether … or'. Dover: Greek invocation regularly takes the form 'whether you are in … or at …, COME!' — so expect an imperative once the alternatives are exhausted (it arrives as ἔνθ᾽ in 124)" },
+          { w:"ἐσσὶ", lemma:"εἰμί", pos:"verb", parse:"present active indicative, 2nd singular (Doric/epic ἐσσί = Attic εἶ)",
+            gloss:"you are", note:"the uncontracted athematic form, as at 85" },
+          { w:"κατ᾽", lemma:"κατά", pos:"preposition", parse:"+ accusative (elided κατά)",
+            gloss:"down over, along, throughout", note:"κατά + acc. of extent" },
+          { w:"ὤρεα", lemma:"ὄρος, -εος, τό (Doric ὤρος)", pos:"noun", parse:"acc. pl. neut. (uncontracted -εα = -η)",
+            gloss:"mountain", note:"governed by κατ᾽. Doric ὤ- for ὄ-, as at 77 and 115" },
+          { w:"μακρὰ", lemma:"μακρός, -ά, -όν", pos:"adjective", parse:"acc. pl. neut.",
+            gloss:"long, tall, high", note:"attributive with ὤρεα" },
+          { w:"Λυκαίω", lemma:"Λύκαιον, -ου, τό", pos:"proper noun", parse:"gen. sg. neut. (Doric -ω = Attic -ου)",
+            gloss:"Lykaion (a mountain of Arcadia)", note:"possessive genitive with ὤρεα. Dover: Lykaion was traditionally associated with Pan, 'ruler of Arkadia' in Pindar" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"εἴτε", lemma:"εἴτε", pos:"conjunction", parse:"—",
+            gloss:"or whether", note:"the second limb of the disjunction" },
+          { w:"τύγ᾽", lemma:"σύ (Doric τύ) + γε", pos:"personal pronoun + particle", parse:"nom. sg. + enclitic γε (elided)",
+            gloss:"you", note:"τύ γε. Dover makes a nice point: although γε usually emphasizes a pronoun, it is wholly UNemphatic when it goes with a pronoun inserted in the second member of a disjunction, as here — so do not translate 'you at any rate'" },
+          { w:"ἀμφιπολεῖς", lemma:"ἀμφιπολέω", pos:"verb", parse:"present active indicative, 2nd singular",
+            gloss:"go about, range over, haunt, tend", note:"transitive with μέγα Μαίναλον. Literally 'move about (ἀμφί) on'" },
+          { w:"μέγα", lemma:"μέγας, μεγάλη, μέγα", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"great, large", note:"attributive with Μαίναλον" },
+          { w:"Μαίναλον", lemma:"Μαίναλον, -ου, τό", pos:"proper noun", parse:"acc. sg. neut.",
+            gloss:"Mainalos (a mountain of Arcadia)", note:"object of ἀμφιπολεῖς. Dover: Mainalon was above all the place of Pan — Pausanias reports that the locals say you can hear him piping there" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 124–125 ---- */
+      {
+        lines: "124–125",
+        translation: "come to the Sicilian island,",
+        greek: [
+          { w:"ἔνθ᾽", lemma:"ἔρχομαι (Doric aor. imper. ἔνθε = ἐλθέ)", pos:"verb", parse:"aorist active imperative, 2nd singular (elided ἔνθε)",
+            gloss:"come!, go!", note:"the imperative the whole εἴτε … εἴτε has been building to. Doric ν for λ, exactly as in ἦνθον = ἦλθον (77, 80, 81, 95) — so ἔνθε = ἐλθέ. It comes again at 128" },
+          { w:"ἐπὶ", lemma:"ἐπί", pos:"preposition", parse:"+ accusative",
+            gloss:"to, onto", note:"of motion towards, with the imperative" },
+          { w:"νᾶσον", lemma:"νῆσος, -ου, ἡ (Doric νᾶσος)", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"island", note:"Doric ᾱ for η. Its adjective waits until the next line" },
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article", parse:"acc. sg. fem.",
+            gloss:"the", note:"article + adjective in the attributive position, thrown over the line-end after the noun: νᾶσον τὰν Σικελάν, 'the island, the Sicilian one'" },
+          { w:"Σικελάν", lemma:"Σικελός, -ά, -όν (Doric Σικελά)", pos:"adjective", parse:"acc. sg. fem.",
+            gloss:"Sicilian", note:"Dover: Σικελός applies to the whole island, whereas Σικελικός/'Sikel' in earlier writers means one particular non-Greek people. Doric ᾱ for η" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 125–126 ---- */
+      {
+        lines: "125–126",
+        translation: "and leave the peak of Helike and that steep tomb of the son of Lykaon, which even the blessed gods marvel at.",
+        greek: [
+          { w:"Ἑλίκας", lemma:"Ἑλίκη, -ης, ἡ (Doric Ἑλίκα)", pos:"proper noun", parse:"gen. sg. fem.",
+            gloss:"Helike", note:"possessive genitive with ῥίον. Dover: Helike was a daughter of Lykaon, and since Arkas was son of Kallisto, another daughter of Lykaon, Theocritus seems to be identifying Kallisto with Helike" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connecting the second half of the summons: come here, and leave there" },
+          { w:"λίπε", lemma:"λείπω (aor. ἔλιπον)", pos:"verb", parse:"aorist active imperative, 2nd singular",
+            gloss:"leave, leave behind", note:"second imperative, balancing ἔνθ᾽. Note the accent: λίπε (imperative) against λιπέ- forms of the indicative; and no augment, as an imperative never has one" },
+          { w:"ῥίον", lemma:"ῥίον, -ου, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"peak, mountain-top, headland", note:"first object of λίπε" },
+          { w:"αἰπύ", lemma:"αἰπύς, -εῖα, -ύ", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"steep, sheer, high", note:"attributive with σᾶμα" },
+          { w:"τε", lemma:"τε", pos:"particle (enclitic)", parse:"—",
+            gloss:"and", note:"joining the second object" },
+          { w:"σᾶμα", lemma:"σῆμα, -ατος, τό (Doric σᾶμα)", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"sign, mark; tomb, grave-mound", note:"second object of λίπε. Doric ᾱ for η. A burial mound piled high enough to be a landmark — Pausanias describes exactly such a barrow for Arkas on Mainalos" },
+          { w:"τῆνο", lemma:"τῆνος, -α, -ο (= ἐκεῖνος)", pos:"demonstrative pronoun", parse:"acc. sg. neut.",
+            gloss:"that, that famous one", note:"agreeing with σᾶμα — 'that famous tomb'. Note the neuter in -ο (not -ον), the Doric shape of ἐκεῖνο" },
+          { w:"Λυκαονίδαο", lemma:"Λυκαονίδης, -αο, ὁ", pos:"proper noun (patronymic)", parse:"gen. sg. masc. (epic -αο = -ου)",
+            gloss:"son of Lykaon (i.e. Arkas)", note:"possessive genitive with σᾶμα. The epic genitive of first-declension masculines in -αο is worth knowing on sight (cf. Ἀτρεΐδαο, Πηληϊάδαο)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τὸ", lemma:"ὅς, ἥ, ὅ (article as relative)", pos:"relative pronoun", parse:"nom. sg. neut.",
+            gloss:"which", note:"the article doing duty as a relative, as often in epic and Doric; antecedent σᾶμα" },
+          { w:"καὶ", lemma:"καί", pos:"adverb", parse:"—",
+            gloss:"even", note:"'even to the blessed gods' — the point of the compliment" },
+          { w:"μακάρεσσιν", lemma:"μάκαρ, -αρος", pos:"adjective (substantival)", parse:"dat. pl. masc. (epic -εσσιν = -σι)",
+            gloss:"blessed; (subst.) the blessed ones, the gods", note:"dative with the verbal adjective ἀγητόν — verbal adjectives in -τός take a dative of the person to whom the action applies, like an agent" },
+          { w:"ἀγητόν", lemma:"ἀγητός, -ή, -όν", pos:"adjective (verbal)", parse:"nom. sg. neut.",
+            gloss:"admired, wondered at, to be marvelled at", note:"predicate of the relative clause with an understood ἐστί. A -τός verbal adjective, so either 'admired' or 'admirable'; the dative μακάρεσσιν decides it here as 'a thing the gods marvel at'" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 127 ---- */
+      {
+        lines: "127",
+        translation: "Cease, Muses, come, cease the pastoral song.",
+        greek: [
+          { w:"λήγετε", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"cease, leave off (+ gen.)", note:"THE REFRAIN CHANGES FOR THE LAST TIME: ἄρχετε 'begin' becomes λήγετε 'cease', and the song starts winding itself up. Note that λήγω, like ἄρχω, governs the genitive — which is the proof that ἀοιδᾶς has been genitive all along" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς, unchanged from the ἄρχετε form" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἴτε", lemma:"εἶμι (ibo)", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"go!, come!", note:"the imperative of εἶμι, here almost an interjection urging the other imperative on — 'come now, leave off'. Note it fills the slot πάλιν occupied in the middle refrain" },
+          { w:"λήγετ᾽", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural (elided λήγετε)",
+            gloss:"cease", note:"repeated, keeping the refrain's frame around the vocative" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with λήγετε — 'cease FROM the song'" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 128–129 ---- */
+      {
+        lines: "128–129",
+        translation: "Come, lord, and take this honey-breathing pipe of mine, made of fitted wax, finely wound about the lip;",
+        greek: [
+          { w:"ἔνθ᾽", lemma:"ἔρχομαι (Doric aor. imper. ἔνθε = ἐλθέ)", pos:"verb", parse:"aorist active imperative, 2nd singular (elided ἔνθε)",
+            gloss:"come!", note:"the same Doric imperative as at 124, resuming the summons after the refrain" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὦναξ", lemma:"ὦ ἄναξ (crasis ὦναξ)", pos:"interjection + noun (vocative)", parse:"voc. sg. masc.",
+            gloss:"O lord!, O king!", note:"crasis of ὦ + ἄναξ, still addressing Pan. Compare ὠγαθέ (78), also crasis with ὦ" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"linking the two imperatives" },
+          { w:"τάνδε", lemma:"ὅδε, ἥδε, τόδε (Doric τάνδε = τήνδε)", pos:"demonstrative pronoun", parse:"acc. sg. fem.",
+            gloss:"this (one here)", note:"agreeing with σύριγγα in the next line — 'this pipe of mine'. He is handing it over as he speaks" },
+          { w:"φέρευ", lemma:"φέρω", pos:"verb", parse:"present middle imperative, 2nd singular (Doric φέρευ = Attic φέρου)",
+            gloss:"carry; (mid.) take for oneself, carry off", note:"MIDDLE, so 'take it for yourself', not merely 'carry'. Doric -ευ for -ου from uncontracted -εο, the same ending as ἐλέγευ (86)" },
+          { w:"πακτοῖο", lemma:"πηκτός, -ή, -όν (Doric πακτός)", pos:"adjective", parse:"gen. sg. masc. (epic -οιο = -ου)",
+            gloss:"fastened together, fixed, glued", note:"with κηρῶ in the next line. Doric ᾱ for η, plus the epic genitive -οιο. From πήγνυμι 'fix, fasten'" },
+          { w:"μελίπνουν", lemma:"μελίπνοος, -ον (contr. -πνους)", pos:"adjective", parse:"acc. sg. fem.",
+            gloss:"honey-breathing, breathing sweetness", note:"with σύριγγα. Dover: 'honey-breathing from fitted wax' probably refers to the SMELL of the wax rather than the sound — the same appeal to scent as at 149 ὡς καλὸν ὄσδει" },
+          { w:"ἐκ", lemma:"ἐκ", pos:"preposition", parse:"+ genitive",
+            gloss:"out of, made of", note:"of material: 'made out of wax'" },
+          { w:"κηρῶ", lemma:"κηρός, -οῦ, ὁ", pos:"noun", parse:"gen. sg. masc. (Doric -ῶ = Attic -οῦ)",
+            gloss:"(bees')wax", note:"governed by ἐκ. A syrinx is built by glueing reeds together with wax and stopping the pipes with it — the same κηρός that sealed the rim of the goatherd's cup at 27" },
+          { w:"σύριγγα", lemma:"σῦριγξ, -ιγγος, ἡ", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"pan-pipe, syrinx", note:"object of φέρευ, at last — three adjectives and a prepositional phrase have arrived before their noun. The shepherd's pipe, Pan's own instrument" },
+          { w:"καλὸν", lemma:"καλός, -ή, -όν (adv. καλόν)", pos:"adjective (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"beautifully, finely", note:"adverbial accusative with ἑλικτάν — 'finely wound'. The neuter-adjective-as-adverb again (cf. 107 καλὸν βομβεῦντι, 149 καλὸν ὄσδει)" },
+          { w:"περὶ", lemma:"περί", pos:"preposition", parse:"+ accusative",
+            gloss:"around, about", note:"with χεῖλος" },
+          { w:"χεῖλος", lemma:"χεῖλος, -εος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"lip, rim, edge", note:"Dover: the reference is to the binding wound round the mouth-end of the pipe, so 'well wound about the lip'" },
+          { w:"ἑλικτάν", lemma:"ἑλικτός, -ή, -όν", pos:"adjective (verbal)", parse:"acc. sg. fem. (Doric -άν = Attic -ήν)",
+            gloss:"wound, coiled, twisted round", note:"a -τός verbal adjective with σύριγγα, from ἑλίσσω. Compare the ivy's ἕλιξ tendrils on the cup at 31 — the poem's first object and its last are both described as beautifully twisted things" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 130 ---- */
+      {
+        lines: "130",
+        translation: "for truly I am already being dragged down to Hades by Love.",
+        greek: [
+          { w:"ἦ", lemma:"ἦ", pos:"particle", parse:"—",
+            gloss:"truly, indeed", note:"asseverative ἦ, not the interrogative of 98: it introduces a solemn statement, 'truly'" },
+          { w:"γὰρ", lemma:"γάρ", pos:"particle", parse:"—",
+            gloss:"for", note:"giving the reason for handing over the pipe: he will have no more use for it" },
+          { w:"ἐγὼν", lemma:"ἐγώ (Doric/epic ἐγών)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"I", note:"Doric/epic ἐγών before a vowel, as at 120" },
+          { w:"ὑπ᾽", lemma:"ὑπό", pos:"preposition", parse:"+ genitive (elided ὑπό)",
+            gloss:"by (of the agent)", note:"ὑπό + genitive of the agent with the passive ἕλκομαι. Contrast 98, where the same phrase Ἔρωτος ὑπ᾽ appeared with the preposition postponed" },
+          { w:"Ἔρωτος", lemma:"Ἔρως, -ωτος, ὁ", pos:"proper noun", parse:"gen. sg. masc.",
+            gloss:"Eros, Love", note:"the agent. Love drags him down: the god he swore he would bend (97) is bending him after all" },
+          { w:"ἐς", lemma:"εἰς (Doric ἐς)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, into", note:"Doric/poetic ἐς = εἰς" },
+          { w:"Ἅιδαν", lemma:"Ἅιδης, -ου, ὁ (Doric Ἀΐδας)", pos:"proper noun", parse:"acc. sg. masc.",
+            gloss:"Hades", note:"accusative of the goal after ἐς. Contrast 103 κἠν Ἀΐδα, where the case was genitive because 'the house of' was understood" },
+          { w:"ἕλκομαι", lemma:"ἕλκω", pos:"verb", parse:"present middle/passive indicative, 1st singular",
+            gloss:"drag, haul; (pass.) be dragged", note:"PASSIVE, with ὑπ᾽ Ἔρωτος as agent. The present tense is the point — not 'I shall be dragged' but 'I am being dragged, right now, as I speak'" },
+          { w:"ἤδη", lemma:"ἤδη", pos:"adverb", parse:"—",
+            gloss:"already, by now", note:"the last word of Daphnis' address to Pan, and the answer to his own question at 102 — the sun HAS set" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 131 ---- */
+      {
+        lines: "131",
+        translation: "Cease, Muses, come, cease the pastoral song.",
+        greek: [
+          { w:"λήγετε", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"cease, leave off (+ gen.)", note:"the closing refrain, governing the genitive ἀοιδᾶς" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἴτε", lemma:"εἶμι (ibo)", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"go!, come!", note:"urging on the second imperative" },
+          { w:"λήγετ᾽", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"cease", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with λήγετε" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 132 ---- */
+      {
+        lines: "132",
+        translation: "Now, brambles, may you bear violets, and may you, thistles, bear them too,",
+        greek: [
+          { w:"νῦν", lemma:"νῦν", pos:"adverb", parse:"—",
+            gloss:"now", note:"opening the adynaton — the catalogue of impossibilities that must now come true because Daphnis is dying" },
+          { w:"ἴα", lemma:"ἴον, -ου, τό", pos:"noun", parse:"acc. pl. neut.",
+            gloss:"violet", note:"object of φορέοιτε. The order is the reversal: soft flowers on thorn-bushes" },
+          { w:"μὲν", lemma:"μέν", pos:"particle", parse:"—",
+            gloss:"on the one hand", note:"answered by δ᾽ later in the line" },
+          { w:"φορέοιτε", lemma:"φορέω", pos:"verb", parse:"present active optative, 2nd plural",
+            gloss:"carry, bear, produce", note:"OPTATIVE OF WISH — no ἄν, no subordinating word, second person: 'may you bear'. This whole stanza (132–136) is built of wish-optatives, so recognizing the mood is the key to the passage" },
+          { w:"βάτοι", lemma:"βάτος, -ου, ἡ", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"bramble, thorn-bush", note:"vocative — the plants are addressed directly, which is why the optatives are 2nd person" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"φορέοιτε", lemma:"φορέω", pos:"verb", parse:"present active optative, 2nd plural",
+            gloss:"bear, produce", note:"the verb repeated, with a new vocative — anaphora, the shape of a ritual curse or prayer" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"answering μέν" },
+          { w:"ἄκανθαι", lemma:"ἄκανθα, -ης, ἡ", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"thistle, thorn, prickly plant", note:"second addressee, with ἴα understood again as object" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 133 ---- */
+      {
+        lines: "133",
+        translation: "and may the fair narcissus bloom on junipers,",
+        greek: [
+          { w:"ἁ", lemma:"ὁ, ἡ, τό (Doric ἁ = ἡ)", pos:"article", parse:"nom. sg. fem.",
+            gloss:"the", note:"with νάρκισσος. Doric ἁ = ἡ" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"next item in the catalogue" },
+          { w:"καλὰ", lemma:"καλός, -ή, -όν", pos:"adjective", parse:"nom. sg. fem. (Doric -ά = Attic -ή)",
+            gloss:"beautiful, fair", note:"attributive with νάρκισσος inside the article's bracket" },
+          { w:"νάρκισσος", lemma:"νάρκισσος, -ου, ἡ", pos:"noun", parse:"nom. sg. fem.",
+            gloss:"narcissus", note:"subject of κομάσαι — feminine here, as flower-names often are" },
+          { w:"ἐπ᾽", lemma:"ἐπί", pos:"preposition", parse:"+ dative (elided ἐπί)",
+            gloss:"on, upon", note:"of place where" },
+          { w:"ἀρκεύθοισι", lemma:"ἄρκευθος, -ου, ἡ", pos:"noun", parse:"dat. pl. fem. (epic -οισι = -οις)",
+            gloss:"juniper", note:"governed by ἐπ᾽. Epic fuller dative plural. A prickly shrub — again the wrong plant to be flowering" },
+          { w:"κομάσαι", lemma:"κομάω", pos:"verb", parse:"aorist active optative, 3rd singular",
+            gloss:"wear long hair; (of plants) grow luxuriantly, be in leaf, bloom", note:"another wish-optative, now 3rd singular. Watch the ending: -σαι here is optative (κομήσειε/κομάσαι), not an aorist infinitive or middle imperative — the surrounding optatives are what settle it" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 134 ---- */
+      {
+        lines: "134",
+        translation: "and may everything be turned about, and may the pine bear pears,",
+        greek: [
+          { w:"πάντα", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective (substantival)", parse:"nom. pl. neut.",
+            gloss:"all things, everything", note:"subject of γένοιτο. A neuter plural subject regularly takes a singular verb in Greek — do not 'correct' γένοιτο to a plural" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"connective" },
+          { w:"ἄναλλα", lemma:"ἄναλλος, -ον", pos:"adjective", parse:"nom. pl. neut.",
+            gloss:"changed about, reversed, turned the other way", note:"predicate with γένοιτο. From ἀνά + ἄλλος: 'other than it was'. This one word states the principle the whole catalogue illustrates" },
+          { w:"γένοιτο", lemma:"γίγνομαι", pos:"verb", parse:"aorist middle optative, 3rd singular",
+            gloss:"become, come to be", note:"wish-optative again, and a linking verb, so ἄναλλα is a predicate NOMINATIVE agreeing with πάντα" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"adding the next impossibility" },
+          { w:"ἁ", lemma:"ὁ, ἡ, τό (Doric ἁ = ἡ)", pos:"article", parse:"nom. sg. fem.",
+            gloss:"the", note:"with πίτυς" },
+          { w:"πίτυς", lemma:"πίτυς, -υος, ἡ", pos:"noun", parse:"nom. sg. fem.",
+            gloss:"pine (tree)", note:"subject of ἐνείκαι. The very tree that was making sweet music in line 1 — the poem's opening image returns inside the catalogue of things gone wrong" },
+          { w:"ὄχνας", lemma:"ὄχνη, -ης, ἡ", pos:"noun", parse:"acc. pl. fem. (Doric -ας = Attic -ᾱς)",
+            gloss:"pear, pear-tree", note:"object of ἐνείκαι — a conifer bearing orchard fruit" },
+          { w:"ἐνείκαι", lemma:"φέρω (epic aor. ἤνεικα)", pos:"verb", parse:"aorist active optative, 3rd singular",
+            gloss:"carry, bear, bring forth", note:"wish-optative of the epic aorist ἤνεικα (Attic ἤνεγκα), here unaugmented. φέρω is one of the great suppletive verbs — φέρω / οἴσω / ἤνεγκα-ἤνεικα / ἐνήνοχα — and none of its stems looks like any other" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 135 ---- */
+      {
+        lines: "135",
+        translation: "since Daphnis is dying — and may the stag drag the hounds,",
+        greek: [
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"subject of θνάσκει" },
+          { w:"ἐπεὶ", lemma:"ἐπεί", pos:"conjunction", parse:"—",
+            gloss:"since, seeing that", note:"CAUSAL ἐπεί, not temporal: the reason all nature is to be reversed. Dover notes the artful placing — the causal clause is dropped into the middle of the catalogue rather than heading it" },
+          { w:"θνάσκει", lemma:"θνῄσκω (Doric θνάσκω)", pos:"verb", parse:"present active indicative, 3rd singular",
+            gloss:"die, be dying", note:"INDICATIVE, breaking the run of optatives — the one fact in the stanza that is not a wish. Doric ᾱ for η. Present tense: he is dying now, on stage" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"resuming the wishes" },
+          { w:"τὰς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. fem.",
+            gloss:"the", note:"with κύνας" },
+          { w:"κύνας", lemma:"κύων, κυνός, ὁ/ἡ", pos:"noun", parse:"acc. pl. fem.",
+            gloss:"dog, hound", note:"object of ἕλκοι — the hunting dogs, now the quarry" },
+          { w:"ὥλαφος", lemma:"ὁ ἔλαφος (crasis ὥλαφος)", pos:"article + noun", parse:"nom. sg. masc., crasis of ὁ ἔλαφος",
+            gloss:"the deer, the stag", note:"crasis of ὁ + ἔλαφος. Subject of ἕλκοι: the hunted animal hauling the hunters — the reversal made physical" },
+          { w:"ἕλκοι", lemma:"ἕλκω", pos:"verb", parse:"present active optative, 3rd singular",
+            gloss:"drag, haul, pull", note:"wish-optative. The same verb Daphnis has just used of himself in the passive at 130 (ἕλκομαι) — he is dragged by Love as the dogs are to be dragged by the deer" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 136 ---- */
+      {
+        lines: "136",
+        translation: "and from the mountains may the scops-owls sing to the nightingales.”",
+        greek: [
+          { w:"κἠξ", lemma:"καί + ἐξ (crasis κἠξ)", pos:"conjunction + preposition", parse:"crasis of καὶ ἐξ (+ gen.)",
+            gloss:"and out of, and from", note:"crasis καί + ἐξ → κἠξ, on the pattern of κἠν (103). Collect the family: κἤφα, κεῖπε, χὠ, χὠκ, κἠν, κἠξ" },
+          { w:"ὀρέων", lemma:"ὄρος, -εος, τό (Doric ὤρος)", pos:"noun", parse:"gen. pl. neut.",
+            gloss:"mountain", note:"governed by the ἐξ inside the crasis" },
+          { w:"τοὶ", lemma:"ὁ, ἡ, τό (Doric τοί = οἱ)", pos:"article", parse:"nom. pl. masc.",
+            gloss:"the", note:"Doric τοί = οἱ, with σκῶπες. An article, not the relative τοί of 118 — the following word is a noun, not a verb" },
+          { w:"σκῶπες", lemma:"σκώψ, σκωπός, ὁ", pos:"noun", parse:"nom. pl. masc.",
+            gloss:"scops-owl, little horned owl", note:"subject of γαρύσαιντο. Dover: the scops-owl lives close to man and the nightingale in lowland woods, so their moving to the mountains is itself part of the reversal" },
+          { w:"ἀηδόσι", lemma:"ἀηδών, -όνος, ἡ", pos:"noun", parse:"dat. pl. fem.",
+            gloss:"nightingale", note:"DATIVE, and that is the crux of the line: γαρύομαί σοι is 'I sing TO you', implying you listen in silent admiration. So the reversal is not a singing contest but the nightingale falling silent to listen to the owl" },
+          { w:"γαρύσαιντο", lemma:"γηρύομαι (Doric γαρύομαι)", pos:"verb", parse:"aorist middle optative, 3rd plural",
+            gloss:"utter, sing, cry out", note:"the last wish-optative of the stanza. Doric ᾱ for η (γαρύομαι = γηρύομαι). Dover: we might have expected 'outdo' or 'surpass', but the dative shows the sense is 'sing to' — and to be sung to is to be the admiring listener. The closing quotation mark after this word ends the speech Daphnis began back at 100" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"”", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 137 ---- */
+      {
+        lines: "137",
+        translation: "Cease, Muses, come, cease the pastoral song.",
+        greek: [
+          { w:"λήγετε", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"cease, leave off (+ gen.)", note:"refrain; ἀοιδᾶς is its genitive" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἴτε", lemma:"εἶμι (ibo)", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"go!, come!", note:"with λήγετ᾽" },
+          { w:"λήγετ᾽", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"cease", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with λήγετε. This is the refrain's last appearance inside the song; Thyrsis' narrative resumes at once" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 138–139 ---- */
+      {
+        lines: "138–139",
+        translation: "And he, having said so much, stopped; and Aphrodite wanted to set him on his feet again —",
+        greek: [
+          { w:"χὠ", lemma:"καί + ὁ (crasis χὠ)", pos:"conjunction + article", parse:"crasis of καὶ ὁ",
+            gloss:"and he", note:"crasis καί + ὁ → χὠ, the κ aspirated. The article used as a pronoun: 'and he'" },
+          { w:"μὲν", lemma:"μέν", pos:"particle", parse:"—",
+            gloss:"on the one hand", note:"answered by τὸν δ᾽ — 'he for his part … but her, on the other hand'. The μέν/δέ turns the scene from Daphnis to Aphrodite" },
+          { w:"τόσσ᾽", lemma:"τόσος, -η, -ον (epic τόσσος)", pos:"adjective (substantival)", parse:"acc. pl. neut. (elided τόσσα)",
+            gloss:"so much, so many things", note:"internal object of εἰπών: 'having said so much'. Epic double σ" },
+          { w:"εἰπὼν", lemma:"λέγω", pos:"verb (participle)", parse:"aorist active participle, nom. sg. masc. (aor. εἶπον)",
+            gloss:"say, speak", note:"circumstantial participle, aorist and so PRIOR to the main verb: he finished speaking and then stopped" },
+          { w:"ἀπεπαύσατο", lemma:"ἀποπαύομαι", pos:"verb", parse:"aorist middle indicative, 3rd singular",
+            gloss:"cease, stop, leave off", note:"middle, intransitive: 'he ceased'. The active ἀποπαύω would mean 'make someone stop'" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό (demonstrative)", pos:"article as pronoun", parse:"acc. sg. masc.",
+            gloss:"him", note:"the article as pronoun, object of ἀνορθῶσαι — fronted before its own clause for the μέν/δέ contrast" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"but", note:"answering μέν" },
+          { w:"Ἀφροδίτα", lemma:"Ἀφροδίτη, -ης, ἡ (Doric Ἀφροδίτα)", pos:"proper noun", parse:"nom. sg. fem.",
+            gloss:"Aphrodite", note:"subject of ἤθελε. Doric ᾱ for η. She is named in full only now, at the moment she relents" },
+          { w:"ἤθελ᾽", lemma:"ἐθέλω", pos:"verb", parse:"imperfect active indicative, 3rd singular (elided ἤθελε)",
+            gloss:"wish, want, be willing", note:"imperfect of attempted or unfulfilled wanting — 'she was wanting to', and did not manage it. Governs the infinitive ἀνορθῶσαι" },
+          { w:"ἀνορθῶσαι", lemma:"ἀνορθόω", pos:"verb (infinitive)", parse:"aorist active infinitive",
+            gloss:"set upright again, raise up, restore", note:"complementary infinitive with ἤθελε. Dover: if he dies it is a hollow victory for Aphrodite, since he will have kept his vow — which is why she now wants to save his life, hoping he may yet surrender" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 139–140 ---- */
+      {
+        lines: "139–140",
+        translation: "but all the thread from the Fates had run out, and Daphnis went to the stream.",
+        greek: [
+          { w:"τά", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. pl. neut.",
+            gloss:"the", note:"with λίνα" },
+          { w:"γε", lemma:"γε", pos:"particle (enclitic)", parse:"—",
+            gloss:"at any rate, indeed", note:"γε μάν together, 'but in fact' — marking the objection that cancels her wish" },
+          { w:"μὰν", lemma:"μήν (Doric μάν)", pos:"particle", parse:"—",
+            gloss:"indeed, truly", note:"Doric μάν = μήν" },
+          { w:"λίνα", lemma:"λίνον, -ου, τό", pos:"noun", parse:"nom. pl. neut.",
+            gloss:"thread, flax, linen thread", note:"subject of λελοίπει. Dover: the idea that a thread spun by the Fates runs alongside each human life is Homeric and recurrent — when the thread runs out, the life does" },
+          { w:"πάντα", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective", parse:"nom. pl. neut.",
+            gloss:"all", note:"with λίνα" },
+          { w:"λελοίπει", lemma:"λείπω", pos:"verb", parse:"pluperfect active indicative, 3rd singular",
+            gloss:"leave; (intr., perf./plupf.) have run out, be gone", note:"PLUPERFECT and INTRANSITIVE — 'had run out'. λείπω is transitive in the present ('leave behind') but its perfect stem can be intransitive, exactly as at Odyssey 14.213 νῦν δ᾽ ἤδη πάντα λέλοιπεν, 'but by now everything has run out'. Note the singular verb with the neuter plural subject" },
+          { w:"ἐκ", lemma:"ἐκ", pos:"preposition", parse:"+ genitive",
+            gloss:"from, out of", note:"Dover: this ἐκ indicates the supernatural AUTHORITY by which something happens — 'from the Fates' means 'by the Fates' decree', not merely 'out of their hands'" },
+          { w:"Μοιρᾶν", lemma:"Μοῖρα, -ας, ἡ", pos:"proper noun", parse:"gen. pl. fem.",
+            gloss:"Fate, Destiny; (pl.) the Fates", note:"governed by ἐκ. The same noun as μοίρας 'destiny' at 93, now personified as the three spinners" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"χὠ", lemma:"καί + ὁ (crasis χὠ)", pos:"conjunction + article", parse:"crasis of καὶ ὁ",
+            gloss:"and the", note:"crasis again, here with the following name: 'and Daphnis'" },
+          { w:"Δάφνις", lemma:"Δάφνις, -ιδος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Daphnis", note:"subject of ἔβα" },
+          { w:"ἔβα", lemma:"βαίνω (aor. ἔβην, Doric ἔβα)", pos:"verb", parse:"aorist active indicative, 3rd singular (Doric ἔβα = Attic ἔβη)",
+            gloss:"go, walk, step", note:"a ROOT (athematic) aorist — ἔβην/ἔβα, with no σ and no thematic vowel, like ἔστην and ἔγνων. Doric ᾱ for η. The plainest possible words for the death itself" },
+          { w:"ῥόον", lemma:"ῥόος, -ου, ὁ (= ῥοῦς)", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"stream, current, flow", note:"accusative of the goal reached, with no preposition — a poetic construction. 'The stream' is Acheron, which the souls of the dead must cross; the allusiveness is the point, and Theocritus never names it" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 140–141 ---- */
+      {
+        lines: "140–141",
+        translation: "The eddy washed over the man dear to the Muses, the man not hated by the Nymphs.",
+        greek: [
+          { w:"ἔκλυσε", lemma:"κλύζω", pos:"verb", parse:"aorist active indicative, 3rd singular",
+            gloss:"wash over, wash, dash over", note:"Dover is firm: 'washed', not 'engulfed' — the souls of the dead were not submerged in Acheron but waited at the water's edge to be ferried across. The same verb sealed the rim of the goatherd's cup with wax at 28" },
+          { w:"δίνα", lemma:"δίνη, -ης, ἡ (Doric δίνα)", pos:"noun", parse:"nom. sg. fem.",
+            gloss:"eddy, whirlpool, swirling water", note:"subject of ἔκλυσε. Doric ᾱ for η" },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the", note:"with ἄνδρα, and repeated before the second phrase — the article-plus-adjective frame that carries the whole epitaph" },
+          { w:"Μοίσαις", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"dat. pl. fem.",
+            gloss:"Muse", note:"dative with φίλον: adjectives of liking take the dative of the person" },
+          { w:"φίλον", lemma:"φίλος, -η, -ον", pos:"adjective", parse:"acc. sg. masc.",
+            gloss:"dear, beloved", note:"attributive with ἄνδρα, inside the article's bracket" },
+          { w:"ἄνδρα", lemma:"ἀνήρ, ἀνδρός, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"man", note:"object of ἔκλυσε" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τὸν", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. masc.",
+            gloss:"the (one)", note:"the article repeated with ἄνδρα understood — a second attributive phrase in apposition to the first" },
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negating ἀπεχθῆ. 'Not hated by' is litotes — understatement for 'much loved by'" },
+          { w:"Νύμφαισιν", lemma:"νύμφη, -ης, ἡ", pos:"noun", parse:"dat. pl. fem. (epic -αισιν = -αις)",
+            gloss:"nymph", note:"dative with ἀπεχθῆ, the same rule as Μοίσαις φίλον. Dover notes the pointed recall of 66 — Thyrsis had opened by asking the Nymphs where they were, and closes by insisting they had not abandoned him out of dislike" },
+          { w:"ἀπεχθῆ", lemma:"ἀπεχθής, -ές", pos:"adjective", parse:"acc. sg. masc. (contracted -έα → -ῆ)",
+            gloss:"hateful, odious", note:"attributive with the understood ἄνδρα. The same adjective Daphnis flung at Aphrodite at 101 — the poem gives him the opposite epitaph" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 142 ---- */
+      {
+        lines: "142",
+        translation: "Cease, Muses, come, cease the pastoral song.",
+        greek: [
+          { w:"λήγετε", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"cease, leave off (+ gen.)", note:"the final refrain of Thyrsis' song" },
+          { w:"βουκολικᾶς", lemma:"βουκολικός, -ή, -όν (Doric -ᾶς)", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"bucolic, pastoral", note:"with ἀοιδᾶς" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἴτε", lemma:"εἶμι (ibo)", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"go!, come!", note:"with λήγετ᾽" },
+          { w:"λήγετ᾽", lemma:"λήγω", pos:"verb", parse:"present active imperative, 2nd plural (elided)",
+            gloss:"cease", note:"repeated" },
+          { w:"ἀοιδᾶς", lemma:"ἀοιδή, -ῆς, ἡ (Doric ἀοιδά)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"song, lay", note:"genitive with λήγετε — and now the song really does cease" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 143–144 ---- */
+      {
+        lines: "143–144",
+        translation: "And you, give me the goat and the cup, so that I may milk her and pour a libation to the Muses.",
+        greek: [
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"Thyrsis turns from the song to the payment he was promised at 25–26" },
+          { w:"τὺ", lemma:"σύ (Doric τύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"accented, so nominative subject of δίδου — 'now it's your turn'" },
+          { w:"δίδου", lemma:"δίδωμι", pos:"verb", parse:"present active imperative, 2nd singular",
+            gloss:"give", note:"PRESENT imperative of the athematic δίδωμι (contracted from δίδοε). The present rather than aorist δός makes it 'hand them over now, as agreed', not a bare request" },
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article", parse:"acc. sg. fem.",
+            gloss:"the", note:"with αἶγα" },
+          { w:"αἶγα", lemma:"αἴξ, αἰγός, ὁ/ἡ", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"goat (here she-goat)", note:"the promised fee, first named at 5–6" },
+          { w:"τό", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. neut.",
+            gloss:"the", note:"with σκύφος" },
+          { w:"τε", lemma:"τε", pos:"particle (enclitic)", parse:"—",
+            gloss:"and", note:"joining the second object; τε is postpositive, hence its place inside the article-noun pair" },
+          { w:"σκύφος", lemma:"σκύφος, -εος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"cup, drinking-bowl", note:"the carved κισσύβιον described at length in 27–56 — the poem's frame closing" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὥς", lemma:"ὡς", pos:"conjunction", parse:"—",
+            gloss:"so that, in order that", note:"final (purpose) conjunction. With κεν + subjunctive it is the epic form of a purpose clause" },
+          { w:"κεν", lemma:"ἄν / κε(ν)", pos:"particle", parse:"—",
+            gloss:"(modal particle)", note:"epic κε(ν) = ἄν. In a purpose clause after ὡς it adds a shade of contingency; the mood it requires here is the subjunctive σπείσω" },
+          { w:"ἀμέλξας", lemma:"ἀμέλγω", pos:"verb (participle)", parse:"aorist active participle, nom. sg. masc.",
+            gloss:"milk", note:"circumstantial participle, aorist and so prior to σπείσω: milk first, then pour. English needs two coordinate verbs where Greek subordinates one" },
+          { w:"σπείσω", lemma:"σπένδω (aor. ἔσπεισα)", pos:"verb", parse:"aorist active subjunctive, 1st singular",
+            gloss:"pour a libation", note:"SUBJUNCTIVE in the purpose clause, not a future indicative — the two are identical in shape for this verb, and only ὥς κεν tells you which. Dover: pouring a libation is one of the commonest ways a Greek symbolically shares what he has with his gods" },
+          { w:"ταῖς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"dat. pl. fem.",
+            gloss:"the", note:"with Μοίσαις" },
+          { w:"Μοίσαις", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"dat. pl. fem.",
+            gloss:"Muse", note:"indirect object of σπείσω — the libation goes to the Muses who lent him the song" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 144–145 ---- */
+      {
+        lines: "144–145",
+        translation: "Hail many times over, Muses, hail! And I will sing you something sweeter hereafter.",
+        greek: [
+          { w:"ὦ", lemma:"ὦ", pos:"interjection", parse:"—",
+            gloss:"O", note:"opening the hymn-like farewell" },
+          { w:"χαίρετε", lemma:"χαίρω", pos:"verb", parse:"present active imperative, 2nd plural",
+            gloss:"rejoice; (as greeting) hail, farewell", note:"Dover: this cry gives the song an ending like that of a traditional hymn — both the Homeric Hymns and Kallimachos' end by addressing the god with χαῖρε" },
+          { w:"πολλάκι", lemma:"πολλάκις (poetic πολλάκι)", pos:"adverb", parse:"—",
+            gloss:"often, many times", note:"the ν-less poetic form, used before a consonant" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Μοῖσαι", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"voc. pl. fem.",
+            gloss:"Muse", note:"vocative — no longer commanded to begin or cease, simply saluted" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"χαίρετ᾽", lemma:"χαίρω", pos:"verb", parse:"present active imperative, 2nd plural (elided χαίρετε)",
+            gloss:"hail!, farewell!", note:"the greeting repeated across the line-end, as in the hymns" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"ἐγὼ", lemma:"ἐγώ", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"I", note:"emphatic, opening the promise" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"connective" },
+          { w:"ὔμμιν", lemma:"ὑμεῖς (Aeolic/Doric ὕμμιν = ὑμῖν)", pos:"personal pronoun", parse:"dat. pl.",
+            gloss:"to you, for you", note:"Aeolic/Doric ὕμμιν = ὑμῖν, as at 116. Dative of the person sung to" },
+          { w:"καὶ", lemma:"καί", pos:"adverb", parse:"—",
+            gloss:"also, even", note:"with ἐς ὕστερον, 'in future too'" },
+          { w:"ἐς", lemma:"εἰς (Doric ἐς)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, for", note:"ἐς ὕστερον, 'for hereafter'" },
+          { w:"ὕστερον", lemma:"ὕστερος, -α, -ον (adv. ὕστερον)", pos:"adjective (substantival)", parse:"acc. sg. neut.",
+            gloss:"later, afterwards; (with ἐς) hereafter", note:"neuter adjective as a noun after the preposition" },
+          { w:"ἅδιον", lemma:"ἡδύς, -εῖα, -ύ (Doric ἁδύς, comp. ἅδιον)", pos:"adjective (adverbial comparative)", parse:"acc. sg. neut. as adverb (Doric ἅδιον = Attic ἥδιον)",
+            gloss:"more sweetly", note:"comparative adverb with ᾀσῶ. The neuter singular of a comparative adjective IS its adverb (ἥδιον, θᾶσσον, μᾶλλον) — so do not look for a noun for it to agree with. Doric ᾱ for η" },
+          { w:"ᾀσῶ", lemma:"ἀείδω (= ᾄδω)", pos:"verb", parse:"future active indicative, 1st singular (Doric contracted ᾀσῶ = Attic ᾄσομαι)",
+            gloss:"sing (of)", note:"Doric contracted-type future, like φυλαξεῖς (63) and δοκησεῖς (150). Dover: the promise implies a prayer, exactly as in Greek dedications — 'may you rejoice in this, and grant me another'" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      {
+        translation: "GOATHERD",
+        greek: [
+          { w:"Αἰπόλος", punct:true }
+        ]
+      },
+
+      /* ---- 146–147 ---- */
+      {
+        lines: "146–147",
+        translation: "May your lovely mouth be full of honey, Thyrsis, and full of honeycomb,",
+        greek: [
+          { w:"πλῆρές", lemma:"πλήρης, -ες", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"full (of, + gen.)", note:"predicate with γένοιτο. Adjectives of filling and emptying take the genitive of what fills — hence μέλιτος" },
+          { w:"τοι", lemma:"σύ (Doric/epic τοι = σοι)", pos:"personal pronoun", parse:"dat. sg. (enclitic)",
+            gloss:"to you, your", note:"possessive dative — 'the mouth belonging to you' = 'your mouth'. Not the particle τοι; an enclitic pronoun in second position, as regularly" },
+          { w:"μέλιτος", lemma:"μέλι, -ιτος, τό", pos:"noun", parse:"gen. sg. neut.",
+            gloss:"honey", note:"genitive governed by πλῆρες. Dover, drily: a mouth FULL of honey sounds rather sickening — the goatherd's compliments are as excessive as everything else about him" },
+          { w:"τὸ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. neut.",
+            gloss:"the", note:"with στόμα" },
+          { w:"καλὸν", lemma:"καλός, -ή, -όν", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"beautiful, fine, lovely", note:"attributive with στόμα, inside the article's bracket — contrast the predicative πλῆρες standing outside it" },
+          { w:"στόμα", lemma:"στόμα, -ατος, τό", pos:"noun", parse:"nom. sg. neut.",
+            gloss:"mouth", note:"subject of γένοιτο" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Θύρσι", lemma:"Θύρσις, -ιδος, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Thyrsis", note:"vocative of an -ις stem, with no ending at all — like Δάφνι (77, 82, 97)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"γένοιτο", lemma:"γίγνομαι", pos:"verb", parse:"aorist middle optative, 3rd singular",
+            gloss:"become, come to be", note:"OPTATIVE OF WISH — the same mood as the whole adynaton at 132–136, but now benevolent. The goatherd pays Thyrsis in blessings before he pays him in goods" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"πλῆρες", lemma:"πλήρης, -ες", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"full (of, + gen.)", note:"repeated, with γένοιτο and στόμα understood — anaphora" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective" },
+          { w:"σχαδόνων", lemma:"σχαδών, -όνος, ἡ", pos:"noun", parse:"gen. pl. fem.",
+            gloss:"honeycomb (with the grubs in it)", note:"second genitive with πλῆρες" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 147–148 ---- */
+      {
+        lines: "147–148",
+        translation: "and may you eat a sweet dried fig from Aigilos, since you sing better than the cicada.",
+        greek: [
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"third blessing" },
+          { w:"ἀπ᾽", lemma:"ἀπό", pos:"preposition", parse:"+ genitive (elided ἀπό)",
+            gloss:"from", note:"Dover: the phrase ἀπ᾽ Αἰγίλω functions as an ADJECTIVE qualifying ἰσχάδα — 'an Aigilan fig'. A prepositional phrase doing an adjective's work is common in Greek and usually needs the article, but verse can dispense with it" },
+          { w:"Αἰγίλω", lemma:"Αἴγιλος, -ου, ὁ", pos:"proper noun", parse:"gen. sg. masc. (Doric -ω = Attic -ου)",
+            gloss:"Aigilos", note:"the eponymous hero of the Attic deme Aigilia, whose figs were famous; treated here virtually as a place-name" },
+          { w:"ἰσχάδα", lemma:"ἰσχάς, -άδος, ἡ", pos:"noun", parse:"acc. sg. fem.",
+            gloss:"dried fig", note:"object of τρώγοις; its adjective ἁδεῖαν waits until the next line" },
+          { w:"τρώγοις", lemma:"τρώγω", pos:"verb", parse:"present active optative, 2nd singular",
+            gloss:"gnaw, munch, eat (of fruit and raw food)", note:"another optative of wish, now 2nd singular: 'may you eat'" },
+          { w:"ἁδεῖαν", lemma:"ἡδύς, -εῖα, -ύ (Doric ἁδύς)", pos:"adjective", parse:"acc. sg. fem. (Doric ἁδεῖαν = Attic ἡδεῖαν)",
+            gloss:"sweet, pleasant", note:"attributive with ἰσχάδα, held over to the head of the next line. Contrast 95, where the same word was neuter plural and adverbial — here the accusative singular feminine agreement is unambiguous" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"τέττιγος", lemma:"τέττιξ, -ιγος, ὁ", pos:"noun", parse:"gen. sg. masc.",
+            gloss:"cicada", note:"GENITIVE OF COMPARISON with φέρτερον: 'better than the cicada'. Greek can use a bare genitive instead of ἤ + nominative. Dover: the cicada is the singer par excellence — Socrates in the Phaedrus tells how cicadas were once men who sang until they forgot to eat" },
+          { w:"ἐπεὶ", lemma:"ἐπεί", pos:"conjunction", parse:"—",
+            gloss:"since, seeing that", note:"causal, giving the reason for the blessings" },
+          { w:"τύγα", lemma:"σύ (Doric τύ) + γα", pos:"personal pronoun + particle", parse:"nom. sg. + Doric γα (= γε)",
+            gloss:"you at any rate", note:"τύ γα, with Doric γα for γε — here genuinely emphatic, unlike the τύγ᾽ of 124" },
+          { w:"φέρτερον", lemma:"φέρτερος, -α, -ον (compar.)", pos:"adjective (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"better, more excellently", note:"comparative neuter used adverbially with ᾄδεις — the same rule as ἅδιον at 145" },
+          { w:"ᾄδεις", lemma:"ἀείδω (= ᾄδω)", pos:"verb", parse:"present active indicative, 2nd singular",
+            gloss:"sing", note:"the contracted Attic-type form beside the epic ἀείδω used elsewhere in the poem" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 149 ---- */
+      {
+        lines: "149",
+        translation: "Look, here is the cup for you: see, my friend, how sweetly it smells;",
+        greek: [
+          { w:"ἠνίδε", lemma:"ἠνίδε (Doric)", pos:"interjection", parse:"—",
+            gloss:"look!, see here!", note:"a deictic interjection (ἤν + ἰδέ), used as one word for handing something over — the goatherd is producing the cup as he speaks" },
+          { w:"τοι", lemma:"σύ (Doric/epic τοι = σοι)", pos:"personal pronoun", parse:"dat. sg. (enclitic)",
+            gloss:"for you", note:"dative of the person concerned — 'here's the cup for you'" },
+          { w:"τὸ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. neut.",
+            gloss:"the", note:"with δέπας" },
+          { w:"δέπας", lemma:"δέπας, -αος, τό", pos:"noun", parse:"nom. sg. neut.",
+            gloss:"cup, goblet, drinking-bowl", note:"the promised prize, handed over at last. Note the shift of word: σκύφος at 143, δέπας here, κισσύβιον at 27 — Theocritus never settles on one name for it" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"θᾶσαι", lemma:"θηέομαι (θεάομαι)", pos:"verb", parse:"aorist middle imperative, 2nd singular (Doric θᾶσαι = θέασαι)",
+            gloss:"gaze at, behold, look at", note:"Doric ᾱ for η with contraction. A deponent middle: middle in form, active in meaning. Do not confuse the imperative -σαι with the optative -σαι of κομάσαι (133)" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"φίλος", lemma:"φίλος, -η, -ον", pos:"adjective (substantival)", parse:"nom. sg. masc. for voc.",
+            gloss:"dear; (subst.) friend", note:"nominative standing in for the vocative, a common colloquialism — the same address the goatherd used at 61" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὡς", lemma:"ὡς", pos:"adverb", parse:"—",
+            gloss:"how!", note:"exclamatory ὡς introducing an indirect exclamation after θᾶσαι — 'see HOW sweetly it smells'" },
+          { w:"καλὸν", lemma:"καλός, -ή, -όν (adv. καλόν)", pos:"adjective (adverbial)", parse:"acc. sg. neut. as adverb",
+            gloss:"beautifully, sweetly", note:"adverbial accusative with ὄσδει, exactly as at 107 and 129" },
+          { w:"ὄσδει", lemma:"ὄζω (Doric ὄσδω)", pos:"verb", parse:"present active indicative, 3rd singular",
+            gloss:"smell, give off a scent", note:"Doric -σδ- for -ζ- once more (cf. ποτίσδων 121, φράσδη 102). The cup smells of the wax and cheese it has held — cf. ποτόσδει at 28" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 150 ---- */
+      {
+        lines: "150",
+        translation: "you will think it has been washed at the spring of the Hours.",
+        greek: [
+          { w:"Ὡρᾶν", lemma:"Ὥρα, -ας, ἡ", pos:"proper noun", parse:"gen. pl. fem.",
+            gloss:"Hour, Season; (pl.) the Hours", note:"possessive genitive with κράναισι. Dover: the Hours personify those stages in the life of creatures and plants that attract us by their beauty, so they are the powers that CONFER such beauty — and their 'spring' is probably Theocritus' own invention" },
+          { w:"πεπλύσθαι", lemma:"πλύνω (perf. mid./pass. πέπλυμαι)", pos:"verb (infinitive)", parse:"perfect middle/passive infinitive",
+            gloss:"wash, rinse; (pass.) have been washed", note:"infinitive of indirect statement after δοκησεῖς, with νιν as its subject accusative. The PERFECT gives the resulting state: 'that it stands washed', which is why it still smells so good" },
+          { w:"νιν", lemma:"νιν (Doric enclitic pron. = αὐτόν)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"it, him, her", note:"the Doric all-purpose enclitic accusative pronoun, here neuter 'it' (the cup) and subject of the infinitive πεπλύσθαι" },
+          { w:"ἐπὶ", lemma:"ἐπί", pos:"preposition", parse:"+ dative",
+            gloss:"at, by", note:"of place where, with κράναισι" },
+          { w:"κράναισι", lemma:"κρήνη, -ης, ἡ (Doric κράνα)", pos:"noun", parse:"dat. pl. fem. (epic -αισι = -αις)",
+            gloss:"spring, fountain", note:"Doric ᾱ for η plus the fuller epic dative plural. The same springs the girl was searching at 83" },
+          { w:"δοκησεῖς", lemma:"δοκέω", pos:"verb", parse:"future active indicative, 2nd singular (Doric δοκησεῖς = Attic δόξεις)",
+            gloss:"think, suppose, imagine", note:"Doric contracted-type future in -ησεῖς where Attic has -ξεις — the same formation as φυλαξεῖς (63), λυγιξεῖν (97), ᾀσῶ (145). Governs the accusative-and-infinitive νιν πεπλύσθαι" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 151 ---- */
+      {
+        lines: "151",
+        translation: "Come here, Kissaitha; and you, milk her. And you she-goats,",
+        greek: [
+          { w:"ὧδ᾽", lemma:"ὧδε", pos:"adverb", parse:"elided ὧδε",
+            gloss:"here, this way, hither", note:"of motion towards the speaker, with the imperative" },
+          { w:"ἴθι", lemma:"εἶμι (ibo)", pos:"verb", parse:"present active imperative, 2nd singular",
+            gloss:"go!, come!", note:"the singular of the ἴτε that filled out the λήγετε refrain" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Κισσαίθα", lemma:"Κίσσαιθα, -ας, ἡ", pos:"proper noun", parse:"voc. sg. fem.",
+            gloss:"Kissaitha (a goat's name)", note:"Dover: a good name for a goat, since goats differ from other animals in their appetite for ivy (κισσός) — the same ivy that was carved round the cup at 30" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"τὺ", lemma:"σύ (Doric τύ)", pos:"personal pronoun", parse:"nom. sg.",
+            gloss:"you", note:"accented, so nominative — the subject of ἄμελγε, addressed to Thyrsis, who asked for exactly this at 143" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"turning from the goat to the man" },
+          { w:"ἄμελγέ", lemma:"ἀμέλγω", pos:"verb", parse:"present active imperative, 2nd singular",
+            gloss:"milk", note:"note the second accent on ἄμελγέ, thrown back on it by the following enclitic νιν" },
+          { w:"νιν", lemma:"νιν (Doric enclitic pron. = αὐτόν)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"her", note:"the enclitic accusative again, now feminine — the goat" },
+          { w:".", punct:true, nospaceBefore:true },
+          { w:"αἱ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. pl. fem. (for voc.)",
+            gloss:"the", note:"Dover: the ARTICLE with a vocative is not uncommon in peremptory orders — 'you there, you she-goats!'. Compare Aristophanes' ὁ παῖς ἀκολούθει δεῦρο" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"turning to the herd" },
+          { w:"χίμαιραι", lemma:"χίμαιρα, -ας, ἡ", pos:"noun", parse:"nom. pl. fem. (for voc.)",
+            gloss:"she-goat, young she-goat", note:"addressed with the article, as above. The last thing in the poem is the ordinary business of goats" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 152 ---- */
+      {
+        lines: "152",
+        translation: "don't you go frisking about, or the he-goat will be up at you.",
+        greek: [
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"οὐ μή + future indicative is an EMPHATIC PROHIBITION — much stronger than μή + imperative: 'don't you dare'. The doubled negative is the tell, and it is the last construction in the poem" },
+          { w:"μὴ", lemma:"μή", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"the second half of οὐ μή. Do not read it as introducing a purpose clause — that is the SEPARATE μή later in the line" },
+          { w:"σκιρτασεῖτε", lemma:"σκιρτάω", pos:"verb", parse:"future active indicative, 2nd plural (Doric σκιρτασεῖτε = Attic σκιρτήσετε)",
+            gloss:"leap, skip, frisk, gambol", note:"future indicative, as οὐ μή requires. Doric ᾱ for η and the contracted-type future once more" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"μὴ", lemma:"μή", pos:"conjunction", parse:"—",
+            gloss:"lest, in case", note:"a DIFFERENT μή from the one above: this one introduces a negative purpose / fear clause, and it is why ἀναστῇ is subjunctive" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with τράγος" },
+          { w:"τράγος", lemma:"τράγος, -ου, ὁ", pos:"noun", parse:"nom. sg. masc.",
+            gloss:"he-goat, billy-goat", note:"subject of ἀναστῇ — the same τράγος the goatherd of 87–88 wished he had been born" },
+          { w:"ὔμμιν", lemma:"ὑμεῖς (Aeolic/Doric ὕμμιν = ὑμῖν)", pos:"personal pronoun", parse:"dat. pl.",
+            gloss:"to you, at you, on you", note:"Aeolic/Doric ὕμμιν = ὑμῖν, its third appearance in the poem (116, 145). Dative with the compound ἀν-ίσταμαι" },
+          { w:"ἀναστῇ", lemma:"ἀνίστημι (intr. aor. ἀνέστην)", pos:"verb", parse:"aorist active subjunctive, 3rd singular",
+            gloss:"stand up, rise up; (here) rear up at, mount", note:"SUBJUNCTIVE after the fear-clause μή. From the INTRANSITIVE root aorist ἀνέστην — ἵστημι is transitive in the sigmatic aorist (ἔστησα 'I set up') but intransitive in the root aorist and perfect (ἔστην, ἕστηκα). The poem ends on the same barnyard note as Priapos' speech at 87–88" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      }
+
+    ]
+  },
+
+  {
+    id: "theoc11-1-18",
+    title: "Idyll 11.1–18",
+    citation: "Theocritus, Idyll 11.1–18 — to Nikias: there is no cure for love but song, as Polyphemus found (Doric)",
+    segments: [
+
+      /* ---- 1–2 ---- */
+      {
+        lines: "1–2",
+        translation: "No other remedy for love has ever grown, Nikias — neither ointment, it seems to me, nor powder —",
+        greek: [
+          { w:"οὐδὲν", lemma:"οὐδείς, οὐδεμία, οὐδέν", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"no, none", note:"with φάρμακον ἄλλο. The poem's first word is its thesis: NO remedy" },
+          { w:"ποττὸν", lemma:"πρός (Doric ποτί) + ὁ, ἡ, τό", pos:"preposition + article", parse:"crasis/assimilation of ποτὶ τόν (+ acc.)",
+            gloss:"against the", note:"Dover: ποττόν = ποτὶ τόν, i.e. πρὸς τόν. Doric assimilates the -τι of ποτί to the following τ- and writes it as one word. πρός + acc. of the ailment is the ordinary idiom for a medicine 'for/against' something" },
+          { w:"ἔρωτα", lemma:"ἔρως, -ωτος, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"love, desire, passion", note:"governed by ποτί inside the crasis — love as the disease the φάρμακον must treat" },
+          { w:"πεφύκει", lemma:"φύω (perf. πέφυκα)", pos:"verb", parse:"perfect active indicative, 3rd singular (Doric πεφύκει = Attic πέφυκε)",
+            gloss:"grow; (perf.) have grown, exist by nature, be", note:"a PERFECT WITH PRESENT MEANING — πέφυκα is 'I stand grown', hence simply 'I am by nature'. And the metaphor is alive: φάρμακα are plants, so 'no other drug has GROWN' sets up the medical-botanical image the whole prologue runs on" },
+          { w:"φάρμακον", lemma:"φάρμακον, -ου, τό", pos:"noun", parse:"nom. sg. neut.",
+            gloss:"drug, remedy, cure; charm", note:"subject of πεφύκει. The word means both 'medicine' and 'magic charm', and Theocritus wants both — song will turn out to be the φάρμακον" },
+          { w:"ἄλλο", lemma:"ἄλλος, -η, -ο", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"other, another", note:"with φάρμακον, and looking ahead to the ἤ of line 3: 'no other … than'" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Νικία", lemma:"Νικίας, -ου, ὁ", pos:"proper noun", parse:"voc. sg. masc.",
+            gloss:"Nikias", note:"the addressee: a doctor and poet, Theocritus' friend, addressed again in Idyll 13. The vocative of an -ας noun ends in short -α" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"οὔτ᾽", lemma:"οὔτε", pos:"conjunction (negative)", parse:"elided οὔτε",
+            gloss:"neither, nor", note:"οὔτε … οὔτε picking up οὐδέν and specifying it" },
+          { w:"ἔγχριστον", lemma:"ἔγχριστος, -ον", pos:"adjective (verbal, substantival)", parse:"nom. sg. neut.",
+            gloss:"to be smeared on, for rubbing in; (subst.) ointment, salve", note:"a -τος verbal adjective from ἐγχρίω, expressing possibility: 'a smear-on kind'. Dover compares Euripides, Hippolytus 516, 'is the remedy one to be smeared on or drunk?' — the two are the standard alternatives, and Theocritus is quoting the medical commonplace to dismiss it" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἐμὶν", lemma:"ἐγώ (Doric ἐμίν = ἐμοί)", pos:"personal pronoun", parse:"dat. sg.",
+            gloss:"to me", note:"Doric ἐμίν = ἐμοί. With δοκεῖ, parenthetically: 'it seems to me'" },
+          { w:"δοκεῖ", lemma:"δοκέω", pos:"verb", parse:"present active indicative, 3rd singular",
+            gloss:"seem, seem good", note:"impersonal, in a parenthesis dropped into the middle of the οὔτε … οὔτε pair — the conversational manner of a verse letter" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"οὔτ᾽", lemma:"οὔτε", pos:"conjunction (negative)", parse:"elided οὔτε",
+            gloss:"nor", note:"the second limb" },
+          { w:"ἐπίπαστον", lemma:"ἐπίπαστος, -ον", pos:"adjective (verbal, substantival)", parse:"nom. sg. neut.",
+            gloss:"to be sprinkled on; (subst.) powder, dusting-powder", note:"a second -τος verbal adjective, from ἐπιπάσσω 'sprinkle over'. Note how the pair ἔγχριστον/ἐπίπαστον stands in apposition to φάρμακον, both nominative neuter" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 3 ---- */
+      {
+        lines: "3",
+        translation: "than the Pierian Muses. And this is a light and sweet thing",
+        greek: [
+          { w:"ἢ", lemma:"ἤ", pos:"conjunction", parse:"—",
+            gloss:"than", note:"the ἤ of comparison, answering ἄλλο in line 1: 'no other remedy … THAN the Muses'. ἄλλος regularly takes ἤ, and the two can stand two lines apart" },
+          { w:"ταὶ", lemma:"ὁ, ἡ, τό (Doric ταί = αἱ)", pos:"article", parse:"nom. pl. fem.",
+            gloss:"the", note:"Doric ταί for αἱ (as τοί for οἱ). Nominative because it answers the nominative φάρμακον in the comparison" },
+          { w:"Πιερίδες", lemma:"Πιερίς, -ίδος, ἡ", pos:"proper noun", parse:"nom. pl. fem.",
+            gloss:"Pierian maid, Muse", note:"the Muses, named from Pieria below Olympus. The thesis in full: the only cure for love is poetry" },
+          { w:"·", punct:true, nospaceBefore:true },
+          { w:"κοῦφον", lemma:"κοῦφος, -η, -ον", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"light, gentle; bringing relief", note:"predicate with γίνεται. Dover weighs the two senses and prefers 'gentle': since medicines are so often unpleasant or painful, the point is that THIS remedy is not — Pindar uses the same idea of Chiron treating some patients with gentle spells" },
+          { w:"δέ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and, but", note:"connective, moving from what the remedy is to what it is like" },
+          { w:"τι", lemma:"τις, τι", pos:"indefinite pronoun", parse:"nom. sg. neut. (enclitic)",
+            gloss:"something, somewhat", note:"softening the adjectives — 'something light and sweet'. The same light touch as the poem's opening ἁδύ τι in Idyll 1" },
+          { w:"τοῦτο", lemma:"οὗτος, αὕτη, τοῦτο", pos:"demonstrative pronoun", parse:"nom. sg. neut.",
+            gloss:"this", note:"subject of γίνεται, referring back to the remedy of song" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining the second predicate" },
+          { w:"ἁδύ", lemma:"ἡδύς, -εῖα, -ύ (Doric ἁδύς)", pos:"adjective", parse:"nom. sg. neut. (Doric ἁδύ = Attic ἡδύ)",
+            gloss:"sweet, pleasant", note:"second predicate with γίνεται. Doric ᾱ for η — the very word Idyll 1 opens with, and the signature of the dialect" }
+        ]
+      },
+
+      /* ---- 4 ---- */
+      {
+        lines: "4",
+        translation: "among men, but it is not easy to find.",
+        greek: [
+          { w:"γίνετ᾽", lemma:"γίγνομαι (Ionic/Hellenistic γίνομαι)", pos:"verb", parse:"present middle indicative, 3rd singular (elided γίνεται)",
+            gloss:"become, come to be, prove to be", note:"the verb of the sentence begun in line 3, arriving at the head of this one. γίνομαι without the -γ- is the ordinary Hellenistic spelling" },
+          { w:"ἐπ᾽", lemma:"ἐπί", pos:"preposition", parse:"+ dative (elided ἐπί)",
+            gloss:"among, in the case of", note:"ἐπ᾽ ἀνθρώποις 'among men' — a Pindaric-sounding phrase; Dover compares Bacchylides" },
+          { w:"ἀνθρώποις", lemma:"ἄνθρωπος, -ου, ὁ", pos:"noun", parse:"dat. pl. masc.",
+            gloss:"man, human being", note:"governed by ἐπ᾽" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"εὑρεῖν", lemma:"εὑρίσκω (aor. ηὗρον/εὗρον)", pos:"verb (infinitive)", parse:"aorist active infinitive",
+            gloss:"find, discover", note:"EPEXEGETIC (explanatory) INFINITIVE with ῥᾴδιον: an adjective like ῥᾴδιος, χαλεπός, δεινός, ἄξιος regularly takes an infinitive telling you in what respect it is true — 'easy TO FIND'. Dover: line 17 (ἀλλὰ τὸ φάρμακον εὗρε) picks this up exactly" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"but", note:"the catch, answering the κοῦφον δέ of the line before" },
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negating ῥᾴδιον" },
+          { w:"ῥᾴδιόν", lemma:"ῥᾴδιος, -α, -ον", pos:"adjective", parse:"nom. sg. neut.",
+            gloss:"easy", note:"predicate with ἐστι, impersonal: 'it is not easy'. The second accent is thrown back on it by the following enclitic ἐστι" },
+          { w:"ἐστι", lemma:"εἰμί", pos:"verb", parse:"present active indicative, 3rd singular (enclitic)",
+            gloss:"is", note:"impersonal 'it is'. Dover's paraphrase of 3–4: although this is an agreeable remedy — unlike so many medicines, regimes and operations — it is hard to come by, like a rare medicinal plant" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 5–6 ---- */
+      {
+        lines: "5–6",
+        translation: "And I think you know it well, being a doctor and, besides, especially beloved of the nine Muses.",
+        greek: [
+          { w:"γινώσκειν", lemma:"γιγνώσκω (Ionic/Hellenistic γινώσκω)", pos:"verb (infinitive)", parse:"present active infinitive",
+            gloss:"know, recognize, come to know", note:"infinitive of indirect statement after οἶμαι, with τυ as its subject accusative: 'I think that you know'. It is thrown to the head of the sentence, before its governing verb" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"connective" },
+          { w:"οἶμαί", lemma:"οἴομαι (contr. οἶμαι)", pos:"verb", parse:"present middle indicative, 1st singular",
+            gloss:"think, suppose", note:"a verb of thinking, hence the accusative-and-infinitive around it. The second accent comes from the following enclitic τυ" },
+          { w:"τυ", lemma:"σύ (Doric enclitic τυ = σε)", pos:"personal pronoun", parse:"acc. sg. (enclitic)",
+            gloss:"you", note:"SUBJECT ACCUSATIVE of γινώσκειν, not an object of οἶμαι. Doric τυ = σε, as throughout Idyll 1" },
+          { w:"καλῶς", lemma:"καλός, -ή, -όν (adv. καλῶς)", pos:"adverb", parse:"—",
+            gloss:"well, thoroughly", note:"with γινώσκειν. Note the regular -ως adverb here, beside the neuter-accusative adverbs (καλόν) that Idyll 1 prefers" },
+          { w:"ἰατρὸν", lemma:"ἰατρός, -οῦ, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"doctor, physician", note:"predicate accusative with ἐόντα, agreeing with τυ. Nikias really was a doctor, which is what makes the whole φάρμακον conceit a compliment" },
+          { w:"ἐόντα", lemma:"εἰμί (epic/Doric ἐών, ἐόντος)", pos:"verb (participle)", parse:"present active participle, acc. sg. masc.",
+            gloss:"being", note:"CAUSAL circumstantial participle agreeing with τυ — 'because you are a doctor'. Uncontracted ἐών for ὤν is epic/Ionic" },
+          { w:"καὶ", lemma:"καί", pos:"conjunction", parse:"—",
+            gloss:"and", note:"joining the second participle" },
+          { w:"ταῖς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"dat. pl. fem.",
+            gloss:"the", note:"with Μοίσαις at the line-end" },
+          { w:"ἐννέα", lemma:"ἐννέα", pos:"numeral", parse:"indeclinable",
+            gloss:"nine", note:"with Μοίσαις. Dover: this does not mean Nikias excelled in all nine arts — the idea that nine was the number of the Muses is as old as Hesiod, but the strict apportionment of separate arts among them is later than Theocritus" },
+          { w:"δὴ", lemma:"δή", pos:"particle", parse:"—",
+            gloss:"indeed, in fact", note:"emphasizing the phrase, 'the Nine themselves'" },
+          { w:"πεφιλημένον", lemma:"φιλέω (perf. mid./pass. πεφίλημαι)", pos:"verb (participle)", parse:"perfect middle/passive participle, acc. sg. masc.",
+            gloss:"love; (perf. pass.) be beloved, be dear", note:"second participle with τυ. The PERFECT gives a settled state — 'a man who stands beloved'. Its dative Μοίσαις is the agent, which perfect passives regularly take in a dative rather than ὑπό + gen." },
+          { w:"ἔξοχα", lemma:"ἔξοχος, -ον (adv. ἔξοχα)", pos:"adverb", parse:"acc. pl. neut. as adverb",
+            gloss:"exceedingly, above all, pre-eminently", note:"neuter plural adjective used adverbially with πεφιλημένον — the same formation as ἁδεῖα at Idyll 1.95" },
+          { w:"Μοίσαις", lemma:"Μοῦσα, -ης, ἡ (Doric Μοῖσα)", pos:"noun", parse:"dat. pl. fem.",
+            gloss:"Muse", note:"dative of agent with the perfect passive participle. Doric Μοῖσα = Μοῦσα. The compliment closes the ring: the remedy is the Muses, and Nikias is their favourite" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 7–8 ---- */
+      {
+        lines: "7–8",
+        translation: "At any rate it was thus that the Cyclops in our parts got through most easily — Polyphemus of old — when he was in love with Galateia,",
+        greek: [
+          { w:"οὕτω", lemma:"οὕτω(ς)", pos:"adverb", parse:"—",
+            gloss:"thus, in this way", note:"forward-pointing: 'thus', i.e. by singing, as the story will show. Dover: the general opinion of 1–6 is now supported by the particular case of Polyphemus" },
+          { w:"γοῦν", lemma:"γοῦν", pos:"particle", parse:"—",
+            gloss:"at any rate, at all events", note:"γε + οὖν: introducing a piece of evidence that is at least true, whatever else may be — the standard particle for 'here is a case in point'" },
+          { w:"ῥάιστα", lemma:"ῥᾴδιος, -α, -ον (superl. ῥᾷστος)", pos:"adjective (adverbial superlative)", parse:"acc. pl. neut. as adverb",
+            gloss:"most easily, with least trouble", note:"neuter plural superlative used adverbially with διᾶγε. It answers the οὐ ῥᾴδιον of line 4: the remedy is hard to find, but once found it makes life easiest" },
+          { w:"διᾶγ᾽", lemma:"διάγω", pos:"verb", parse:"imperfect active indicative, 3rd singular (Doric διᾶγε = Attic διῆγε; elided)",
+            gloss:"pass one's time, get through life, live", note:"intransitive διάγω (with βίον understood). Doric ᾱ for η in the augment. The imperfect covers the whole stretch of his lovesickness" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the", note:"with Κύκλωψ" },
+          { w:"Κύκλωψ", lemma:"Κύκλωψ, -ωπος, ὁ", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Cyclops", note:"subject of διᾶγε" },
+          { w:"ὁ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"nom. sg. masc.",
+            gloss:"the (one)", note:"a second article introducing an attributive prepositional phrase, ὁ παρ᾽ ἁμῖν — 'the one in our parts'" },
+          { w:"παρ᾽", lemma:"παρά", pos:"preposition", parse:"+ dative (elided παρά)",
+            gloss:"beside, among, at the home of", note:"παρά + dat. of the people among whom — 'our Cyclops', the local Sicilian one. Theocritus, a Syracusan, claims Polyphemus as a countryman" },
+          { w:"ἁμῖν", lemma:"ἐγώ (Doric ἁμίν = ἡμῖν)", pos:"personal pronoun", parse:"dat. pl.",
+            gloss:"us", note:"Doric ἁμίν = ἡμῖν, with ᾱ for η and the rough breathing. Compare the Aeolic ἄμμι at Idyll 1.102 — two different dialect forms of the same word in one quiz" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὡρχαῖος", lemma:"ὁ ἀρχαῖος (crasis ὡρχαῖος)", pos:"article + adjective", parse:"nom. sg. masc., crasis of ὁ ἀρχαῖος",
+            gloss:"the ancient, the old-time, the famous old", note:"crasis of ὁ + ἀρχαῖος — the same fusion as ὡξ (Idyll 1.65) and ᾡπόλος (1.80, 87). 'That old Polyphemus' — the figure everyone knows from the Odyssey" },
+          { w:"Πολύφαμος", lemma:"Πολύφημος, -ου, ὁ (Doric Πολύφαμος)", pos:"proper noun", parse:"nom. sg. masc.",
+            gloss:"Polyphemus", note:"in apposition to ὁ Κύκλωψ. Doric ᾱ for η, so the name looks unfamiliar at first — expect it in any Doric text" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ὅκ᾽", lemma:"ὅτε (Doric ὅκα)", pos:"conjunction", parse:"elided ὅκα",
+            gloss:"when", note:"Doric ὅκα = ὅτε, with a plain indicative for a definite past occasion — exactly as at Idyll 1.66, and to be distinguished from ὅκκα (= ὅταν) + subjunctive at 1.87" },
+          { w:"ἤρατο", lemma:"ἔραμαι (aor. ἠράσθην/ἠράμην)", pos:"verb", parse:"aorist middle indicative, 3rd singular",
+            gloss:"love, fall in love with, be in love with (+ gen.)", note:"governs the GENITIVE τᾶς Γαλατείας — the same rule as τίνος … ἔρασαι at Idyll 1.78. Ingressive aorist: 'fell in love'" },
+          { w:"τᾶς", lemma:"ὁ, ἡ, τό (Doric τᾶς = τῆς)", pos:"article", parse:"gen. sg. fem.",
+            gloss:"the", note:"with Γαλατείας. Doric ᾱ for η" },
+          { w:"Γαλατείας", lemma:"Γαλάτεια, -ας, ἡ", pos:"proper noun", parse:"gen. sg. fem.",
+            gloss:"Galateia", note:"genitive governed by ἤρατο. A sea-nymph, one of the Nereids — hence the Cyclops singing at the shore in 13–18" },
+          { w:",", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 9 ---- */
+      {
+        lines: "9",
+        translation: "with the beard just coming about his mouth and his temples.",
+        greek: [
+          { w:"ἄρτι", lemma:"ἄρτι", pos:"adverb", parse:"—",
+            gloss:"just now, just lately", note:"with the participle: the beard has only just started. He is an adolescent, which is half the joke and half the pathos" },
+          { w:"γενειάσδων", lemma:"γενειάω (Doric γενειάσδω)", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"grow a beard, get one's first beard", note:"circumstantial participle agreeing with the subject of ἤρατο. Doric -σδ- for -ζ- (γενειάζω), the same swap as ποτίσδων and ὄσδει in Idyll 1" },
+          { w:"περὶ", lemma:"περί", pos:"preposition", parse:"+ accusative",
+            gloss:"around, about", note:"governing both τὸ στόμα and τὼς κροτάφως — one preposition, two objects joined by τε" },
+          { w:"τὸ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. neut.",
+            gloss:"the", note:"with στόμα" },
+          { w:"στόμα", lemma:"στόμα, -ατος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"mouth", note:"first object of περί" },
+          { w:"τὼς", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. pl. masc. (Doric τώς = τούς)",
+            gloss:"the", note:"the Doric accusative plural in -ώς again — and here article and noun both show it, so the pair is unmistakable" },
+          { w:"κροτάφως", lemma:"κρόταφος, -ου, ὁ", pos:"noun", parse:"acc. pl. masc. (Doric -ως = Attic -ους)",
+            gloss:"temple (of the head), side of the forehead", note:"second object of περί" },
+          { w:"τε", lemma:"τε", pos:"particle (enclitic)", parse:"—",
+            gloss:"and", note:"postpositive, joining the two objects of περί; it stands after the noun-phrase it links, not before it" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 10–11 ---- */
+      {
+        lines: "10–11",
+        translation: "And he loved not with apples nor with a rose nor with love-locks, but with sheer madness, and he counted everything else as by-work.",
+        greek: [
+          { w:"ἤρατο", lemma:"ἔραμαι (aor. ἠράσθην/ἠράμην)", pos:"verb", parse:"aorist middle indicative, 3rd singular",
+            gloss:"love, be in love (+ gen.)", note:"the verb repeated from line 8 at the head of the line — anaphora. Here without an object, so absolute: 'he did his loving …'" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and, but", note:"connective" },
+          { w:"οὐ", lemma:"οὐ", pos:"adverb (negative)", parse:"—",
+            gloss:"not", note:"negating the three datives that follow, not the verb" },
+          { w:"μάλοις", lemma:"μῆλον, -ου, τό (Doric μᾶλον)", pos:"noun", parse:"dat. pl. neut.",
+            gloss:"apple", note:"DATIVE OF MEANS: 'by means of apples'. Throwing or giving an apple is the standard courtship gesture of Greek love poetry — the point is that Polyphemus skipped all the conventions" },
+          { w:"οὐδὲ", lemma:"οὐδέ", pos:"conjunction (negative)", parse:"—",
+            gloss:"nor", note:"linking the second item" },
+          { w:"ῥόδῳ", lemma:"ῥόδον, -ου, τό", pos:"noun", parse:"dat. sg. neut.",
+            gloss:"rose", note:"second dative of means — the second conventional love-token" },
+          { w:"οὐδὲ", lemma:"οὐδέ", pos:"conjunction (negative)", parse:"—",
+            gloss:"nor", note:"linking the third" },
+          { w:"κικίννοις", lemma:"κίκιννος, -ου, ὁ", pos:"noun", parse:"dat. pl. masc.",
+            gloss:"curl, ringlet, love-lock", note:"third dative of means. Dover: this passage shows a curl of hair could serve as a love-token — and since hair could be used in magic, lovers thereby put themselves in each other's power, so a prudent lover might present someone else's" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἀλλ᾽", lemma:"ἀλλά", pos:"conjunction", parse:"elided ἀλλά",
+            gloss:"but", note:"the strong adversative after the run of negatives — this is what he DID love with" },
+          { w:"ὀρθαῖς", lemma:"ὀρθός, -ή, -όν", pos:"adjective", parse:"dat. pl. fem.",
+            gloss:"straight, upright; real, outright, downright", note:"with μανίαις, and the same dative of means. Dover notes the sense 'real, outright' is a fourth-century development from the earlier ὀρθῶς 'truly, correctly'" },
+          { w:"μανίαις", lemma:"μανία, -ας, ἡ", pos:"noun", parse:"dat. pl. fem.",
+            gloss:"madness, frenzy", note:"the fourth and decisive dative of means, capping the list: not apples, roses or curls, but outright madness" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἁγεῖτο", lemma:"ἡγέομαι (Doric ἁγέομαι)", pos:"verb", parse:"imperfect middle indicative, 3rd singular (Doric ἁγεῖτο = Attic ἡγεῖτο)",
+            gloss:"lead; consider, count, reckon", note:"ἡγέομαι in the sense 'consider X (to be) Y' takes a double accusative — here πάντα as object and πάρεργα as predicate. Doric ᾱ for η, with the rough breathing kept" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"and", note:"connective" },
+          { w:"πάντα", lemma:"πᾶς, πᾶσα, πᾶν", pos:"adjective (substantival)", parse:"acc. pl. neut.",
+            gloss:"all things, everything", note:"object of ἁγεῖτο. Dover: supply 'else' — everything OTHER than his love" },
+          { w:"πάρεργα", lemma:"πάρεργον, -ου, τό", pos:"noun", parse:"acc. pl. neut.",
+            gloss:"by-work, side-issue, secondary matter", note:"PREDICATE accusative with ἁγεῖτο — 'he counted everything else a sideline'. From παρά + ἔργον, 'beside the work'" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 12–13 ---- */
+      {
+        lines: "12–13",
+        translation: "Often the sheep came home to the fold by themselves from the green pasture;",
+        greek: [
+          { w:"πολλάκι", lemma:"πολλάκις (poetic πολλάκι)", pos:"adverb", parse:"—",
+            gloss:"often, many times", note:"the ν-less poetic form before a consonant, as at Idyll 1.144" },
+          { w:"ταὶ", lemma:"ὁ, ἡ, τό (Doric ταί = αἱ)", pos:"article", parse:"nom. pl. fem.",
+            gloss:"the", note:"Doric ταί = αἱ, with ὄιες" },
+          { w:"ὄιες", lemma:"ὄϊς, ὄϊος, ἡ", pos:"noun", parse:"nom. pl. fem.",
+            gloss:"sheep, ewe", note:"subject of ἀπῆνθον. Two syllables, ὄ-ιες, with the ι sounded" },
+          { w:"ποτὶ", lemma:"πρός (Doric ποτί)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, towards", note:"Doric ποτί = πρός, of motion towards" },
+          { w:"τωὔλιον", lemma:"τὸ αὔλιον (crasis τωὔλιον)", pos:"article + noun", parse:"acc. sg. neut., crasis of τὸ αὔλιον",
+            gloss:"the fold, the steading, the farmyard", note:"crasis of τό + αὔλιον, marked by the coronis over the υ. Add it to the collection: ὡξ, ᾡπόλος, χὠ, κἠν, ὡρχαῖος, τωὔλιον" },
+          { w:"αὐταὶ", lemma:"αὐτός, -ή, -ό", pos:"intensive pronoun", parse:"nom. pl. fem.",
+            gloss:"themselves, of their own accord", note:"intensive with ταὶ ὄιες — 'BY THEMSELVES', with no shepherd. That is the whole point: he has abandoned his flock. Dover compares the lovesick Boukaios neglecting his crops in Idyll 10" },
+          { w:"ἀπῆνθον", lemma:"ἀπέρχομαι (Doric aor. ἀπῆνθον = ἀπῆλθον)", pos:"verb", parse:"aorist active indicative, 3rd plural",
+            gloss:"go away, go back, depart", note:"Doric ν for λ in the aorist of ἔρχομαι — the same ἦνθον/ἦλθον swap as all through Idyll 1, now with ἀπο-" },
+          { w:"χλωρᾶς", lemma:"χλωρός, -ά, -όν", pos:"adjective", parse:"gen. sg. fem.",
+            gloss:"green, fresh, verdant", note:"with βοτάνας, its preposition standing between them" },
+          { w:"ἐκ", lemma:"ἐκ", pos:"preposition", parse:"+ genitive",
+            gloss:"from, out of", note:"placed between adjective and noun (χλωρᾶς ἐκ βοτάνας), a verse liberty — look for the noun that agrees, not the nearest one" },
+          { w:"βοτάνας", lemma:"βοτάνη, -ης, ἡ (Doric βοτάνα)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"pasture, fodder, grazing", note:"governed by ἐκ. Doric ᾱ for η" },
+          { w:"·", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 13–14 ---- */
+      {
+        lines: "13–14",
+        translation: "but he, singing of Galateia, lay wasting away by himself on the seaweed-strewn shore",
+        greek: [
+          { w:"ὁ", lemma:"ὁ, ἡ, τό (demonstrative)", pos:"article as pronoun", parse:"nom. sg. masc.",
+            gloss:"he", note:"the article as a pronoun, contrasted with the sheep: ὁ δέ, 'but HE'" },
+          { w:"δὲ", lemma:"δέ", pos:"particle", parse:"—",
+            gloss:"but", note:"the contrast: the sheep went home, he did not" },
+          { w:"τὰν", lemma:"ὁ, ἡ, τό (Doric τάν = τήν)", pos:"article", parse:"acc. sg. fem.",
+            gloss:"the", note:"with Γαλάτειαν" },
+          { w:"Γαλάτειαν", lemma:"Γαλάτεια, -ας, ἡ", pos:"proper noun", parse:"acc. sg. fem.",
+            gloss:"Galateia", note:"ACCUSATIVE here, object of ἀείδων — ἀείδω takes an accusative of what one sings about. Contrast the genitive after ἤρατο in line 8: the case follows the verb, not the sense" },
+          { w:"ἀείδων", lemma:"ἀείδω (= ᾄδω)", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"sing (of)", note:"circumstantial participle, present and so contemporaneous with κατετάκετο: he was wasting away AS he sang. This participle is the hinge of the poem — the singing is both the symptom and, in 17, the cure" },
+          { w:"αὐτὸς", lemma:"αὐτός, -ή, -ό", pos:"intensive pronoun", parse:"nom. sg. masc.",
+            gloss:"himself, by himself, alone", note:"Dover allows two readings: 'by himself', alone; or an antithesis between him and his flocks — the sheep went one way, he stayed the other. The αὐταί of line 12 makes the antithesis attractive" },
+          { w:"ἐπ᾽", lemma:"ἐπί", pos:"preposition", parse:"+ genitive (elided ἐπί)",
+            gloss:"on, upon", note:"of place where, with ἀϊόνος" },
+          { w:"ἀϊόνος", lemma:"ἠϊών, -όνος, ἡ (Doric ἀϊών)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"shore, beach, sea-bank", note:"governed by ἐπ᾽. Doric ᾱ for η. Its adjective φυκιοέσσας waits until the end of the line" },
+          { w:"κατετάκετο", lemma:"κατατήκω (Doric κατατάκομαι)", pos:"verb", parse:"imperfect middle/passive indicative, 3rd singular",
+            gloss:"melt away, waste away, pine away utterly", note:"the τάκομαι of Idyll 1 (66, 82, 88, 91) with κατα- added for intensity — 'melted right away'. Doric τάκ- for τήκ-, and the imperfect of a drawn-out process" },
+          { w:"φυκιοέσσας", lemma:"φυκιόεις, -εσσα, -εν", pos:"adjective", parse:"gen. sg. fem.",
+            gloss:"full of seaweed, seaweed-strewn", note:"agreeing with ἀϊόνος across the verb — the adjectives in -όεις/-εσσα/-εν are an epic formation meaning 'full of, abounding in' (cf. ὑλήεις 'wooded', ἠχήεις 'echoing')" }
+        ]
+      },
+
+      /* ---- 15–16 ---- */
+      {
+        lines: "15–16",
+        translation: "from dawn, with a most hateful wound beneath his heart, which the shaft of mighty Cypris had fixed in his liver.",
+        greek: [
+          { w:"ἐξ", lemma:"ἐκ", pos:"preposition", parse:"+ genitive",
+            gloss:"from, ever since", note:"temporal ἐκ: 'starting from dawn', i.e. all day long" },
+          { w:"ἀοῦς", lemma:"ἠώς, -οῦς, ἡ (Doric ἀώς)", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"dawn, daybreak", note:"governed by ἐξ. Doric ᾱ for η — ἀώς = ἠώς = Attic ἕως" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"ἔχθιστον", lemma:"ἐχθρός, -ά, -όν (superl. ἔχθιστος)", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"most hateful, most hated, bitterest", note:"attributive with ἕλκος. An irregular superlative built on the stem ἐχθ- rather than on ἐχθρός" },
+          { w:"ἔχων", lemma:"ἔχω", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"have, hold", note:"a third circumstantial participle with the subject of κατετάκετο, giving the cause of the wasting" },
+          { w:"ὑποκάρδιον", lemma:"ὑποκάρδιος, -ον", pos:"adjective", parse:"acc. sg. neut.",
+            gloss:"under the heart, beneath the breast", note:"second attributive with ἕλκος. Dover: there is often no great anatomical precision in descriptions of love-sickness — the wound is 'under the heart' here and in the 'liver' one line later" },
+          { w:"ἕλκος", lemma:"ἕλκος, -εος, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"wound, sore, ulcer", note:"object of ἔχων, and the ANTECEDENT of the relative τό in the next line. Note the medical vocabulary answering the φάρμακον of line 1" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"Κύπριδος", lemma:"Κύπρις, -ιδος, ἡ", pos:"proper noun", parse:"gen. sg. fem.",
+            gloss:"Cypris, Aphrodite", note:"governed by ἐκ — the source of the wound. Dover: strictly it is Eros, not Aphrodite, who shoots the arrow, but he is her minister, so the wound can be said to come 'from' her" },
+          { w:"ἐκ", lemma:"ἐκ", pos:"preposition", parse:"+ genitive",
+            gloss:"from, at the hands of", note:"ANASTROPHE — the preposition following its noun (Κύπριδος ἐκ), as ὑπ᾽ did at Idyll 1.98. And this is the same authority-marking ἐκ as ἐκ Μοιρᾶν at Idyll 1.140: 'by the agency of'" },
+          { w:"μεγάλας", lemma:"μέγας, μεγάλη, μέγα", pos:"adjective", parse:"gen. sg. fem. (Doric -ας = Attic -ης)",
+            gloss:"great, mighty", note:"agreeing with Κύπριδος across the intervening preposition" },
+          { w:"τό", lemma:"ὅς, ἥ, ὅ (article as relative)", pos:"relative pronoun", parse:"acc. sg. neut.",
+            gloss:"which", note:"Dover states it flatly: τό is the OBJECT of πᾶξε and its antecedent is ἕλκος. So the wound is what was driven in, and βέλεμνον is predicative — 'which she fixed in his liver AS a shaft'. The article-as-relative is standard in this poetry" },
+          { w:"οἱ", lemma:"οὗ, οἷ, ἕ (epic 3rd person pronoun)", pos:"personal pronoun", parse:"dat. sg. (enclitic)",
+            gloss:"for him, his", note:"epic enclitic dative = αὐτῷ; possessive with ἥπατι, 'in HIS liver'. The same word as at Idyll 1.74 — not the article" },
+          { w:"ἥπατι", lemma:"ἧπαρ, -ατος, τό", pos:"noun", parse:"dat. sg. neut.",
+            gloss:"liver", note:"dative of place where, with πᾶξε. The liver is a standard Greek seat of the passions — no contradiction with ὑποκάρδιον, since such descriptions are not anatomical" },
+          { w:"πᾶξε", lemma:"πήγνυμι (aor. ἔπηξα, Doric πᾶξε)", pos:"verb", parse:"aorist active indicative, 3rd singular",
+            gloss:"fix, drive in, fasten", note:"Doric ᾱ for η, and unaugmented (πᾶξε for ἔπαξε) — an epic licence. Subject is Κύπρις, drawn out of the genitive phrase" },
+          { w:"βέλεμνον", lemma:"βέλεμνον, -ου, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"missile, dart, shaft, arrow", note:"PREDICATIVE accusative with τό: she fixed the wound in him 'as a shaft'. If you read it as the object instead, τό is left with nothing to do — which is exactly the trap here" },
+          { w:".", punct:true, nospaceBefore:true }
+        ]
+      },
+
+      /* ---- 17–18 ---- */
+      {
+        lines: "17–18",
+        translation: "But he found the remedy, and sitting on a high rock, looking out to sea, he would sing songs like these:",
+        greek: [
+          { w:"ἀλλὰ", lemma:"ἀλλά", pos:"conjunction", parse:"—",
+            gloss:"but, yet", note:"the turn of the whole prologue: after eight lines of hopeless suffering, the cure" },
+          { w:"τὸ", lemma:"ὁ, ἡ, τό", pos:"article", parse:"acc. sg. neut.",
+            gloss:"the", note:"with φάρμακον — THE remedy, the one announced in line 1" },
+          { w:"φάρμακον", lemma:"φάρμακον, -ου, τό", pos:"noun", parse:"acc. sg. neut.",
+            gloss:"drug, remedy, cure", note:"object of εὗρε. The word returns from line 1 to close the ring" },
+          { w:"εὗρε", lemma:"εὑρίσκω (aor. ηὗρον/εὗρον)", pos:"verb", parse:"aorist active indicative, 3rd singular",
+            gloss:"find, discover", note:"Dover: line 17 clearly picks up εὑρεῖν δ᾽ οὐ ῥᾴδιόν ἐστι in line 4. The remedy is hard to find — but by persisting in song Polyphemus eventually found what he could have found no other way" },
+          { w:",", punct:true, nospaceBefore:true },
+          { w:"καθεζόμενος", lemma:"καθέζομαι", pos:"verb (participle)", parse:"present middle participle, nom. sg. masc.",
+            gloss:"sit down, be seated", note:"circumstantial participle. A deponent middle — middle in form, active in meaning" },
+          { w:"δ᾽", lemma:"δέ", pos:"particle", parse:"elided δέ",
+            gloss:"and", note:"connective" },
+          { w:"ἐπὶ", lemma:"ἐπί", pos:"preposition", parse:"+ genitive",
+            gloss:"on, upon", note:"of place where, with πέτρας" },
+          { w:"πέτρας", lemma:"πέτρα, -ας, ἡ", pos:"noun", parse:"gen. sg. fem.",
+            gloss:"rock, crag", note:"governed by ἐπί; its adjective ὑψηλᾶς waits for the next line" },
+          { w:"ὑψηλᾶς", lemma:"ὑψηλός, -ή, -όν", pos:"adjective", parse:"gen. sg. fem. (Doric -ᾶς = Attic -ῆς)",
+            gloss:"high, lofty", note:"attributive with πέτρας, thrown over the line-end. Doric ᾱ for η" },
+          { w:"ἐς", lemma:"εἰς (Doric ἐς)", pos:"preposition", parse:"+ accusative",
+            gloss:"to, towards, out over", note:"of the direction of the gaze" },
+          { w:"πόντον", lemma:"πόντος, -ου, ὁ", pos:"noun", parse:"acc. sg. masc.",
+            gloss:"sea, open sea", note:"governed by ἐς — he looks out to where Galateia is" },
+          { w:"ὁρῶν", lemma:"ὁράω", pos:"verb (participle)", parse:"present active participle, nom. sg. masc.",
+            gloss:"see, look", note:"a second circumstantial participle with ἄειδε: sitting and looking, he sang. Contracted ὁρῶν beside the uncontracted epic ἐσοράω of Idyll 1.87" },
+          { w:"ἄειδε", lemma:"ἀείδω (= ᾄδω)", pos:"verb", parse:"imperfect active indicative, 3rd singular",
+            gloss:"sing (of)", note:"IMPERFECT, and that is the point: not 'he sang' once but 'he used to sing, he would sing' — the repeated singing is the cure, and it introduces the song that fills the rest of the poem. Unaugmented, as often in this verse" },
+          { w:"τοιαῦτα", lemma:"τοιοῦτος, τοιαύτη, τοιοῦτο", pos:"demonstrative pronoun", parse:"acc. pl. neut.",
+            gloss:"such things, things like these", note:"internal object of ἄειδε, pointing forward to the quoted song: 'songs of this kind'" },
+          { w:"·", punct:true, nospaceBefore:true }
         ]
       }
 

@@ -24,8 +24,14 @@ const QUIZZES = [
   {
     id: "quiz2",
     label: "Quiz 2",
+    status: "ready",
+    readings: ["theoc1-1-63", "theoc1-64-118", "theoc1-120-152", "theoc11-1-18"]
+  },
+  {
+    id: "quiz3",
+    label: "Quiz 3",
     status: "collecting",
-    readings: ["theoc1-1-56"]
+    readings: []
   }
 ];
 
