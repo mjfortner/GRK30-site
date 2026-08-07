@@ -31,7 +31,7 @@ const QUIZZES = [
     id: "quiz3",
     label: "Quiz 3",
     status: "collecting",
-    readings: []
+    readings: ["theoc11-19-81"]
   }
 ];
 
